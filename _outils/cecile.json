@@ -1,0 +1,513 @@
+{
+ "client": {
+  "slug": "cecile",
+  "name": "Custom Chic by Cécile",
+  "first": "Cécile",
+  "tone": "tu"
+ },
+ "pack": {
+  "name": "Pack Prêt à Poster · 1 mois",
+  "delivered": "2026-11-12",
+  "start": "2026-11-16",
+  "end": "2026-12-13",
+  "retouches": "1 tour inclus, dans les 7 jours après la livraison",
+  "cadre": [
+   [
+    "Ce que tu reçois",
+    [
+     "Tes publications du mois : reels, carrousels, posts et stories",
+     "Tous les textes, prêts à copier",
+     "Le calendrier : quoi publier, et quel jour",
+     "Ton profil revu : photo, bio, couvertures à la une",
+     "Les vidéos sont livrées sans musique : tu ajoutes un son tendance en publiant"
+    ]
+   ],
+   [
+    "Les retouches",
+    [
+     "1 tour de retouches inclus, dans les 7 jours après la livraison",
+     "En un seul message : la publication concernée et ce qu'il faut changer",
+     "Textes, sous-titres, coupe, couverture ou ordre des publications",
+     "Corrections livrées sous 48 h ouvrées"
+    ]
+   ],
+   [
+    "Ce qui reste entre tes mains",
+    [
+     "C'est toi qui publies : je n'accède pas à ton compte",
+     "Répondre aux commentaires et aux messages",
+     "Les stories spontanées depuis ton stand : ce sont elles qui rendent ton compte vivant"
+    ]
+   ],
+   [
+    "Mon engagement",
+    [
+     "Des contenus pros, prêts à publier, adaptés à ton activité",
+     "Je ne promets ni vues, ni abonnés, ni clients : ils dépendent de ton offre, de ta régularité et des réseaux eux-mêmes"
+    ]
+   ]
+  ]
+ },
+ "contact": {
+  "email": "studio.pretaposter@gmail.com",
+  "text": "Un fichier qui ne s'ouvre pas, une étape pas claire, une retouche ? Écris-moi, je te réponds sous 24 h ouvrées, du lundi au vendredi."
+ },
+ "profile": {
+  "photo": "/home/claude/cecile/out2/Photo_de_profil.jpg",
+  "name": "Custom Chic · Vestes uniques",
+  "bio": "Customisation de vestes uniques ✂️\nJe transforme votre veste à votre image 🧵\n📍 Marchés de Noël en Alsace\n💌 Infos et commandes en message privé",
+  "covers": [
+   {
+    "label": "Qui suis-je",
+    "file": "/home/claude/cecile/out2/Couvertures_a_la_une/1_Qui_suis-je.jpg"
+   },
+   {
+    "label": "Créations",
+    "file": "/home/claude/cecile/out2/Couvertures_a_la_une/2_Creations.jpg"
+   },
+   {
+    "label": "Marchés",
+    "file": "/home/claude/cecile/out2/Couvertures_a_la_une/3_Marches.jpg"
+   },
+   {
+    "label": "Bijoux",
+    "file": "/home/claude/cecile/out2/Couvertures_a_la_une/4_Bijoux.jpg"
+   }
+  ],
+  "pinned": "Le carrousel « Où me trouver cet hiver » (18 nov.) : épingle-le en haut de ton profil jusqu'au 13 décembre. Sur la publication › ⋯ › Épingler."
+ },
+ "items": [
+  {
+   "id": "p00",
+   "date": "2026-11-16",
+   "label": "Lundi 16 nov.",
+   "type": "Reel",
+   "title": "Veste rose",
+   "media": [
+    "/home/claude/cecile/light/r01.mp4"
+   ],
+   "caption": "C'est parti pour la saison des marchés de Noël ! 🎄\n\nBienvenue sur mon stand ! Vestes customisées, chemises, bijoux en cravate… que des pièces uniques ✂️\n\nVenez me faire un petit coucou, ça me ferait trop plaisir !\n\n📍 Fessenheim : 20, 21 et 22 novembre\n📍 Kingersheim : 27, 28 et 29 novembre\n📍 Studio 42, Mulhouse : du 1er au 6 décembre\n📍 Kembs : 12 et 13 décembre\n\n#customchic #cecilethouvenin #customisation #creationunique #secondemain #vesteunique #faitmain #alsace #hautrhin #marchedenoel",
+   "tip": "🎵 Musique à ajouter en publiant. Partage aussi le reel en story.",
+   "cover": "/home/claude/cecile/light/r01.jpg"
+  },
+  {
+   "id": "p01",
+   "date": "2026-11-17",
+   "label": "Mardi 17 nov.",
+   "type": "Reel",
+   "title": "Atelier veste kaki",
+   "media": [
+    "/home/claude/cecile/light/r02.mp4"
+   ],
+   "caption": "Bienvenue dans mon atelier 🧵\n\nUne veste kaki toute simple… et quelques fleurs brodées, cousues à la machine. Il n'en faut pas plus pour qu'elle revive 🌸\n\nVos vêtements méritent mieux que le fond du placard ! Apportez-les-moi, on en fait des pièces uniques ✨\n\n📍 Je vous attends au marché de Noël de Fessenheim, du 20 au 22 novembre\n\n#customchic #cecilethouvenin #customisation #creationunique #secondemain #vesteunique #faitmain #alsace #hautrhin #coulisses #broderie #atelier",
+   "tip": "🎵 Musique à ajouter en publiant. Partage le reel en story.",
+   "cover": "/home/claude/cecile/light/r02.jpg"
+  },
+  {
+   "id": "p02",
+   "date": "2026-11-18",
+   "label": "Mercredi 18 nov.",
+   "type": "Carrousel",
+   "title": "Où me trouver cet hiver",
+   "media": [
+    "/home/claude/cecile/out/Carrousel1_ou_me_trouver/01.jpg",
+    "/home/claude/cecile/out/Carrousel1_ou_me_trouver/02.jpg",
+    "/home/claude/cecile/out/Carrousel1_ou_me_trouver/03.jpg",
+    "/home/claude/cecile/out/Carrousel1_ou_me_trouver/04.jpg",
+    "/home/claude/cecile/out/Carrousel1_ou_me_trouver/05.jpg",
+    "/home/claude/cecile/out/Carrousel1_ou_me_trouver/06.jpg"
+   ],
+   "caption": "📅 Mes dates de cet hiver, à enregistrer !\n\n🎄 Fessenheim : 20, 21 et 22 novembre\n🎄 Kingersheim : 27, 28 et 29 novembre\n✂️ Studio 42, Mulhouse (1 rue Henriette) : du 1er au 6 décembre. Apportez votre veste, je la customise sur place !\n🎄 Kembs : 12 et 13 décembre\n\nDes vestes uniques, faites main, et plein d'idées de cadeaux 🎁\n\nOù est-ce que vous venez me voir ? Dites-le moi en commentaire 🥰\n\n#customchic #cecilethouvenin #customisation #creationunique #secondemain #vesteunique #faitmain #alsace #hautrhin #marchedenoel #fessenheim #kingersheim #mulhouse #kembs",
+   "tip": "🎵 Musique à ajouter en publiant. Épingle ce post en haut de ton profil jusqu'au 13 décembre."
+  },
+  {
+   "id": "p03",
+   "date": "2026-11-19",
+   "label": "Jeudi 19 nov.",
+   "type": "Story",
+   "title": "Demain, Fessenheim !",
+   "media": [
+    "/home/claude/cecile/out/Stories/1_Fessenheim_veille.jpg"
+   ],
+   "caption": "",
+   "tip": "Ajoute un sticker « compte à rebours » ou « lieu : Fessenheim »."
+  },
+  {
+   "id": "p04",
+   "date": "2026-11-20",
+   "label": "Vendredi 20 nov.",
+   "type": "Reel",
+   "title": "Mon stand",
+   "media": [
+    "/home/claude/cecile/light/r03.mp4"
+   ],
+   "caption": "C'est parti pour la saison des marchés de Noël ! 🎄\n\nBienvenue sur mon stand ! Vestes customisées, chemises, bijoux en cravate… que des pièces uniques ✂️\n\nVenez me faire un petit coucou, ça me ferait trop plaisir !\n\n📍 Fessenheim : 20, 21 et 22 novembre\n📍 Kingersheim : 27, 28 et 29 novembre\n📍 Studio 42, Mulhouse : du 1er au 6 décembre\n📍 Kembs : 12 et 13 décembre\n\n#customchic #cecilethouvenin #customisation #creationunique #secondemain #vesteunique #faitmain #alsace #hautrhin #marchedenoel",
+   "tip": "🎵 Musique à ajouter en publiant. Pendant le marché, filme 2 ou 3 petites stories de ton stand (voir les idées dans le guide).",
+   "cover": "/home/claude/cecile/light/r03.jpg"
+  },
+  {
+   "id": "p05",
+   "date": "2026-11-20",
+   "label": "Du vendredi 20 au dimanche 22 nov.",
+   "type": "Story",
+   "title": "Je suis au marché",
+   "media": [
+    "/home/claude/cecile/out/Stories/2_Jour_J_stand.jpg"
+   ],
+   "caption": "",
+   "tip": "À republier chaque jour de marché, avec le sticker « lieu »."
+  },
+  {
+   "id": "p06",
+   "date": "2026-11-21",
+   "label": "Samedi 21 nov.",
+   "type": "Reel",
+   "title": "Bijou cravate (fabrication)",
+   "media": [
+    "/home/claude/cecile/light/r04.mp4"
+   ],
+   "caption": "De la cravate au bijou, en 15 secondes ⏱️\n\nJe la plie, je la couds à la main, j'ajoute des chaînes et des breloques… et elle devient un bijou ✨\n\nChaque bijou cravate est une pièce unique : pas deux pareils !\n\n📍 Venez les voir en vrai au marché de Noël de Fessenheim, jusqu'à demain 🎄\n\n#customchic #cecilethouvenin #customisation #creationunique #secondemain #vesteunique #faitmain #alsace #hautrhin #bijoucravate #upcycling #bijouunique",
+   "tip": "🎵 Musique à ajouter en publiant. Partage-le en story depuis le marché.",
+   "cover": "/home/claude/cecile/light/r04.jpg"
+  },
+  {
+   "id": "p07",
+   "date": "2026-11-22",
+   "label": "Dimanche 22 nov.",
+   "type": "Story",
+   "title": "Quiz : avant ou après ?",
+   "media": [
+    "/home/claude/cecile/out2/Stories/3_Quiz_avant_apres.jpg"
+   ],
+   "caption": "",
+   "tip": "Ajoute le sticker « quiz » : réponses « Avant » (la bonne) et « Après ». Le lendemain, montre l'après en story !"
+  },
+  {
+   "id": "p08",
+   "date": "2026-11-23",
+   "label": "Lundi 23 nov.",
+   "type": "Post",
+   "title": "45 ans de couture",
+   "media": [
+    "/home/claude/cecile/out2/2_45_ans_de_couture/1.jpg"
+   ],
+   "caption": "45 ans de couture, et toujours la même passion 🧵\n\nJ'ai commencé à coudre il y a 45 ans. En mars 2025, j'ai lancé Custom Chic pour donner une deuxième vie aux vestes de seconde main.\n\nChaque pièce que je crée est unique : des galons, de la dentelle, des boutons, des broderies… et beaucoup d'amour ❤️\n\nMerci d'être là pour suivre l'aventure 🥰\n\n#customchic #cecilethouvenin #customisation #creationunique #secondemain #vesteunique #faitmain #alsace #hautrhin #couturiere #passioncouture",
+   "tip": "🎵 Musique à ajouter en publiant. Réponds à chaque commentaire, même par un simple cœur."
+  },
+  {
+   "id": "p09",
+   "date": "2026-11-24",
+   "label": "Mardi 24 nov.",
+   "type": "Reel",
+   "title": "Veste carreaux",
+   "media": [
+    "/home/claude/cecile/light/r05.mp4"
+   ],
+   "caption": "Une grande chemise à carreaux un peu trop sage… 🤔\n\nJe lui ai donné une nouvelle coupe et un petit détail qui change tout.\n\nC'est ça que j'adore : redonner vie à une pièce oubliée pour en faire une pièce unique.\n\nVotre veste dort au placard ? Écrivez-moi en message privé 💌\n\n📍 Prochain rendez-vous : marché de Noël de Kingersheim, du 27 au 29 novembre\n\n#customchic #cecilethouvenin #customisation #creationunique #secondemain #vesteunique #faitmain #alsace #hautrhin #avantapres",
+   "tip": "🎵 Musique à ajouter en publiant. Partage le reel en story.",
+   "cover": "/home/claude/cecile/light/r05.jpg"
+  },
+  {
+   "id": "p10",
+   "date": "2026-11-25",
+   "label": "Mercredi 25 nov.",
+   "type": "Carrousel",
+   "title": "Avant après",
+   "media": [
+    "/home/claude/cecile/out/Carrousel3_avant_apres/01.jpg",
+    "/home/claude/cecile/out/Carrousel3_avant_apres/02.jpg",
+    "/home/claude/cecile/out/Carrousel3_avant_apres/03.jpg",
+    "/home/claude/cecile/out/Carrousel3_avant_apres/04.jpg",
+    "/home/claude/cecile/out/Carrousel3_avant_apres/05.jpg",
+    "/home/claude/cecile/out/Carrousel3_avant_apres/06.jpg"
+   ],
+   "caption": "2 vestes, 2 nouvelles vies ✨\n\nSwipe pour voir l'avant et l'après 👉\n\nEt vous, vous préférez laquelle ? Dites-moi 1 ou 2 en commentaire, je suis curieuse ! 😄\n\n#customchic #cecilethouvenin #customisation #creationunique #secondemain #vesteunique #faitmain #alsace #hautrhin #avantapres",
+   "tip": "🎵 Musique à ajouter en publiant. Réponds à chaque commentaire : ça fait remonter le post."
+  },
+  {
+   "id": "p11",
+   "date": "2026-11-26",
+   "label": "Jeudi 26 nov.",
+   "type": "Story",
+   "title": "Kingersheim",
+   "media": [
+    "/home/claude/cecile/out/Stories/3_Kingersheim.jpg"
+   ],
+   "caption": "",
+   "tip": "Sticker « compte à rebours » ou « lieu : Kingersheim »."
+  },
+  {
+   "id": "p12",
+   "date": "2026-11-27",
+   "label": "Vendredi 27 nov.",
+   "type": "Carrousel",
+   "title": "Idée cadeau",
+   "media": [
+    "/home/claude/cecile/out2/4_Idee_cadeau/1.jpg",
+    "/home/claude/cecile/out2/4_Idee_cadeau/2.jpg",
+    "/home/claude/cecile/out2/4_Idee_cadeau/3.jpg",
+    "/home/claude/cecile/out2/4_Idee_cadeau/4.jpg",
+    "/home/claude/cecile/out2/4_Idee_cadeau/5.jpg",
+    "/home/claude/cecile/out2/4_Idee_cadeau/6.jpg"
+   ],
+   "caption": "Vous cherchez un cadeau qu'elle ne trouvera nulle part ailleurs ? 🎁\n\nUne veste customisée, c'est une pièce unique : il n'en existe qu'une seule au monde ✨\n\nEt pour celles qui aiment les détails, il y a aussi mes bijoux en cravate 💎\n\n💶 Mes vestes vont de 50 à 90 €\n📍 Venez les découvrir sur mes marchés de Noël, ou écrivez-moi en message privé 💌\n\n#customchic #cecilethouvenin #customisation #creationunique #secondemain #vesteunique #faitmain #alsace #hautrhin #ideecadeau #cadeaunoel #cadeauunique",
+   "tip": "🎵 Musique à ajouter en publiant. Partage ce carrousel en story avec le sticker « lien » ou « mention »."
+  },
+  {
+   "id": "p13",
+   "date": "2026-11-27",
+   "label": "Du vendredi 27 au dimanche 29 nov.",
+   "type": "Story",
+   "title": "Je suis au marché",
+   "media": [
+    "/home/claude/cecile/out/Stories/2_Jour_J_stand.jpg"
+   ],
+   "caption": "",
+   "tip": "Chaque jour de marché, avec le sticker « lieu »."
+  },
+  {
+   "id": "p14",
+   "date": "2026-11-28",
+   "label": "Samedi 28 nov.",
+   "type": "Reel",
+   "title": "Veste en jean brodée",
+   "media": [
+    "/home/claude/cecile/light/r06.mp4"
+   ],
+   "caption": "Des broderies qui dormaient dans une boîte… 🌸\n\nJe les pose une à une sur une veste en jean, fleur après fleur. Résultat : une veste qui ne ressemble à aucune autre ✨\n\nVotre veste en jean peut fleurir aussi ! Apportez-la-moi 🧵\n\n📍 Marché de Noël de Kingersheim, jusqu'à demain\n✂️ Et du 1er au 6 décembre, au Studio 42 à Mulhouse, je customise votre veste sur place\n\n#customchic #cecilethouvenin #customisation #creationunique #secondemain #vesteunique #faitmain #alsace #hautrhin #vesteenjean #broderie",
+   "tip": "🎵 Musique à ajouter en publiant.",
+   "cover": "/home/claude/cecile/light/r06.jpg"
+  },
+  {
+   "id": "p15",
+   "date": "2026-11-29",
+   "label": "Dimanche 29 nov.",
+   "type": "Carrousel",
+   "title": "Ta veste à ton image",
+   "media": [
+    "/home/claude/cecile/out/Carrousel2_ta_veste_a_ton_image/01.jpg",
+    "/home/claude/cecile/out/Carrousel2_ta_veste_a_ton_image/02.jpg",
+    "/home/claude/cecile/out/Carrousel2_ta_veste_a_ton_image/03.jpg",
+    "/home/claude/cecile/out/Carrousel2_ta_veste_a_ton_image/04.jpg",
+    "/home/claude/cecile/out/Carrousel2_ta_veste_a_ton_image/05.jpg",
+    "/home/claude/cecile/out/Carrousel2_ta_veste_a_ton_image/06.jpg"
+   ],
+   "caption": "Votre veste, à votre image 🧵\n\nVous avez une veste que vous aimez bien mais que vous ne mettez plus ? On peut lui donner une deuxième vie !\n\n1️⃣ Vous me l'apportez\n2️⃣ Vous me dites vos envies : galons, dentelle, boutons, broderies, jean récupéré…\n3️⃣ Je la transforme à la main\n4️⃣ Vous repartez avec une pièce unique\n\n✂️ Du 1er au 6 décembre, je suis au Studio 42, 1 rue Henriette à Mulhouse : apportez votre veste, je la customise sur place !\n\nDes questions ? Écrivez-moi en message privé 💌\n\n#customchic #cecilethouvenin #customisation #creationunique #secondemain #vesteunique #faitmain #alsace #hautrhin #mulhouse #studio42",
+   "tip": "🎵 Musique à ajouter en publiant."
+  },
+  {
+   "id": "p16",
+   "date": "2026-11-30",
+   "label": "Lundi 30 nov.",
+   "type": "Reel",
+   "title": "Je customise votre veste (Studio 42)",
+   "media": [
+    "/home/claude/cecile/light/r07.mp4"
+   ],
+   "caption": "POV : je customise votre veste ✂️\n\nBroderies, dentelle, petits détails… voilà à quoi ressemblent mes journées derrière ma machine 🧵\n\nEt cette semaine, c'est vous qui choisissez ! Du 1er au 6 décembre, je suis au Studio 42, 1 rue Henriette à Mulhouse : apportez votre veste, je la customise sur place 🥰\n\n#customchic #cecilethouvenin #customisation #creationunique #secondemain #vesteunique #faitmain #alsace #hautrhin #mulhouse #studio42 #coulisses",
+   "tip": "🎵 Musique à ajouter en publiant. Le même jour, publie aussi la story « C'est demain ! ».",
+   "cover": "/home/claude/cecile/light/r07.jpg"
+  },
+  {
+   "id": "p18",
+   "date": "2026-12-01",
+   "label": "Mardi 1er déc.",
+   "type": "Reel",
+   "title": "Mes créations",
+   "media": [
+    "/home/claude/cecile/light/r08.mp4"
+   ],
+   "caption": "Laquelle vous choisissez ? 😍\n\nQuelques-unes de mes dernières créations : chaque veste est une pièce unique, personnalisée à la main ✨\n\nDites-moi son numéro en commentaire 👇\n\n📍 Cette semaine, je suis au Studio 42 à Mulhouse (1 rue Henriette), jusqu'au dimanche 6 décembre\n\n#customchic #cecilethouvenin #customisation #creationunique #secondemain #vesteunique #faitmain #alsace #hautrhin #lookbook",
+   "tip": "🎵 Musique à ajouter en publiant. Réponds aux commentaires avec le nom de la veste choisie.",
+   "cover": "/home/claude/cecile/light/r08.jpg"
+  },
+  {
+   "id": "p19",
+   "date": "2026-12-02",
+   "label": "Mercredi 2 déc.",
+   "type": "Reel",
+   "title": "Veste carreaux portée",
+   "media": [
+    "/home/claude/cecile/light/r09.mp4"
+   ],
+   "caption": "Sur le cintre, elle est jolie… mais portée, c'est autre chose 😍\n\nMa veste à carreaux, avec sa poche contrastée, faite main. Une pièce unique, comme vous ✨\n\n📍 Venez l'essayer au Studio 42, 1 rue Henriette à Mulhouse, jusqu'au dimanche 6 décembre\n\n#customchic #cecilethouvenin #customisation #creationunique #secondemain #vesteunique #faitmain #alsace #hautrhin #lookdujour #vesteacarreaux",
+   "tip": "🎵 Musique à ajouter en publiant. Partage le reel en story.",
+   "cover": "/home/claude/cecile/light/r09.jpg"
+  },
+  {
+   "id": "p20",
+   "date": "2026-12-03",
+   "label": "Jeudi 3 déc.",
+   "type": "Carrousel",
+   "title": "Bijoux en cravate",
+   "media": [
+    "/home/claude/cecile/out2/6_Bijoux_cravate/1.jpg",
+    "/home/claude/cecile/out2/6_Bijoux_cravate/2.jpg",
+    "/home/claude/cecile/out2/6_Bijoux_cravate/3.jpg",
+    "/home/claude/cecile/out2/6_Bijoux_cravate/4.jpg",
+    "/home/claude/cecile/out2/6_Bijoux_cravate/5.jpg",
+    "/home/claude/cecile/out2/6_Bijoux_cravate/6.jpg",
+    "/home/claude/cecile/out2/6_Bijoux_cravate/7.jpg"
+   ],
+   "caption": "Une cravate oubliée… devient un bijou 💎\n\nJe plie, j'assemble et je décore d'anciennes cravates pour en faire des bijoux uniques. Pas deux pareilles !\n\nVous avez une cravate qui dort dans un tiroir ? Apportez-la-moi, je la transforme. Ou choisissez parmi mes modèles sur mes marchés 🥰\n\nUne jolie idée cadeau, non ? 🎁\n\n#customchic #cecilethouvenin #customisation #creationunique #secondemain #vesteunique #faitmain #alsace #hautrhin #cravatebijou #bijouunique #upcycling",
+   "tip": "🎵 Musique à ajouter en publiant."
+  },
+  {
+   "id": "p21",
+   "date": "2026-12-03",
+   "label": "Jeudi 3 déc.",
+   "type": "Story",
+   "title": "Sondage : rose ou carreaux ?",
+   "media": [
+    "/home/claude/cecile/out/Stories/6_Sondage.jpg"
+   ],
+   "caption": "",
+   "tip": "Ajoute un sticker « sondage » : Rose / Carreaux."
+  },
+  {
+   "id": "p22",
+   "date": "2026-12-05",
+   "label": "Samedi 5 déc.",
+   "type": "Story",
+   "title": "Posez-moi vos questions",
+   "media": [
+    "/home/claude/cecile/out2/Stories/7_Question.jpg"
+   ],
+   "caption": "",
+   "tip": "Ajoute le sticker « questions » juste en dessous. Réponds en story aux meilleures réponses !"
+  },
+  {
+   "id": "p23",
+   "date": "2026-12-07",
+   "label": "Lundi 7 déc.",
+   "type": "Carrousel",
+   "title": "Vos questions (FAQ)",
+   "media": [
+    "/home/claude/cecile/out2/7_FAQ/1.jpg",
+    "/home/claude/cecile/out2/7_FAQ/2.jpg",
+    "/home/claude/cecile/out2/7_FAQ/3.jpg",
+    "/home/claude/cecile/out2/7_FAQ/4.jpg",
+    "/home/claude/cecile/out2/7_FAQ/5.jpg",
+    "/home/claude/cecile/out2/7_FAQ/6.jpg"
+   ],
+   "caption": "Les questions que vous me posez le plus souvent 💬\n\nLe prix, la customisation sur mesure, mes bijoux en cravate, où me trouver, comment me joindre… tout est dans ce carrousel 👉\n\nUne autre question ? Posez-la en commentaire, je réponds à tout 🥰\n\n#customchic #cecilethouvenin #customisation #creationunique #secondemain #vesteunique #faitmain #alsace #hautrhin",
+   "tip": "🎵 Musique à ajouter en publiant. Enregistre-le aussi dans ta story à la une « Qui suis-je »."
+  },
+  {
+   "id": "p24",
+   "date": "2026-12-08",
+   "label": "Mardi 8 déc.",
+   "type": "Reel",
+   "title": "Cravate bijou (idée cadeau)",
+   "media": [
+    "/home/claude/cecile/light/r10.mp4"
+   ],
+   "caption": "L'idée cadeau qu'on ne trouve nulle part ailleurs 🎁\n\nJe la plie, je l'assemble, puis je l'habille : perles, broches, chaînes, dentelle… Chaque modèle est unique !\n\nVous avez une cravate qui dort dans un tiroir ? Écrivez-moi en message privé, je la transforme 🥰\n\nUne jolie idée cadeau pour Noël 🎁\n\n#customchic #cecilethouvenin #customisation #creationunique #secondemain #vesteunique #faitmain #alsace #hautrhin #cravatebijou #upcycling #ideecadeau",
+   "tip": "🎵 Musique à ajouter en publiant. Le même jour, publie la story 8_Sondage_cravate.",
+   "cover": "/home/claude/cecile/light/r10.jpg"
+  },
+  {
+   "id": "p25",
+   "date": "2026-12-08",
+   "label": "Mardi 8 déc.",
+   "type": "Story",
+   "title": "Sondage : je l'offre ou je la garde ?",
+   "media": [
+    "/home/claude/cecile/out2/Stories/8_Sondage_cravate.jpg"
+   ],
+   "caption": "",
+   "tip": "Ajoute un sticker « sondage » : Je l'offre / Je la garde."
+  },
+  {
+   "id": "p26",
+   "date": "2026-12-10",
+   "label": "Jeudi 10 déc.",
+   "type": "Reel",
+   "title": "Look cravate",
+   "media": [
+    "/home/claude/cecile/light/r11.mp4"
+   ],
+   "caption": "Qui a dit que la cravate, c'était pour les hommes ? 👔😉\n\nJe l'ajuste, je la porte… et je ne m'en lasse pas ✨\n\nLook n°1 ou look n°2 ? Dites-le moi en commentaire 👇\n\n📍 Mes bijoux cravate seront au marché de Noël de Kembs, samedi 12 et dimanche 13 décembre\n\n#customchic #cecilethouvenin #customisation #creationunique #secondemain #vesteunique #faitmain #alsace #hautrhin #bijoucravate #lookcravate",
+   "tip": "🎵 Musique à ajouter en publiant. Réponds à chaque commentaire.",
+   "cover": "/home/claude/cecile/light/r11.jpg"
+  },
+  {
+   "id": "p27",
+   "date": "2026-12-11",
+   "label": "Vendredi 11 déc.",
+   "type": "Reel",
+   "title": "Mon stand (Kembs)",
+   "media": [
+    "/home/claude/cecile/light/r12.mp4"
+   ],
+   "caption": "Dernier marché de l'année ce week-end ! 🎄\n\n📍 Marché de Noël de Kembs, samedi 12 et dimanche 13 décembre\n\nVestes uniques, bijoux en cravate, idées cadeaux… venez me faire un coucou avant Noël 🥰\n\n#customchic #cecilethouvenin #customisation #creationunique #secondemain #vesteunique #faitmain #alsace #hautrhin #kembs #marchedenoel",
+   "tip": "🎵 Musique à ajouter en publiant. Version spéciale Kembs du reel de ton stand. Publie aussi la story 9_Kembs.",
+   "cover": "/home/claude/cecile/light/r12.jpg"
+  },
+  {
+   "id": "p28",
+   "date": "2026-12-12",
+   "label": "Samedi 12 et dimanche 13 déc.",
+   "type": "Story",
+   "title": "Je suis au marché",
+   "media": [
+    "/home/claude/cecile/out/Stories/2_Jour_J_stand.jpg"
+   ],
+   "caption": "",
+   "tip": "Chaque jour de marché, avec le sticker « lieu »."
+  },
+  {
+   "id": "s42c",
+   "date": "2026-11-26",
+   "label": "Jeudi 26 nov.",
+   "type": "Carrousel",
+   "title": "Rendez-vous au Studio 42",
+   "media": [
+    "/home/claude/cecile/studio42v2/Carrousel – 1.jpg",
+    "/home/claude/cecile/studio42v2/Carrousel – 2.jpg",
+    "/home/claude/cecile/studio42v2/Carrousel – 3.jpg",
+    "/home/claude/cecile/studio42v2/Carrousel – 4.jpg",
+    "/home/claude/cecile/studio42v2/Carrousel – 5.jpg",
+    "/home/claude/cecile/studio42v2/Carrousel – 6.jpg"
+   ],
+   "caption": "Grande nouvelle : du 1er au 6 décembre, je m'installe au Studio 42 ✨\n\nUn magasin éphémère en plein centre-ville de Mulhouse, à quelques mètres du marché de Noël.\n\nVous y trouverez mes vestes customisées, mes chemises et mes bijoux en cravate, tous des pièces uniques faites main.\n\nEt surtout : apportez votre veste, je la customise sur place, devant vous.\n\n📍 Studio 42, 1 rue Henriette, Mulhouse\n📅 Du mardi 1er au dimanche 6 décembre (ouvert aussi le dimanche après-midi)\n\nEnregistrez ce post pour ne pas oublier, et partagez-le à une amie qui cherche un cadeau original.\n\n#mulhouse #marchedenoelmulhouse #customisation #piecesunique #faitmain #ideecadeau #upcycling",
+   "tip": "🎵 Musique à ajouter en publiant. Sélectionne les 6 images dans l'ordre."
+  },
+  {
+   "id": "s42a",
+   "date": "2026-11-30",
+   "label": "Lundi 30 nov.",
+   "type": "Story",
+   "title": "C'est demain !",
+   "media": [
+    "/home/claude/cecile/studio42v2/Story 30 nov – C'est demain.jpg"
+   ],
+   "caption": "",
+   "tip": "Ajoute un sticker « compte à rebours » (mardi 1er décembre) en haut de la story."
+  },
+  {
+   "id": "s42b",
+   "date": "2026-12-01",
+   "label": "Du mardi 1er au samedi 5 déc.",
+   "type": "Story",
+   "title": "En ce moment au Studio 42",
+   "media": [
+    "/home/claude/cecile/studio42v2/Story 1er au 5 déc – En ce moment.jpg"
+   ],
+   "caption": "",
+   "tip": "À remettre chaque matin, avec le sticker « lieu : Mulhouse ». Et si tu peux, une petite photo de ton stand en plus !"
+  },
+  {
+   "id": "s42d",
+   "date": "2026-12-06",
+   "label": "Dimanche 6 déc.",
+   "type": "Story",
+   "title": "Dernier jour au Studio 42",
+   "media": [
+    "/home/claude/cecile/studio42v2/Story 6 déc – Dernier jour.jpg"
+   ],
+   "caption": "",
+   "tip": "Ajoute le sticker « lieu : Mulhouse »."
+  }
+ ]
+}
