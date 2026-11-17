@@ -1,0 +1,495 @@
+{
+ "client": {
+  "slug": "marine",
+  "name": "L'Atelier Nodena",
+  "first": "Marine",
+  "tone": "tu"
+ },
+ "pack": {
+  "name": "Pack Prêt à Poster · 1 mois",
+  "start": "2026-11-23",
+  "end": "2026-12-18",
+  "retouches": "1 tour inclus, dans les 7 jours après la livraison",
+  "cadre": [
+   [
+    "Ce que tu reçois",
+    [
+     "Tes publications du mois : reels, carrousels, posts et stories",
+     "Tous les textes, prêts à copier",
+     "Le calendrier : quoi publier, et quel jour",
+     "Ton profil revu : bio et couvertures à la une",
+     "Les vidéos sont livrées sans musique : tu ajoutes un son en publiant"
+    ]
+   ],
+   [
+    "Les retouches",
+    [
+     "1 tour de retouches inclus, dans les 7 jours après la livraison",
+     "En un seul message : la publication concernée et ce qu'il faut changer",
+     "Corrections livrées sous 48 h ouvrées"
+    ]
+   ],
+   [
+    "Ce qui reste entre tes mains",
+    [
+     "C'est toi qui publies : je n'accède pas à ton compte",
+     "Répondre aux commentaires et aux messages",
+     "Les petites stories spontanées : ce sont elles qui créent le lien"
+    ]
+   ],
+   [
+    "Mon engagement",
+    [
+     "Des contenus pros, prêts à publier, adaptés à ton activité",
+     "Je ne promets ni vues, ni abonnés, ni clientes : ils dépendent de ton offre, de ta régularité et des réseaux eux-mêmes"
+    ]
+   ]
+  ]
+ },
+ "contact": {
+  "email": "studio.pretaposter@gmail.com",
+  "text": "Un fichier qui ne s'ouvre pas, une étape pas claire, une retouche ? Écris-moi, je te réponds sous 24 h ouvrées, du lundi au vendredi."
+ },
+ "profile": {
+  "bio": "Technicienne de cils · Briel-sur-Barse 📍 25 min de Troyes\nVos cils naturels d'abord · produits de marque française\nCil à cil dès 50 € · rehaussement 30 €\n👇 Rendez-vous par message ou SMS",
+  "covers": [
+   {
+    "label": "Tarifs",
+    "file": "/home/claude/marine/v2/profil/À la une 1 – Tarifs.jpg"
+   },
+   {
+    "label": "Avant-Après",
+    "file": "/home/claude/marine/v2/profil/À la une 2 – Avant-Après.jpg"
+   },
+   {
+    "label": "Avis",
+    "file": "/home/claude/marine/v2/profil/À la une 3 – Avis.jpg"
+   },
+   {
+    "label": "Formations",
+    "file": "/home/claude/marine/v2/profil/À la une 4 – Formations.jpg"
+   },
+   {
+    "label": "Entretien",
+    "file": "/home/claude/marine/v2/profil/À la une 5 – Entretien.jpg"
+   }
+  ],
+  "photo": "/home/claude/marine/v2/profil/Monogramme (photo de profil).png"
+ },
+ "extras": [
+  {
+   "title": "Mon message clé",
+   "intro": "La phrase à répéter partout : en story, en message, en vrai.",
+   "rows": [
+    {
+     "label": "Mon message",
+     "text": "Des cils sublimés, en respectant les vôtres, à 25 minutes de Troyes.",
+     "copy": true
+    }
+   ]
+  },
+  {
+   "title": "Mes réponses types",
+   "intro": "À copier quand on t'écrit en message privé.",
+   "rows": [
+    {
+     "label": "« C'est combien ? »",
+     "text": "Bonjour et merci pour votre message 🤍 Le cil à cil est à 50 €, le mixte à 60 € et le volume à 70 €. Le rehaussement est à 30 €. Vous souhaitez un créneau ? Dites-moi vos disponibilités.",
+     "copy": true
+    },
+    {
+     "label": "« Comment se passe l'entretien ? »",
+     "text": "C'est très simple : pas d'eau ni de vapeur pendant 48 h, puis un shampoing de cils 1 à 2 fois par semaine et un coup de brossette le matin. Le remplissage se fait toutes les 2 à 3 semaines.",
+     "copy": true
+    },
+    {
+     "label": "« Vous êtes où ? »",
+     "text": "Je suis à Briel-sur-Barse, à 10 min de Lusigny et 25 min de Troyes. Je vous envoie l'adresse exacte quand on fixe votre rendez-vous.",
+     "copy": true
+    },
+    {
+     "label": "« J'ai peur d'abîmer mes cils »",
+     "text": "Je comprends tout à fait ! Avant chaque pose, je regarde vos cils naturels pour choisir la longueur et l'épaisseur qui leur conviennent. On en parle ensemble, sans aucune obligation.",
+     "copy": true
+    }
+   ]
+  },
+  {
+   "title": "Mes tarifs",
+   "intro": "Ceux utilisés dans tes visuels. Un prix change ? Dis-le-moi.",
+   "rows": [
+    {
+     "label": "— Extensions de cils —",
+     "text": ""
+    },
+    {
+     "label": "Signature naturelle · cil à cil",
+     "text": "50 €"
+    },
+    {
+     "label": "Signature sublimée · mixte",
+     "text": "60 €"
+    },
+    {
+     "label": "Signature intense · volume",
+     "text": "70 €"
+    },
+    {
+     "label": "Dépose",
+     "text": "15 €"
+    },
+    {
+     "label": "— Remplissages (2 sem. / 3 sem.) —",
+     "text": ""
+    },
+    {
+     "label": "Cil à cil",
+     "text": "30 € / 40 €"
+    },
+    {
+     "label": "Mixte",
+     "text": "35 € / 45 €"
+    },
+    {
+     "label": "Volume",
+     "text": "50 € / 55 €"
+    },
+    {
+     "label": "— Rehaussement et soins —",
+     "text": ""
+    },
+    {
+     "label": "Rehaussement · inspiration coréenne",
+     "text": "30 €"
+    },
+    {
+     "label": "Teinture",
+     "text": "15 €"
+    },
+    {
+     "label": "Lash botox",
+     "text": "15 €"
+    },
+    {
+     "label": "Lashlift + teinture + soin",
+     "text": "50 €"
+    }
+   ]
+  }
+ ],
+ "items": [
+  {
+   "id": "p01",
+   "date": "2026-11-23",
+   "label": "Lundi 23 nov.",
+   "caption": "Avant, après 🤍\nIci, je ne cherche pas à changer votre regard : je le sublime, en partant de vos cils naturels. Une pose adaptée à chaque œil, avec des produits de marque française.\nLequel préférez-vous ? Dites-le-moi en commentaire 👇\nPour réserver, écrivez-moi en message privé ou par SMS 🤍\n\n#extensionsdecils #cilacil #rehaussementdecils #techniciennecils #troyes #aube #lusigny #brielsurbarse #regardnaturel",
+   "type": "Reel",
+   "title": "Avant après",
+   "media": [
+    "/home/claude/marine/v2/light/p01.mp4"
+   ],
+   "cover": "/home/claude/marine/v2/reels/Couverture – Reel 23 nov – Avant après.jpg",
+   "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story."
+  },
+  {
+   "id": "p02",
+   "date": "2026-11-25",
+   "label": "Mercredi 25 nov.",
+   "caption": "Cil à cil, mixte ou volume : vous hésitez ? 🤔\nJe vous ai tout résumé, avec les prix, pour choisir le regard qui vous ressemble. Et si vous ne savez pas, on en parle ensemble avant la pose : c'est mon rôle de vous conseiller.\nEnregistrez ce post pour le retrouver 📌\nPour réserver, écrivez-moi en message privé ou par SMS 🤍\n\n#extensionsdecils #cilacil #rehaussementdecils #techniciennecils #troyes #aube #lusigny #brielsurbarse #regardnaturel",
+   "type": "Carrousel",
+   "title": "Cil à cil, mixte ou volume",
+   "media": [
+    "/home/claude/marine/v2/carrousels/1 Cil à cil, mixte ou volume – 1.jpg",
+    "/home/claude/marine/v2/carrousels/1 Cil à cil, mixte ou volume – 2.jpg",
+    "/home/claude/marine/v2/carrousels/1 Cil à cil, mixte ou volume – 3.jpg",
+    "/home/claude/marine/v2/carrousels/1 Cil à cil, mixte ou volume – 4.jpg",
+    "/home/claude/marine/v2/carrousels/1 Cil à cil, mixte ou volume – 5.jpg",
+    "/home/claude/marine/v2/carrousels/1 Cil à cil, mixte ou volume – 6.jpg"
+   ],
+   "tip": "🎵 Ajoute une musique au moment de publier. Sélectionne les images dans l'ordre."
+  },
+  {
+   "id": "p03",
+   "date": "2026-11-27",
+   "label": "Vendredi 27 nov.",
+   "caption": "Moi, c'est Marine 🤍\nTechnicienne de cils, j'ai ouvert L'Atelier Nodena à Briel-sur-Barse, à 25 minutes de Troyes. Formée et passionnée par le regard, j'ai une conviction : sublimer vos cils, sans jamais oublier les vôtres.\nIci, je prends le temps : on échange avant la pose, je vous conseille, et vous repartez avec un regard qui vous ressemble.\nRavie de faire votre connaissance ! Dites-moi en commentaire d'où vous me suivez 👇\nPour réserver, écrivez-moi en message privé ou par SMS 🤍\n\n#extensionsdecils #cilacil #rehaussementdecils #techniciennecils #troyes #aube #lusigny #brielsurbarse #regardnaturel",
+   "type": "Post",
+   "title": "Moi, c'est Marine",
+   "media": [
+    "/home/claude/marine/v2/posts/2 Moi, c'est Marine (27 nov).jpg"
+   ],
+   "tip": "🎵 Ajoute une musique au moment de publier."
+  },
+  {
+   "id": "p04",
+   "date": "2026-11-30",
+   "label": "Lundi 30 nov.",
+   "caption": "Bienvenue à l'Atelier 🤍\nUn coin calme et doux à Briel-sur-Barse, à 10 min de Lusigny et 25 min de Troyes. Ici, vous vous allongez, vous fermez les yeux… et vous profitez d'un vrai moment pour vous.\nPour réserver, écrivez-moi en message privé ou par SMS 🤍\n\n#extensionsdecils #cilacil #rehaussementdecils #techniciennecils #troyes #aube #lusigny #brielsurbarse #regardnaturel",
+   "type": "Reel",
+   "title": "Bienvenue à l'Atelier",
+   "media": [
+    "/home/claude/marine/v2/light/p04.mp4"
+   ],
+   "cover": "/home/claude/marine/v2/reels/Couverture – Reel 30 nov – Bienvenue à l'Atelier.jpg",
+   "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story."
+  },
+  {
+   "id": "p05",
+   "date": "2026-12-02",
+   "label": "Mercredi 2 déc.",
+   "caption": "« Comment je fais pour que ça tienne ? » C'est LA question qu'on me pose 😊\nVoici mes 5 gestes simples pour garder de beaux cils jusqu'à votre remplissage.\nEnregistrez ce post 📌 et envoyez-le à une amie qui vient de se faire poser des cils !\nPour réserver, écrivez-moi en message privé ou par SMS 🤍\n\n#extensionsdecils #cilacil #rehaussementdecils #techniciennecils #troyes #aube #lusigny #brielsurbarse #regardnaturel",
+   "type": "Carrousel",
+   "title": "Entretien",
+   "media": [
+    "/home/claude/marine/v2/carrousels/3 Entretien – 1.jpg",
+    "/home/claude/marine/v2/carrousels/3 Entretien – 2.jpg",
+    "/home/claude/marine/v2/carrousels/3 Entretien – 3.jpg",
+    "/home/claude/marine/v2/carrousels/3 Entretien – 4.jpg",
+    "/home/claude/marine/v2/carrousels/3 Entretien – 5.jpg",
+    "/home/claude/marine/v2/carrousels/3 Entretien – 6.jpg"
+   ],
+   "tip": "🎵 Ajoute une musique au moment de publier. Sélectionne les images dans l'ordre."
+  },
+  {
+   "id": "p06",
+   "date": "2026-12-04",
+   "label": "Vendredi 4 déc.",
+   "caption": "Ce que vous ne voyez pas pendant votre pose 👀\nChaque cil est isolé, posé, vérifié. C'est long, c'est précis, et c'est exactement ce que j'aime dans ce métier.\nFormée au rehaussement de cils et passionnée par le regard, je prends tout le temps qu'il faut pour vous.\nPour réserver, écrivez-moi en message privé ou par SMS 🤍\n\n#extensionsdecils #cilacil #rehaussementdecils #techniciennecils #troyes #aube #lusigny #brielsurbarse #regardnaturel",
+   "type": "Reel",
+   "title": "Les coulisses",
+   "media": [
+    "/home/claude/marine/v2/light/p06.mp4"
+   ],
+   "cover": "/home/claude/marine/v2/reels/Couverture – Reel 4 déc – Les coulisses.jpg",
+   "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story."
+  },
+  {
+   "id": "p07",
+   "date": "2026-12-07",
+   "label": "Lundi 7 déc.",
+   "caption": "Le même regard… en plus intense ✨\nJ'adore ce moment où la cliente ouvre les yeux et se regarde dans le miroir. Voici quelques-unes de mes poses récentes, toutes faites à l'Atelier.\nVotre préférée : 1, 2 ou 3 ? 👇\nPour réserver, écrivez-moi en message privé ou par SMS 🤍\n\n#extensionsdecils #cilacil #rehaussementdecils #techniciennecils #troyes #aube #lusigny #brielsurbarse #regardnaturel",
+   "type": "Carrousel",
+   "title": "Avant après",
+   "media": [
+    "/home/claude/marine/v2/carrousels/4 Avant après – 1.jpg",
+    "/home/claude/marine/v2/carrousels/4 Avant après – 2.jpg",
+    "/home/claude/marine/v2/carrousels/4 Avant après – 3.jpg",
+    "/home/claude/marine/v2/carrousels/4 Avant après – 4.jpg"
+   ],
+   "tip": "🎵 Ajoute une musique au moment de publier. Sélectionne les images dans l'ordre."
+  },
+  {
+   "id": "p08",
+   "date": "2026-12-09",
+   "label": "Mercredi 9 déc.",
+   "caption": "« Est-ce que ça abîme mes cils ? » C'est une question qu'on me pose souvent, et c'est normal de se la poser 🤍\nAvant chaque pose, je regarde vos cils naturels pour choisir la longueur et l'épaisseur qui leur conviennent. Le but : un regard sublimé, avec des extensions adaptées à vos cils.\nVous avez une question ? Posez-la-moi en commentaire 👇\nPour réserver, écrivez-moi en message privé ou par SMS 🤍\n\n#extensionsdecils #cilacil #rehaussementdecils #techniciennecils #troyes #aube #lusigny #brielsurbarse #regardnaturel",
+   "type": "Reel",
+   "title": "Vos cils naturels d'abord",
+   "media": [
+    "/home/claude/marine/v2/light/p08.mp4"
+   ],
+   "cover": "/home/claude/marine/v2/reels/Couverture – Reel 9 déc – Vos cils naturels d'abord.jpg",
+   "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story."
+  },
+  {
+   "id": "p09",
+   "date": "2026-12-11",
+   "label": "Vendredi 11 déc.",
+   "caption": "Rehaussement ou extensions : que choisir ? 🤍\nLe rehaussement sublime vos propres cils, les extensions ajoutent de la longueur et du volume. Je vous ai fait le comparatif pour vous aider à choisir.\nEnregistrez ce post 📌\nPour réserver, écrivez-moi en message privé ou par SMS 🤍\n\n#extensionsdecils #cilacil #rehaussementdecils #techniciennecils #troyes #aube #lusigny #brielsurbarse #regardnaturel",
+   "type": "Carrousel",
+   "title": "Rehaussement ou extensions",
+   "media": [
+    "/home/claude/marine/v2/carrousels/5 Rehaussement ou extensions – 1.jpg",
+    "/home/claude/marine/v2/carrousels/5 Rehaussement ou extensions – 2.jpg",
+    "/home/claude/marine/v2/carrousels/5 Rehaussement ou extensions – 3.jpg",
+    "/home/claude/marine/v2/carrousels/5 Rehaussement ou extensions – 4.jpg",
+    "/home/claude/marine/v2/carrousels/5 Rehaussement ou extensions – 5.jpg"
+   ],
+   "tip": "🎵 Ajoute une musique au moment de publier. Sélectionne les images dans l'ordre."
+  },
+  {
+   "id": "p10",
+   "date": "2026-12-14",
+   "label": "Lundi 14 déc.",
+   "caption": "Elles en parlent mieux que moi 🥰\nMerci Charline, Stéphanie et Kareen pour vos mots. Chaque avis me touche et me pousse à donner le meilleur à chaque pose.\nVous êtes venue à l'Atelier ? Laissez-moi un petit avis, ça m'aide énormément 🙏\nPour réserver, écrivez-moi en message privé ou par SMS 🤍\n\n#extensionsdecils #cilacil #rehaussementdecils #techniciennecils #troyes #aube #lusigny #brielsurbarse #regardnaturel",
+   "type": "Carrousel",
+   "title": "Vos avis",
+   "media": [
+    "/home/claude/marine/v2/carrousels/6 Vos avis – 1.jpg",
+    "/home/claude/marine/v2/carrousels/6 Vos avis – 2.jpg",
+    "/home/claude/marine/v2/carrousels/6 Vos avis – 3.jpg",
+    "/home/claude/marine/v2/carrousels/6 Vos avis – 4.jpg"
+   ],
+   "tip": "🎵 Ajoute une musique au moment de publier. Sélectionne les images dans l'ordre."
+  },
+  {
+   "id": "p11",
+   "date": "2026-12-16",
+   "label": "Mercredi 16 déc.",
+   "caption": "Qualité institut, prix doux, à 25 minutes de Troyes 🤍\nCil à cil dès 50 €, rehaussement à 30 €, au calme à Briel-sur-Barse.\nCe soin, vous le méritez, et sans exploser votre budget.\nPour réserver, écrivez-moi en message privé ou par SMS 🤍\n\n#extensionsdecils #cilacil #rehaussementdecils #techniciennecils #troyes #aube #lusigny #brielsurbarse #regardnaturel",
+   "type": "Reel",
+   "title": "À 25 min de Troyes",
+   "media": [
+    "/home/claude/marine/v2/light/p11.mp4"
+   ],
+   "cover": "/home/claude/marine/v2/reels/Couverture – Reel 16 déc – À 25 min de Troyes.jpg",
+   "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story."
+  },
+  {
+   "id": "p12",
+   "date": "2026-12-18",
+   "label": "Vendredi 18 déc.",
+   "caption": "Prête pour les fêtes ? ✨\nUn regard qui pétille pour les repas de famille et les photos de Noël, sans mascara qui coule à minuit 😉\nIl me reste quelques créneaux avant Noël : écrivez-moi vite pour réserver le vôtre.\nPour réserver, écrivez-moi en message privé ou par SMS 🤍\n\n#extensionsdecils #cilacil #rehaussementdecils #techniciennecils #troyes #aube #lusigny #brielsurbarse #regardnaturel",
+   "type": "Post",
+   "title": "Prête pour les fêtes",
+   "media": [
+    "/home/claude/marine/v2/posts/7 Prête pour les fêtes (18 déc).jpg"
+   ],
+   "tip": "🎵 Ajoute une musique au moment de publier."
+  },
+  {
+   "id": "s03",
+   "date": "2026-11-23",
+   "label": "Lundi 23 nov.",
+   "type": "Story",
+   "title": "Je me présente",
+   "media": [
+    "/home/claude/marine/v2/stories/Je me présente.jpg"
+   ],
+   "caption": "",
+   "tip": "Photo de toi + texte. Ajoute le sticker « Mention » vers ton compte."
+  },
+  {
+   "id": "s04",
+   "date": "2026-11-23",
+   "label": "Lundi 23 nov.",
+   "type": "Story",
+   "title": "Sondage regard",
+   "media": [
+    "/home/claude/marine/v2/stories/Sondage regard.jpg"
+   ],
+   "caption": "",
+   "tip": "Ajoute le sticker « Sondage » : Naturel / Intense."
+  },
+  {
+   "id": "s05",
+   "date": "2026-11-25",
+   "label": "Mercredi 25 nov.",
+   "type": "Story",
+   "title": "Quiz remplissage",
+   "media": [
+    "/home/claude/marine/v2/stories/Quiz remplissage.jpg"
+   ],
+   "caption": "",
+   "tip": "Ajoute le sticker « Quiz » : 1 semaine / 2 à 3 semaines (bonne réponse) / 2 mois."
+  },
+  {
+   "id": "s06",
+   "date": "2026-11-27",
+   "label": "Vendredi 27 nov.",
+   "type": "Story",
+   "title": "Coulisses pose",
+   "media": [
+    "/home/claude/marine/v2/stories/Coulisses pose.jpg"
+   ],
+   "caption": "",
+   "tip": "Partage cette story pendant une journée de poses."
+  },
+  {
+   "id": "s07",
+   "date": "2026-11-30",
+   "label": "Lundi 30 nov.",
+   "type": "Story",
+   "title": "Résultat du jour",
+   "media": [
+    "/home/claude/marine/v2/stories/Résultat du jour.jpg"
+   ],
+   "caption": "",
+   "tip": "Remplace la photo par celle du jour si tu veux : sinon publie-la telle quelle."
+  },
+  {
+   "id": "s08",
+   "date": "2026-12-02",
+   "label": "Mercredi 2 déc.",
+   "type": "Story",
+   "title": "Vos questions entretien",
+   "media": [
+    "/home/claude/marine/v2/stories/Vos questions entretien.jpg"
+   ],
+   "caption": "",
+   "tip": "Ajoute le sticker « Questions ». Réponds en story les jours suivants."
+  },
+  {
+   "id": "s09",
+   "date": "2026-12-04",
+   "label": "Vendredi 4 déc.",
+   "type": "Story",
+   "title": "Sondage première fois",
+   "media": [
+    "/home/claude/marine/v2/stories/Sondage première fois.jpg"
+   ],
+   "caption": "",
+   "tip": "Ajoute le sticker « Sondage » : Oui, j'adore / Pas encore."
+  },
+  {
+   "id": "s10",
+   "date": "2026-12-07",
+   "label": "Lundi 7 déc.",
+   "type": "Story",
+   "title": "Produits français",
+   "media": [
+    "/home/claude/marine/v2/stories/Produits français.jpg"
+   ],
+   "caption": "",
+   "tip": "Partage-la tel quel."
+  },
+  {
+   "id": "s11",
+   "date": "2026-12-09",
+   "label": "Mercredi 9 déc.",
+   "type": "Story",
+   "title": "Rappel 48 h",
+   "media": [
+    "/home/claude/marine/v2/stories/Rappel 48 h.jpg"
+   ],
+   "caption": "",
+   "tip": "À repartager à chaque cliente qui sort de pose."
+  },
+  {
+   "id": "s12",
+   "date": "2026-12-11",
+   "label": "Vendredi 11 déc.",
+   "type": "Story",
+   "title": "Créneaux de décembre",
+   "media": [
+    "/home/claude/marine/v2/stories/Créneaux de décembre.jpg"
+   ],
+   "caption": "",
+   "tip": "Écris tes créneaux libres avec l'outil « Aa » dans le cadre."
+  },
+  {
+   "id": "s13",
+   "date": "2026-12-14",
+   "label": "Lundi 14 déc.",
+   "type": "Story",
+   "title": "Cils de fête",
+   "media": [
+    "/home/claude/marine/v2/stories/Cils de fête.jpg"
+   ],
+   "caption": "",
+   "tip": "Ajoute le sticker « Sondage » : Oui ! / Je réfléchis."
+  },
+  {
+   "id": "s14",
+   "date": "2026-12-16",
+   "label": "Mercredi 16 déc.",
+   "type": "Story",
+   "title": "Derniers créneaux",
+   "media": [
+    "/home/claude/marine/v2/stories/Derniers créneaux.jpg"
+   ],
+   "caption": "",
+   "tip": "Écris tes derniers créneaux avec « Aa »."
+  }
+ ]
+}

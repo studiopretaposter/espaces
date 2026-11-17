@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Prêt à Poster">
+<meta name="theme-color" content="#833AB4">
+<link rel="icon" href="logo.svg">
+<link rel="apple-touch-icon" href="logo.png">
+<title>L&#x27;Atelier Nodena · Mon espace Prêt à Poster</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--vio:#833AB4;--pink:#FD1D78;--ora:#FF963C;--ink:#22182F;--grey:#6B6178;--soft:#FBF5F9;--line:#EFE4EC;--ok:#1E9E62;
+--grad:linear-gradient(110deg,var(--vio) 0%,var(--pink) 52%,var(--ora) 100%)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--soft);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:16px;line-height:1.5}
+.wrap{max-width:560px;margin:0 auto;padding:0 16px calc(96px + env(safe-area-inset-bottom))}
+.hero{background:var(--grad);color:#fff;padding:calc(18px + env(safe-area-inset-top)) 20px 24px;border-radius:0 0 28px 28px;margin:0 -16px 8px;position:relative;overflow:hidden}
+.hero:after{content:'';position:absolute;right:-80px;top:-60px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.12);pointer-events:none}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:13px;letter-spacing:.12em}
+.brand img{width:30px;height:30px}
+.hero h1{font-size:30px;line-height:1.1;font-weight:900;letter-spacing:-.02em;margin:18px 0 6px}
+.hero p{margin:0;opacity:.92;font-size:15px}
+h2{font-size:22px;font-weight:900;letter-spacing:-.02em;margin:24px 4px 10px}
+.sub{color:var(--grey);margin:-4px 4px 14px;font-size:15px}
+.card{background:#fff;border-radius:22px;box-shadow:0 6px 24px rgba(34,24,47,.07);margin-bottom:16px;overflow:hidden;border:1px solid var(--line)}
+.pad{padding:18px}
+.kv{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.kv div{background:var(--soft);border-radius:14px;padding:12px}
+.kv b{display:block;font-size:22px;font-weight:900}
+.kv span{font-size:13px;color:var(--grey)}
+.pill{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:6px 11px;border-radius:30px;background:var(--soft);color:var(--vio);white-space:nowrap}
+.pill.reel{background:#FFE6F0;color:#C2125A}.pill.story{background:#F1E7FA;color:var(--vio)}.pill.carrousel,.pill.post{background:#FFF0E2;color:#B85A0F}
+.progress{display:flex;align-items:center;gap:10px;margin-top:14px}
+.bar{flex:1;height:10px;background:rgba(255,255,255,.3);border-radius:10px;overflow:hidden}
+.bar i{display:block;height:100%;background:#fff;width:0;transition:width .4s}
+.progress b{font-size:14px;white-space:nowrap}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:2px 16px 6px;margin:0 -16px 12px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;border:1.5px solid var(--line);background:#fff;color:var(--ink);border-radius:30px;padding:9px 15px;font:700 14px Inter;cursor:pointer}
+.tabs button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.tabs button.now:after{content:' •';color:var(--pink)}
+.top{display:flex;align-items:center;justify-content:space-between;padding:16px 18px 6px;gap:10px}
+.day{font-size:19px;font-weight:900;letter-spacing:-.01em}
+.title{padding:0 18px 12px;color:var(--grey);font-size:15px}
+.media{display:flex;gap:10px;overflow-x:auto;padding:0 18px 10px;scroll-snap-type:x mandatory;scrollbar-width:none}
+.media::-webkit-scrollbar{display:none}
+.media img,.media video{flex:none;height:320px;border-radius:14px;scroll-snap-align:start;background:#eee;object-fit:cover;max-width:86%}
+.media.one img,.media.one video{width:100%;max-width:100%;height:auto;max-height:560px;object-fit:contain;background:var(--soft)}
+.swipe{font-size:13px;color:var(--grey);padding:0 18px 8px}
+.seq{margin:0 18px 12px;padding:0 0 0 22px}.seq li{margin-bottom:8px;font-size:15px}.seq span{color:var(--grey)}
+.tip{margin:4px 18px 12px;background:#FFF6E8;border-radius:12px;padding:10px 12px;font-size:15px}
+.cap{margin:0 18px 12px;border:1.5px dashed var(--line);border-radius:12px;padding:10px 12px;font-size:15px;white-space:pre-wrap;max-height:5.8em;overflow:hidden;position:relative;cursor:pointer}
+.cap.open{max-height:none}
+.cap:not(.open):after{content:'Voir tout le texte ▾';position:absolute;left:0;right:0;bottom:0;padding:18px 12px 6px;background:linear-gradient(transparent,#fff 60%);font-weight:700;color:var(--vio);font-size:14px}
+.steps{padding:4px 18px 16px;display:grid;gap:10px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;border:0;border-radius:16px;padding:15px 16px;font:800 16px Inter;cursor:pointer;color:#fff;background:var(--grad);text-decoration:none}
+.btn .n{flex:none;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.25);display:grid;place-items:center;font-size:14px}
+.btn.dark{background:var(--ink)}
+.btn.ghost{background:#fff;color:var(--ink);border:1.5px solid var(--line)}
+.btn.ok{background:var(--ok)}
+.check{display:flex;align-items:center;gap:12px;padding:14px 18px;border-top:1px solid var(--line);font-weight:700;cursor:pointer;user-select:none}
+.check input{width:24px;height:24px;accent-color:var(--ok)}
+.card.done .seq,.card.done .media,.card.done .cap,.card.done .tip,.card.done .steps,.card.done .swipe{display:none}
+.card.done .check{color:var(--ok)}
+.list{margin:0;padding:0;list-style:none}
+.list li{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.list li:last-child{border:0}
+.list .ico{flex:none;width:38px;height:38px;border-radius:12px;background:var(--soft);display:grid;place-items:center;font-size:18px}
+.mini{display:flex;gap:12px;align-items:center;padding:12px 18px;border-top:1px solid var(--line);cursor:pointer}
+.mini img{width:54px;height:54px;border-radius:12px;object-fit:cover;background:var(--soft);flex:none}
+.mini b{display:block;font-size:15px}.mini span{font-size:13px;color:var(--grey)}
+.covers{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:0 18px 12px}
+.covers figure{margin:0;text-align:center;font-size:12px;color:var(--grey)}
+.covers img{width:100%;aspect-ratio:1;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:0 0 0 2px var(--pink)}
+.pp{display:flex;gap:16px;align-items:center;padding:18px}
+.pp img{width:96px;height:96px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 3px #fff,0 0 0 5px var(--pink);flex:none}
+details{border-top:1px solid var(--line)}
+details:first-child{border:0}
+summary{list-style:none;padding:16px 18px;font-weight:800;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:'+';font-size:22px;color:var(--vio)}
+details[open] summary:after{content:'–'}
+details .in{padding:0 18px 16px;color:#3b3147}
+details ol{padding-left:20px;margin:0}details li{margin-bottom:8px}
+.nav{position:fixed;left:0;right:0;bottom:0;background:rgba(255,255,255,.96);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-top:1px solid var(--line);display:flex;justify-content:center;padding:6px 6px calc(6px + env(safe-area-inset-bottom));z-index:5}
+.nav div{display:flex;max-width:560px;width:100%}
+.nav button{flex:1;border:0;background:none;font:700 11px Inter;color:var(--grey);padding:6px 0;display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer}
+.nav button i{font-style:normal;font-size:22px;line-height:1.1;filter:grayscale(1);opacity:.55}
+.nav button.on{color:var(--pink)}.nav button.on i{filter:none;opacity:1}
+.view{display:none}.view.on{display:block}
+.toast{opacity:0;pointer-events:none;position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:13px 18px;border-radius:14px;font-weight:700;transition:.3s;z-index:9;max-width:90%;text-align:center}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.sheet{position:fixed;inset:0;background:rgba(34,24,47,.5);display:none;align-items:flex-end;z-index:8}
+.sheet.show{display:flex}
+.sheet>div{background:#fff;width:100%;max-width:560px;margin:0 auto;border-radius:24px 24px 0 0;padding:22px 20px calc(24px + env(safe-area-inset-bottom))}
+.sheet h3{margin:0 0 10px;font-size:20px;font-weight:900}
+.sheet ol{padding-left:20px;margin:0 0 16px}.sheet li{margin-bottom:8px}
+.foot{text-align:center;font-size:13px;color:var(--grey);margin:26px 0 8px}
+a{color:var(--vio)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="brand"><img src="logo.svg" alt="">PRÊT À POSTER</div>
+    <h1 id="hello"></h1>
+    <p id="intro"></p>
+    <div class="progress"><div class="bar"><i id="barfill"></i></div><b id="count"></b></div>
+  </header>
+
+  <section class="view" id="v-home">
+    <h2 id="weekTitle">Cette semaine</h2>
+    <div class="card" id="thisweek"></div>
+    <h2 id="packTitle">Mon pack</h2>
+    <div class="card pad">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:10px"><b id="packName"></b><span class="pill" id="packStatus"></span></div>
+      <div class="kv" id="packKv"></div>
+      <ul class="list" id="packDates" style="margin-top:10px"></ul>
+    </div>
+    <h2>Comment ça marche</h2>
+    <div class="card pad"><ul class="list" id="how"></ul></div>
+  </section>
+
+  <section class="view" id="v-pubs">
+    <h2>Mes publications</h2>
+    <p class="sub" id="pubsSub"></p>
+    <nav class="tabs" id="tabs"></nav>
+    <main id="list"></main>
+  </section>
+
+  <section class="view" id="v-profile">
+    <h2>Mon profil</h2>
+    <p class="sub" id="profSub"></p>
+    <div class="card" id="profile"></div>
+    <div id="extras"></div>
+  </section>
+
+  <section class="view" id="v-help">
+    <h2>Mode d'emploi</h2>
+    <div class="card" id="guides"></div>
+    <h2>Le cadre</h2>
+    <div class="card" id="cadre"></div>
+    <h2>Une question ?</h2>
+    <div class="card pad" id="contact"></div>
+  </section>
+  <p class="foot">Prêt à Poster · espace réservé à <span id="fname"></span></p>
+</div>
+
+<nav class="nav"><div>
+  <button data-v="home"><i>🏠</i>Accueil</button>
+  <button data-v="pubs"><i>🗓️</i>Publications</button>
+  <button data-v="profile"><i>👤</i>Profil</button>
+  <button data-v="help"><i>💡</i>Aide</button>
+</div></nav>
+<div class="toast" id="toast"></div>
+<div class="sheet" id="sheet" onclick="if(event.target===this)this.classList.remove('show')"><div>
+  <h3 id="shT"></h3>
+  <ol id="shL"></ol>
+  <button class="btn dark" onclick="document.getElementById('sheet').classList.remove('show')">J'ai compris</button>
+</div></div>
+
+<script>
+const DATA = {"client": {"slug": "marine", "name": "L'Atelier Nodena", "first": "Marine", "tone": "tu"}, "pack": {"name": "Pack Prêt à Poster · 1 mois", "start": "2026-11-23", "end": "2026-12-18", "retouches": "1 tour inclus, dans les 7 jours après la livraison", "cadre": [["Ce que tu reçois", ["Tes publications du mois : reels, carrousels, posts et stories", "Tous les textes, prêts à copier", "Le calendrier : quoi publier, et quel jour", "Ton profil revu : bio et couvertures à la une", "Les vidéos sont livrées sans musique : tu ajoutes un son en publiant"]], ["Les retouches", ["1 tour de retouches inclus, dans les 7 jours après la livraison", "En un seul message : la publication concernée et ce qu'il faut changer", "Corrections livrées sous 48 h ouvrées"]], ["Ce qui reste entre tes mains", ["C'est toi qui publies : je n'accède pas à ton compte", "Répondre aux commentaires et aux messages", "Les petites stories spontanées : ce sont elles qui créent le lien"]], ["Mon engagement", ["Des contenus pros, prêts à publier, adaptés à ton activité", "Je ne promets ni vues, ni abonnés, ni clientes : ils dépendent de ton offre, de ta régularité et des réseaux eux-mêmes"]]]}, "contact": {"email": "studio.pretaposter@gmail.com", "text": "Un fichier qui ne s'ouvre pas, une étape pas claire, une retouche ? Écris-moi, je te réponds sous 24 h ouvrées, du lundi au vendredi."}, "extras": [{"title": "Mon message clé", "intro": "La phrase à répéter partout : en story, en message, en vrai.", "rows": [{"label": "Mon message", "text": "Des cils sublimés, en respectant les vôtres, à 25 minutes de Troyes.", "copy": true}]}, {"title": "Mes réponses types", "intro": "À copier quand on t'écrit en message privé.", "rows": [{"label": "« C'est combien ? »", "text": "Bonjour et merci pour votre message 🤍 Le cil à cil est à 50 €, le mixte à 60 € et le volume à 70 €. Le rehaussement est à 30 €. Vous souhaitez un créneau ? Dites-moi vos disponibilités.", "copy": true}, {"label": "« Comment se passe l'entretien ? »", "text": "C'est très simple : pas d'eau ni de vapeur pendant 48 h, puis un shampoing de cils 1 à 2 fois par semaine et un coup de brossette le matin. Le remplissage se fait toutes les 2 à 3 semaines.", "copy": true}, {"label": "« Vous êtes où ? »", "text": "Je suis à Briel-sur-Barse, à 10 min de Lusigny et 25 min de Troyes. Je vous envoie l'adresse exacte quand on fixe votre rendez-vous.", "copy": true}, {"label": "« J'ai peur d'abîmer mes cils »", "text": "Je comprends tout à fait ! Avant chaque pose, je regarde vos cils naturels pour choisir la longueur et l'épaisseur qui leur conviennent. On en parle ensemble, sans aucune obligation.", "copy": true}]}, {"title": "Mes tarifs", "intro": "Ceux utilisés dans tes visuels. Un prix change ? Dis-le-moi.", "rows": [{"label": "— Extensions de cils —", "text": ""}, {"label": "Signature naturelle · cil à cil", "text": "50 €"}, {"label": "Signature sublimée · mixte", "text": "60 €"}, {"label": "Signature intense · volume", "text": "70 €"}, {"label": "Dépose", "text": "15 €"}, {"label": "— Remplissages (2 sem. / 3 sem.) —", "text": ""}, {"label": "Cil à cil", "text": "30 € / 40 €"}, {"label": "Mixte", "text": "35 € / 45 €"}, {"label": "Volume", "text": "50 € / 55 €"}, {"label": "— Rehaussement et soins —", "text": ""}, {"label": "Rehaussement · inspiration coréenne", "text": "30 €"}, {"label": "Teinture", "text": "15 €"}, {"label": "Lash botox", "text": "15 €"}, {"label": "Lashlift + teinture + soin", "text": "50 €"}]}], "items": [{"id": "p01", "date": "2026-11-23", "label": "Lundi 23 nov.", "caption": "Avant, après 🤍\nIci, je ne cherche pas à changer votre regard : je le sublime, en partant de vos cils naturels. Une pose adaptée à chaque œil, avec des produits de marque française.\nLequel préférez-vous ? Dites-le-moi en commentaire 👇\nPour réserver, écrivez-moi en message privé ou par SMS 🤍\n\n#extensionsdecils #cilacil #rehaussementdecils #techniciennecils #troyes #aube #lusigny #brielsurbarse #regardnaturel", "type": "Reel", "title": "Avant après", "media": [{"file": "media/96aea1237e.mp4", "video": true}], "cover": "/home/claude/marine/v2/reels/Couverture – Reel 23 nov – Avant après.jpg", "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story.", "poster": "media/89a6632d9b.jpg"}, {"id": "s03", "date": "2026-11-23", "label": "Lundi 23 nov.", "type": "Story", "title": "Je me présente", "media": [{"file": "media/e2401916d7.jpg", "video": false}], "caption": "", "tip": "Photo de toi + texte. Ajoute le sticker « Mention » vers ton compte."}, {"id": "s04", "date": "2026-11-23", "label": "Lundi 23 nov.", "type": "Story", "title": "Sondage regard", "media": [{"file": "media/1767e4b443.jpg", "video": false}], "caption": "", "tip": "Ajoute le sticker « Sondage » : Naturel / Intense."}, {"id": "p02", "date": "2026-11-25", "label": "Mercredi 25 nov.", "caption": "Cil à cil, mixte ou volume : vous hésitez ? 🤔\nJe vous ai tout résumé, avec les prix, pour choisir le regard qui vous ressemble. Et si vous ne savez pas, on en parle ensemble avant la pose : c'est mon rôle de vous conseiller.\nEnregistrez ce post pour le retrouver 📌\nPour réserver, écrivez-moi en message privé ou par SMS 🤍\n\n#extensionsdecils #cilacil #rehaussementdecils #techniciennecils #troyes #aube #lusigny #brielsurbarse #regardnaturel", "type": "Carrousel", "title": "Cil à cil, mixte ou volume", "media": [{"file": "media/b74e60153a.jpg", "video": false}, {"file": "media/3172b6667f.jpg", "video": false}, {"file": "media/bfee67d0dc.jpg", "video": false}, {"file": "media/ffa29db41e.jpg", "video": false}, {"file": "media/2d054b7a12.jpg", "video": false}, {"file": "media/17e420b647.jpg", "video": false}], "tip": "🎵 Ajoute une musique au moment de publier. Sélectionne les images dans l'ordre."}, {"id": "s05", "date": "2026-11-25", "label": "Mercredi 25 nov.", "type": "Story", "title": "Quiz remplissage", "media": [{"file": "media/6a47b94a1a.jpg", "video": false}], "caption": "", "tip": "Ajoute le sticker « Quiz » : 1 semaine / 2 à 3 semaines (bonne réponse) / 2 mois."}, {"id": "p03", "date": "2026-11-27", "label": "Vendredi 27 nov.", "caption": "Moi, c'est Marine 🤍\nTechnicienne de cils, j'ai ouvert L'Atelier Nodena à Briel-sur-Barse, à 25 minutes de Troyes. Formée et passionnée par le regard, j'ai une conviction : sublimer vos cils, sans jamais oublier les vôtres.\nIci, je prends le temps : on échange avant la pose, je vous conseille, et vous repartez avec un regard qui vous ressemble.\nRavie de faire votre connaissance ! Dites-moi en commentaire d'où vous me suivez 👇\nPour réserver, écrivez-moi en message privé ou par SMS 🤍\n\n#extensionsdecils #cilacil #rehaussementdecils #techniciennecils #troyes #aube #lusigny #brielsurbarse #regardnaturel", "type": "Post", "title": "Moi, c'est Marine", "media": [{"file": "media/2493eee636.jpg", "video": false}], "tip": "🎵 Ajoute une musique au moment de publier."}, {"id": "s06", "date": "2026-11-27", "label": "Vendredi 27 nov.", "type": "Story", "title": "Coulisses pose", "media": [{"file": "media/2e0d32423d.jpg", "video": false}], "caption": "", "tip": "Partage cette story pendant une journée de poses."}, {"id": "p04", "date": "2026-11-30", "label": "Lundi 30 nov.", "caption": "Bienvenue à l'Atelier 🤍\nUn coin calme et doux à Briel-sur-Barse, à 10 min de Lusigny et 25 min de Troyes. Ici, vous vous allongez, vous fermez les yeux… et vous profitez d'un vrai moment pour vous.\nPour réserver, écrivez-moi en message privé ou par SMS 🤍\n\n#extensionsdecils #cilacil #rehaussementdecils #techniciennecils #troyes #aube #lusigny #brielsurbarse #regardnaturel", "type": "Reel", "title": "Bienvenue à l'Atelier", "media": [{"file": "media/740df78145.mp4", "video": true}], "cover": "/home/claude/marine/v2/reels/Couverture – Reel 30 nov – Bienvenue à l'Atelier.jpg", "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story.", "poster": "media/f214b7bdb5.jpg"}, {"id": "s07", "date": "2026-11-30", "label": "Lundi 30 nov.", "type": "Story", "title": "Résultat du jour", "media": [{"file": "media/0cb8956160.jpg", "video": false}], "caption": "", "tip": "Remplace la photo par celle du jour si tu veux : sinon publie-la telle quelle."}, {"id": "p05", "date": "2026-12-02", "label": "Mercredi 2 déc.", "caption": "« Comment je fais pour que ça tienne ? » C'est LA question qu'on me pose 😊\nVoici mes 5 gestes simples pour garder de beaux cils jusqu'à votre remplissage.\nEnregistrez ce post 📌 et envoyez-le à une amie qui vient de se faire poser des cils !\nPour réserver, écrivez-moi en message privé ou par SMS 🤍\n\n#extensionsdecils #cilacil #rehaussementdecils #techniciennecils #troyes #aube #lusigny #brielsurbarse #regardnaturel", "type": "Carrousel", "title": "Entretien", "media": [{"file": "media/99df4406d0.jpg", "video": false}, {"file": "media/6295af83ba.jpg", "video": false}, {"file": "media/db23e4fb4d.jpg", "video": false}, {"file": "media/2f6960080c.jpg", "video": false}, {"file": "media/5ee15794cb.jpg", "video": false}, {"file": "media/dfc07838fa.jpg", "video": false}], "tip": "🎵 Ajoute une musique au moment de publier. Sélectionne les images dans l'ordre."}, {"id": "s08", "date": "2026-12-02", "label": "Mercredi 2 déc.", "type": "Story", "title": "Vos questions entretien", "media": [{"file": "media/ec8285a1b7.jpg", "video": false}], "caption": "", "tip": "Ajoute le sticker « Questions ». Réponds en story les jours suivants."}, {"id": "p06", "date": "2026-12-04", "label": "Vendredi 4 déc.", "caption": "Ce que vous ne voyez pas pendant votre pose 👀\nChaque cil est isolé, posé, vérifié. C'est long, c'est précis, et c'est exactement ce que j'aime dans ce métier.\nFormée au rehaussement de cils et passionnée par le regard, je prends tout le temps qu'il faut pour vous.\nPour réserver, écrivez-moi en message privé ou par SMS 🤍\n\n#extensionsdecils #cilacil #rehaussementdecils #techniciennecils #troyes #aube #lusigny #brielsurbarse #regardnaturel", "type": "Reel", "title": "Les coulisses", "media": [{"file": "media/2826a533ff.mp4", "video": true}], "cover": "/home/claude/marine/v2/reels/Couverture – Reel 4 déc – Les coulisses.jpg", "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story.", "poster": "media/cb03483401.jpg"}, {"id": "s09", "date": "2026-12-04", "label": "Vendredi 4 déc.", "type": "Story", "title": "Sondage première fois", "media": [{"file": "media/5b7683ec03.jpg", "video": false}], "caption": "", "tip": "Ajoute le sticker « Sondage » : Oui, j'adore / Pas encore."}, {"id": "p07", "date": "2026-12-07", "label": "Lundi 7 déc.", "caption": "Le même regard… en plus intense ✨\nJ'adore ce moment où la cliente ouvre les yeux et se regarde dans le miroir. Voici quelques-unes de mes poses récentes, toutes faites à l'Atelier.\nVotre préférée : 1, 2 ou 3 ? 👇\nPour réserver, écrivez-moi en message privé ou par SMS 🤍\n\n#extensionsdecils #cilacil #rehaussementdecils #techniciennecils #troyes #aube #lusigny #brielsurbarse #regardnaturel", "type": "Carrousel", "title": "Avant après", "media": [{"file": "media/acb219c51d.jpg", "video": false}, {"file": "media/a9577a5f4d.jpg", "video": false}, {"file": "media/04b156a89e.jpg", "video": false}, {"file": "media/573c23bbdb.jpg", "video": false}], "tip": "🎵 Ajoute une musique au moment de publier. Sélectionne les images dans l'ordre."}, {"id": "s10", "date": "2026-12-07", "label": "Lundi 7 déc.", "type": "Story", "title": "Produits français", "media": [{"file": "media/0dbe9628ae.jpg", "video": false}], "caption": "", "tip": "Partage-la tel quel."}, {"id": "p08", "date": "2026-12-09", "label": "Mercredi 9 déc.", "caption": "« Est-ce que ça abîme mes cils ? » C'est une question qu'on me pose souvent, et c'est normal de se la poser 🤍\nAvant chaque pose, je regarde vos cils naturels pour choisir la longueur et l'épaisseur qui leur conviennent. Le but : un regard sublimé, avec des extensions adaptées à vos cils.\nVous avez une question ? Posez-la-moi en commentaire 👇\nPour réserver, écrivez-moi en message privé ou par SMS 🤍\n\n#extensionsdecils #cilacil #rehaussementdecils #techniciennecils #troyes #aube #lusigny #brielsurbarse #regardnaturel", "type": "Reel", "title": "Vos cils naturels d'abord", "media": [{"file": "media/2b00c1e56f.mp4", "video": true}], "cover": "/home/claude/marine/v2/reels/Couverture – Reel 9 déc – Vos cils naturels d'abord.jpg", "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story.", "poster": "media/1ac5893409.jpg"}, {"id": "s11", "date": "2026-12-09", "label": "Mercredi 9 déc.", "type": "Story", "title": "Rappel 48 h", "media": [{"file": "media/37fb432b8e.jpg", "video": false}], "caption": "", "tip": "À repartager à chaque cliente qui sort de pose."}, {"id": "p09", "date": "2026-12-11", "label": "Vendredi 11 déc.", "caption": "Rehaussement ou extensions : que choisir ? 🤍\nLe rehaussement sublime vos propres cils, les extensions ajoutent de la longueur et du volume. Je vous ai fait le comparatif pour vous aider à choisir.\nEnregistrez ce post 📌\nPour réserver, écrivez-moi en message privé ou par SMS 🤍\n\n#extensionsdecils #cilacil #rehaussementdecils #techniciennecils #troyes #aube #lusigny #brielsurbarse #regardnaturel", "type": "Carrousel", "title": "Rehaussement ou extensions", "media": [{"file": "media/87eed86391.jpg", "video": false}, {"file": "media/5462a24388.jpg", "video": false}, {"file": "media/191fab6b92.jpg", "video": false}, {"file": "media/52cc513702.jpg", "video": false}, {"file": "media/3d46daae34.jpg", "video": false}], "tip": "🎵 Ajoute une musique au moment de publier. Sélectionne les images dans l'ordre."}, {"id": "s12", "date": "2026-12-11", "label": "Vendredi 11 déc.", "type": "Story", "title": "Créneaux de décembre", "media": [{"file": "media/84c5bdb914.jpg", "video": false}], "caption": "", "tip": "Écris tes créneaux libres avec l'outil « Aa » dans le cadre."}, {"id": "p10", "date": "2026-12-14", "label": "Lundi 14 déc.", "caption": "Elles en parlent mieux que moi 🥰\nMerci Charline, Stéphanie et Kareen pour vos mots. Chaque avis me touche et me pousse à donner le meilleur à chaque pose.\nVous êtes venue à l'Atelier ? Laissez-moi un petit avis, ça m'aide énormément 🙏\nPour réserver, écrivez-moi en message privé ou par SMS 🤍\n\n#extensionsdecils #cilacil #rehaussementdecils #techniciennecils #troyes #aube #lusigny #brielsurbarse #regardnaturel", "type": "Carrousel", "title": "Vos avis", "media": [{"file": "media/b6dc861bcd.jpg", "video": false}, {"file": "media/0c921a5cca.jpg", "video": false}, {"file": "media/e28770efdf.jpg", "video": false}, {"file": "media/b47db4503b.jpg", "video": false}], "tip": "🎵 Ajoute une musique au moment de publier. Sélectionne les images dans l'ordre."}, {"id": "s13", "date": "2026-12-14", "label": "Lundi 14 déc.", "type": "Story", "title": "Cils de fête", "media": [{"file": "media/53b07230a9.jpg", "video": false}], "caption": "", "tip": "Ajoute le sticker « Sondage » : Oui ! / Je réfléchis."}, {"id": "p11", "date": "2026-12-16", "label": "Mercredi 16 déc.", "caption": "Qualité institut, prix doux, à 25 minutes de Troyes 🤍\nCil à cil dès 50 €, rehaussement à 30 €, au calme à Briel-sur-Barse.\nCe soin, vous le méritez, et sans exploser votre budget.\nPour réserver, écrivez-moi en message privé ou par SMS 🤍\n\n#extensionsdecils #cilacil #rehaussementdecils #techniciennecils #troyes #aube #lusigny #brielsurbarse #regardnaturel", "type": "Reel", "title": "À 25 min de Troyes", "media": [{"file": "media/5d6bc18a22.mp4", "video": true}], "cover": "/home/claude/marine/v2/reels/Couverture – Reel 16 déc – À 25 min de Troyes.jpg", "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story.", "poster": "media/6cdd67952f.jpg"}, {"id": "s14", "date": "2026-12-16", "label": "Mercredi 16 déc.", "type": "Story", "title": "Derniers créneaux", "media": [{"file": "media/460093c89f.jpg", "video": false}], "caption": "", "tip": "Écris tes derniers créneaux avec « Aa »."}, {"id": "p12", "date": "2026-12-18", "label": "Vendredi 18 déc.", "caption": "Prête pour les fêtes ? ✨\nUn regard qui pétille pour les repas de famille et les photos de Noël, sans mascara qui coule à minuit 😉\nIl me reste quelques créneaux avant Noël : écrivez-moi vite pour réserver le vôtre.\nPour réserver, écrivez-moi en message privé ou par SMS 🤍\n\n#extensionsdecils #cilacil #rehaussementdecils #techniciennecils #troyes #aube #lusigny #brielsurbarse #regardnaturel", "type": "Post", "title": "Prête pour les fêtes", "media": [{"file": "media/2257ca343c.jpg", "video": false}], "tip": "🎵 Ajoute une musique au moment de publier."}], "weeks": [{"id": "2026-11-23", "label": "Sem. du 23 nov.", "items": ["p01", "s03", "s04", "p02", "s05", "p03", "s06"]}, {"id": "2026-11-30", "label": "Sem. du 30 nov.", "items": ["p04", "s07", "p05", "s08", "p06", "s09"]}, {"id": "2026-12-07", "label": "Sem. du 7 déc.", "items": ["p07", "s10", "p08", "s11", "p09", "s12"]}, {"id": "2026-12-14", "label": "Sem. du 14 déc.", "items": ["p10", "s13", "p11", "s14", "p12"]}], "profile": {"bio": "Technicienne de cils · Briel-sur-Barse 📍 25 min de Troyes\nVos cils naturels d'abord · produits de marque française\nCil à cil dès 50 € · rehaussement 30 €\n👇 Rendez-vous par message ou SMS", "covers": [{"label": "Tarifs", "file": "media/5296473cad.jpg"}, {"label": "Avant-Après", "file": "media/702758b103.jpg"}, {"label": "Avis", "file": "media/8850fd25bf.jpg"}, {"label": "Formations", "file": "media/b1ba0e52a9.jpg"}, {"label": "Entretien", "file": "media/15fdc9c94e.jpg"}], "photo": "media/bb395626d3.jpg"}};
+const $ = s => document.querySelector(s);
+const C = DATA.client, TU = C.tone !== 'vous';
+const t = (tu, vous) => TU ? tu : vous;
+const esc = s => (s || '').replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+const KEY = 'pap_' + C.slug;
+let done = {}; try { done = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) {}
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(done)); } catch (e) {} };
+const byId = Object.fromEntries(DATA.items.map(i => [i.id, i]));
+const files = {};
+const now = new Date();
+const pad = n => String(n).padStart(2, '0');
+const iso = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+const mondayOf = d => { const x = new Date(d.getFullYear(), d.getMonth(), d.getDate()); x.setDate(x.getDate() - (x.getDay() + 6) % 7); return iso(x); };
+const curWeek = (() => { const m = mondayOf(now); const ids = DATA.weeks.map(w => w.id); if (ids.includes(m)) return m; return m < ids[0] ? ids[0] : ids[ids.length - 1]; })();
+function toast(s) { const el = $('#toast'); el.textContent = s; el.classList.add('show'); clearTimeout(el._t); el._t = setTimeout(() => el.classList.remove('show'), 2600); }
+function sheet(title, steps) { $('#shT').textContent = title; $('#shL').innerHTML = steps.map(s => `<li>${s}</li>`).join(''); $('#sheet').classList.add('show'); }
+
+$('#hello').textContent = `Bonjour ${C.first} 👋`;
+$('#intro').textContent = t(`Ton mois de contenu est prêt. Tout est ici : quoi publier, quand, et comment.`, `Votre mois de contenu est prêt. Tout est ici : quoi publier, quand, et comment.`);
+$('#fname').textContent = C.name;
+$('#packTitle').textContent = t('Ton pack', 'Votre pack');
+function progress() { const n = DATA.items.filter(i => done[i.id]).length; $('#count').textContent = `${n} / ${DATA.items.length} publiés`; $('#barfill').style.width = (100 * n / DATA.items.length) + '%'; }
+
+const P = DATA.pack, fmt = s => new Date(s + 'T12:00').toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' });
+$('#packName').textContent = P.name;
+const tday = iso(now);
+$('#packStatus').textContent = tday < P.start ? 'À venir' : tday > P.end ? 'Terminé' : 'En cours';
+const cnt = k => DATA.items.filter(i => i.type.toLowerCase().startsWith(k)).length;
+$('#packKv').innerHTML = [['reel', 'reels montés'], ['carrousel', 'carrousels'], ['post', 'post photo'], ['story', 'stories']].filter(([k]) => cnt(k)).map(([k, l]) => `<div><b>${cnt(k)}</b><span>${l}</span></div>`).join('');
+$('#packDates').innerHTML = [['📦', 'Livré le', P.delivered && fmt(P.delivered)], ['🗓️', 'Période de publication', `du ${fmt(P.start)} au ${fmt(P.end)}`], ['🔁', 'Retouches', P.retouches]].filter(r => r[2]).map(([i, a, b]) => `<li><span class="ico">${i}</span><div><b>${a}</b><br><span style="color:var(--grey)">${b}</span></div></li>`).join('');
+$('#how').innerHTML = [['🗓️', t('Ouvre « Publications »', 'Ouvrez « Publications »'), t('Chaque semaine, tu y trouves quoi publier et quel jour.', 'Chaque semaine, vous y trouvez quoi publier et quel jour.')],
+  ['📋', 'Copie le texte en un clic', t('Le bouton copie la légende pour toi.', 'Le bouton copie la légende pour vous.')],
+  ['📲', 'Envoie vers Instagram', t('Le deuxième bouton ouvre le partage : choisis Instagram, colle le texte, publie.', 'Le deuxième bouton ouvre le partage : choisissez Instagram, collez le texte, publiez.')],
+  ['✅', 'Coche « C\'est publié »', t('Tu vois où tu en es, sans rien retenir.', 'Vous voyez où vous en êtes, sans rien retenir.')]]
+  .map(([i, a, b]) => `<li><span class="ico">${i}</span><div><b>${TU ? a : a.replace('Copie', 'Copiez').replace('Envoie', 'Envoyez').replace('Coche', 'Cochez')}</b><br><span style="color:var(--grey)">${b}</span></div></li>`).join('');
+
+async function preload(it) {
+  if (!it.media.length) return null;
+  if (!files[it.id]) files[it.id] = Promise.all(it.media.map(async (m, k) => { const r = await fetch(m.file); const b = await r.blob(); return new File([b], `${C.slug}-${it.id}-${k + 1}.${m.file.split('.').pop()}`, { type: b.type }); })).catch(() => null);
+  return files[it.id];
+}
+async function share(it) {
+  const fl = await preload(it);
+  if (fl && navigator.canShare && navigator.canShare({ files: fl })) {
+    try { await navigator.share({ files: fl }); return; } catch (e) { if (e.name === 'AbortError') return; }
+  }
+  sheet(t('Enregistrer dans tes photos', 'Enregistrer dans vos photos'), [t('Appuie longuement sur l\'image (ou la vidéo).', 'Appuyez longuement sur l\'image (ou la vidéo).'), t('Choisis « Enregistrer dans Photos ».', 'Choisissez « Enregistrer dans Photos ».'), t('Ouvre Instagram, appuie sur + et sélectionne-la.', 'Ouvrez Instagram, appuyez sur + et sélectionnez-la.')]);
+}
+function card(it) {
+  preload(it);
+  const c = document.createElement('section'); c.className = 'card' + (done[it.id] ? ' done' : '');
+  const typ = it.type.toLowerCase().split(' ')[0];
+  const media = it.media.map(m => m.video ? `<video src="${m.file}" ${it.poster ? `poster="${it.poster}"` : ''} controls playsinline preload="none"></video>` : `<img src="${m.file}" alt="" loading="lazy">`).join('');
+  const n = it.media.length, vid = n && it.media[0].video;
+  c.innerHTML = `
+    <div class="top"><span class="day">${esc(it.label)}</span><span class="pill ${typ}">${esc(it.type)}</span></div>
+    <div class="title">${esc(it.title)}</div>
+    ${n ? `<div class="media ${n === 1 ? 'one' : ''}">${media}</div>` : ''}
+    ${n > 1 ? `<div class="swipe">← ${t('Fais glisser pour voir les', 'Faites glisser pour voir les')} ${n} images</div>` : ''}
+    ${it.tip ? `<div class="tip">💡 ${esc(it.tip)}</div>` : ''}
+    ${it.steps ? `<ol class="seq">${it.steps.map(x => `<li><b>${esc(x.what)}</b>${x.text ? `<br><span>${esc(x.text)}</span>` : ''}</li>`).join('')}</ol>` : ''}
+    ${it.caption ? `<div class="cap">${esc(it.caption)}</div>` : ''}
+    <div class="steps">
+      ${it.caption ? `<button class="btn dark cp"><span class="n">1</span><span class="t">Copier le texte</span></button>` : ''}
+      ${n ? `<button class="btn sh"><span class="n">${it.caption ? 2 : 1}</span>${n > 1 ? `Envoyer les ${n} images` : vid ? 'Envoyer la vidéo' : "Envoyer l'image"} vers Instagram</button>` : ''}
+    </div>
+    <label class="check"><input type="checkbox" ${done[it.id] ? 'checked' : ''}> C'est publié !</label>`;
+  const cap = c.querySelector('.cap'); if (cap) cap.onclick = () => cap.classList.toggle('open');
+  const cp = c.querySelector('.cp');
+  if (cp) cp.onclick = async () => { try { await navigator.clipboard.writeText(it.caption); cp.classList.replace('dark', 'ok'); cp.querySelector('.t').textContent = 'Texte copié ✓'; toast(t('Texte copié : tu pourras le coller dans Instagram', 'Texte copié : vous pourrez le coller dans Instagram')); } catch (e) { cap && cap.classList.add('open'); toast(t('Appuie longuement sur le texte pour le copier', 'Appuyez longuement sur le texte pour le copier')); } };
+  const sh = c.querySelector('.sh'); if (sh) sh.onclick = () => share(it);
+  c.querySelector('input').onchange = e => { done[it.id] = e.target.checked; save(); c.classList.toggle('done', e.target.checked); progress(); renderHome(); if (e.target.checked) toast('Bravo ! 🎉'); };
+  return c;
+}
+function renderWeek(wid) {
+  document.querySelectorAll('#tabs button').forEach(b => b.classList.toggle('on', b.dataset.id === wid));
+  const L = $('#list'); L.innerHTML = '';
+  DATA.weeks.find(w => w.id === wid).items.forEach(id => L.appendChild(card(byId[id])));
+}
+DATA.weeks.forEach(w => { const b = document.createElement('button'); b.textContent = w.label; b.dataset.id = w.id; if (w.id === curWeek) b.classList.add('now'); b.onclick = () => renderWeek(w.id); $('#tabs').appendChild(b); });
+$('#pubsSub').textContent = 'Semaine par semaine. Le point rose indique la semaine en cours.';
+
+function renderHome() {
+  const w = DATA.weeks.find(x => x.id === curWeek);
+  const todo = w.items.map(id => byId[id]);
+  const left = todo.filter(i => !done[i.id]).length;
+  $('#weekTitle').textContent = w.label.replace('Sem.', 'Semaine');
+  const box = $('#thisweek');
+  box.innerHTML = `<div class="pad" style="padding-bottom:6px"><b>${left ? `${left} publication${left > 1 ? 's' : ''} à faire` : 'Tout est publié cette semaine, bravo ! 🎉'}</b></div>` +
+    todo.map(i => `<div class="mini"><img src="${i.poster || (!i.media.length || i.media[0].video ? 'logo.png' : i.media[0].file)}" alt="" loading="lazy"><div style="flex:1"><b>${esc(i.label)}</b><span>${esc(i.type)} · ${esc(i.title)}</span></div><span>${done[i.id] ? '✅' : '›'}</span></div>`).join('') +
+    `<div class="pad"><button class="btn" id="goWeek">Voir mes publications de la semaine</button></div>`;
+  box.querySelectorAll('.mini').forEach(m => m.onclick = () => { go('pubs'); renderWeek(curWeek); });
+  $('#goWeek').onclick = () => { go('pubs'); renderWeek(curWeek); };
+}
+
+(function () {
+  const p = DATA.profile; $('#profSub').textContent = t('À faire une seule fois, au début. Compte 10 minutes.', 'À faire une seule fois, au début. Comptez 10 minutes.');
+  let h = '';
+  if (p.photo) h += `<div class="pp"><img src="${p.photo}" alt=""><div><b>Photo de profil</b><br><span style="color:var(--grey);font-size:14px">${t('Instagram › ton profil › Modifier le profil › Modifier la photo.', 'Instagram › votre profil › Modifier le profil › Modifier la photo.')}</span></div></div><div class="steps"><button class="btn ghost" data-share="photo">Enregistrer la photo</button></div>`;
+  if (p.name) h += `<div class="pad" style="border-top:1px solid var(--line)"><b>Nom affiché</b><div class="cap open" style="margin:8px 0 10px;cursor:default">${esc(p.name)}</div><button class="btn dark" data-copy="name">Copier le nom</button></div>`;
+  if (p.bio) h += `<div class="pad" style="border-top:1px solid var(--line)"><b>Bio</b><div class="cap open" style="margin:8px 0 10px;cursor:default">${esc(p.bio)}</div><button class="btn dark" data-copy="bio">Copier la bio</button><p style="font-size:14px;color:var(--grey);margin:10px 0 0">${t('Instagram › Modifier le profil › Bio : efface l\'ancienne, colle, puis OK.', 'Instagram › Modifier le profil › Bio : effacez l\'ancienne, collez, puis OK.')}</p></div>`;
+  if (p.covers.length) h += `<div class="pad" style="border-top:1px solid var(--line);padding-bottom:8px"><b>Couvertures « à la une »</b><p style="font-size:14px;color:var(--grey);margin:4px 0 0">${t('Sur ton profil, appuie longuement sur une story à la une › Modifier › Modifier la couverture.', 'Sur votre profil, appuyez longuement sur une story à la une › Modifier › Modifier la couverture.')}</p></div><div class="covers">${p.covers.map(c => `<figure><img src="${c.file}" alt=""><figcaption>${esc(c.label)}</figcaption></figure>`).join('')}</div><div class="steps"><button class="btn ghost" data-share="covers">Enregistrer les couvertures</button></div>`;
+  if (p.pinned) h += `<div class="pad" style="border-top:1px solid var(--line)"><b>📌 Publication à épingler</b><p style="margin:6px 0 0;color:#3b3147">${esc(p.pinned)}</p></div>`;
+  $('#profile').innerHTML = h;
+  document.querySelectorAll('[data-copy]').forEach(b => b.onclick = async () => { try { await navigator.clipboard.writeText(p[b.dataset.copy]); b.classList.replace('dark', 'ok'); b.textContent = 'Copié ✓'; } catch (e) { toast('Appuie longuement sur le texte pour le copier'); } });
+  document.querySelectorAll('[data-share]').forEach(b => b.onclick = () => share({ id: 'p_' + b.dataset.share, media: b.dataset.share === 'photo' ? [{ file: p.photo }] : p.covers.map(c => ({ file: c.file })) }));
+})();
+
+const G = [
+  ['Publier une publication ou un carrousel', [t('Appuie sur « Copier le texte ».', 'Appuyez sur « Copier le texte ».'), t('Appuie sur « Envoyer vers Instagram », puis choisis Instagram › Publication.', 'Appuyez sur « Envoyer vers Instagram », puis choisissez Instagram › Publication.'), t('Vérifie l\'ordre des images, puis Suivant.', 'Vérifiez l\'ordre des images, puis Suivant.'), t('Ajoute une musique si tu veux (« Ajouter de la musique »).', 'Ajoutez une musique si vous voulez (« Ajouter de la musique »).'), t('Appuie dans « Ajouter une légende », colle le texte, puis Partager.', 'Appuyez dans « Ajouter une légende », collez le texte, puis Partager.')]],
+  ['Publier un reel (vidéo)', [t('Copie le texte, puis « Envoyer la vidéo vers Instagram » › Reels.', 'Copiez le texte, puis « Envoyer la vidéo vers Instagram » › Reels.'), t('Appuie sur la note de musique ♫ et choisis un son tendance : les vidéos sont livrées sans musique, exprès.', 'Appuyez sur la note de musique ♫ et choisissez un son tendance : les vidéos sont livrées sans musique, exprès.'), t('Suivant, colle le texte dans la légende, puis Partager.', 'Suivant, collez le texte dans la légende, puis Partager.')]],
+  ['Publier une story', [t('« Envoyer l\'image vers Instagram » › Stories.', '« Envoyer l\'image vers Instagram » › Stories.'), t('Appuie sur l\'icône sticker (le carré souriant) pour ajouter le sticker indiqué : lieu, sondage, quiz, compte à rebours…', 'Appuyez sur l\'icône sticker (le carré souriant) pour ajouter le sticker indiqué : lieu, sondage, quiz, compte à rebours…'), t('Appuie sur « Votre story ».', 'Appuyez sur « Votre story ».')]],
+  ['Publication ou story : quelle différence ?', [t('Une publication reste sur ton profil : tout le monde peut la voir.', 'Une publication reste sur votre profil : tout le monde peut la voir.'), t('Une story disparaît au bout de 24 h : elle est surtout vue par tes abonnés.', 'Une story disparaît au bout de 24 h : elle est surtout vue par vos abonnés.'), t('Suis simplement le type indiqué sur chaque carte : Reel, Carrousel, Post ou Story.', 'Suivez simplement le type indiqué sur chaque carte : Reel, Carrousel, Post ou Story.')]],
+  [t('Mettre ton espace sur l\'écran d\'accueil', 'Mettre votre espace sur l\'écran d\'accueil'), [t('iPhone : dans Safari, appuie sur Partager ⬆️ puis « Sur l\'écran d\'accueil ».', 'iPhone : dans Safari, appuyez sur Partager ⬆️ puis « Sur l\'écran d\'accueil ».'), t('Android : dans Chrome, menu ⋮ puis « Ajouter à l\'écran d\'accueil ».', 'Android : dans Chrome, menu ⋮ puis « Ajouter à l\'écran d\'accueil ».'), t('Ton espace s\'ouvre ensuite comme une application.', 'Votre espace s\'ouvre ensuite comme une application.')]],
+  ['Le bouton « Envoyer » ne marche pas ?', [t('Ouvre ton espace dans Safari (iPhone) ou Chrome (Android), pas directement dans WhatsApp.', 'Ouvrez votre espace dans Safari (iPhone) ou Chrome (Android), pas directement dans WhatsApp.'), t('Sinon : appuie longuement sur l\'image › « Enregistrer dans Photos », puis publie depuis Instagram.', 'Sinon : appuyez longuement sur l\'image › « Enregistrer dans Photos », puis publiez depuis Instagram.')]]];
+$('#guides').innerHTML = G.map(([q, s]) => `<details><summary>${q}</summary><div class="in"><ol>${s.map(x => `<li>${x}</li>`).join('')}</ol></div></details>`).join('');
+$('#cadre').innerHTML = (P.cadre || []).map(([q, s]) => `<details><summary>${esc(q)}</summary><div class="in"><ul style="padding-left:18px;margin:0">${s.map(x => `<li style="margin-bottom:6px">${esc(x)}</li>`).join('')}</ul></div></details>`).join('');
+const CT = DATA.contact || {};
+$('#contact').innerHTML = `<p style="margin:0 0 14px">${esc(CT.text || '')}</p>${CT.email ? `<a class="btn" href="mailto:${CT.email}?subject=${encodeURIComponent('Mon espace ' + C.name)}">✉️ Écrire un e-mail</a><p style="text-align:center;font-size:14px;color:var(--grey);margin:8px 0 0">${CT.email}</p>` : ''}`;
+
+(DATA.extras || []).forEach((x, xi) => {
+  const w = document.createElement('div');
+  w.innerHTML = `<h2>${esc(x.title)}</h2>${x.intro ? `<p class="sub">${esc(x.intro)}</p>` : ''}<div class="card">${x.rows.map((r, k) => `<div class="pad" style="${k ? 'border-top:1px solid var(--line)' : ''}"><b>${esc(r.label)}</b>${r.text ? `<div class="cap open" style="margin:8px 0 ${r.copy ? 10 : 0}px;cursor:default">${esc(r.text)}</div>` : ''}${r.copy ? `<button class="btn dark" data-x="${xi}_${k}">Copier</button>` : ''}</div>`).join('')}</div>`;
+  $('#extras').appendChild(w);
+});
+document.querySelectorAll('[data-x]').forEach(b => b.onclick = async () => { try { await navigator.clipboard.writeText((([a, c]) => DATA.extras[a].rows[c].text)(b.dataset.x.split('_'))); b.classList.replace('dark', 'ok'); b.textContent = 'Copié ✓'; } catch (e) { toast('Appuie longuement sur le texte pour le copier'); } });
+function go(v) { document.querySelectorAll('.view').forEach(s => s.classList.toggle('on', s.id === 'v-' + v)); document.querySelectorAll('.nav button').forEach(b => b.classList.toggle('on', b.dataset.v === v)); window.scrollTo(0, 0); try { history.replaceState(null, '', '#' + v); } catch (e) {} }
+document.querySelectorAll('.nav button').forEach(b => b.onclick = () => go(b.dataset.v));
+window.addEventListener('hashchange', () => { const v = location.hash.slice(1); if (['home', 'pubs', 'profile', 'help'].includes(v)) go(v); });
+renderWeek(curWeek); renderHome(); progress();
+go(['home', 'pubs', 'profile', 'help'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'home');
+</script>
+</body>
+</html>

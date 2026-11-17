@@ -1,0 +1,760 @@
+{
+ "client": {
+  "slug": "manon",
+  "name": "M' & Beauty",
+  "first": "Manon",
+  "tone": "tu"
+ },
+ "pack": {
+  "name": "Pack Prêt à Poster · 1 mois",
+  "start": "2026-11-19",
+  "end": "2026-12-19",
+  "retouches": "1 tour inclus, dans les 7 jours après la livraison",
+  "cadre": [
+   [
+    "Ce que tu reçois",
+    [
+     "Tes publications du mois : reels, carrousels, posts et stories",
+     "Tous les textes, prêts à copier",
+     "Le calendrier : quoi publier, et quel jour",
+     "Ton profil revu : bio et couvertures à la une",
+     "Les vidéos sont livrées sans musique : tu ajoutes un son en publiant"
+    ]
+   ],
+   [
+    "Les retouches",
+    [
+     "1 tour de retouches inclus, dans les 7 jours après la livraison",
+     "En un seul message : la publication concernée et ce qu'il faut changer",
+     "Corrections livrées sous 48 h ouvrées"
+    ]
+   ],
+   [
+    "Ce qui reste entre tes mains",
+    [
+     "C'est toi qui publies : je n'accède pas à ton compte",
+     "Répondre aux commentaires et aux messages",
+     "Les petites stories spontanées : ce sont elles qui créent le lien"
+    ]
+   ],
+   [
+    "Mon engagement",
+    [
+     "Des contenus pros, prêts à publier, adaptés à ton activité",
+     "Je ne promets ni vues, ni abonnés, ni clientes : ils dépendent de ton offre, de ta régularité et des réseaux eux-mêmes"
+    ]
+   ]
+  ]
+ },
+ "contact": {
+  "email": "studio.pretaposter@gmail.com",
+  "text": "Un fichier qui ne s'ouvre pas, une étape pas claire, une retouche ? Écris-moi, je te réponds sous 24 h ouvrées, du lundi au vendredi."
+ },
+ "profile": {
+  "bio": "Esthéticienne · La Chapelle-Saint-Luc 📍\nLe soin accessible, entre femmes 💕\nCils · ongles · soins · 9h-18h même le midi\n👇 Rdv uniquement par message",
+  "covers": [
+   {
+    "label": "Tarifs",
+    "file": "/home/claude/manon/v2/profil/À la une 1 – Tarifs.jpg"
+   },
+   {
+    "label": "Cils",
+    "file": "/home/claude/manon/v2/profil/À la une 2 – Cils.jpg"
+   },
+   {
+    "label": "Pieds",
+    "file": "/home/claude/manon/v2/profil/À la une 3 – Pieds.jpg"
+   },
+   {
+    "label": "Ongles",
+    "file": "/home/claude/manon/v2/profil/À la une 4 – Ongles.jpg"
+   },
+   {
+    "label": "Avis",
+    "file": "/home/claude/manon/v2/profil/À la une 5 – Avis.jpg"
+   },
+   {
+    "label": "Cadeau",
+    "file": "/home/claude/manon/v2/profil/À la une 6 – Cadeau.jpg"
+   },
+   {
+    "label": "Institut",
+    "file": "/home/claude/manon/v2/profil/À la une 7 – Institut.jpg"
+   }
+  ]
+ },
+ "extras": [
+  {
+   "title": "Mon message clé",
+   "intro": "La phrase à répéter partout : en story, en message, en vrai.",
+   "rows": [
+    {
+     "label": "Mon message",
+     "text": "Prenez soin de vous sans vous demander si vous pouvez vous le permettre.",
+     "copy": true
+    }
+   ]
+  },
+  {
+   "title": "Mes réponses types",
+   "intro": "À copier quand on t'écrit en message privé.",
+   "rows": [
+    {
+     "label": "On te demande un prix",
+     "text": "Bonjour [prénom] ! Merci pour votre message 😊 [Prestation] est à [prix]. Quand seriez-vous disponible ? Je vous reçois de 9h à 18h, même entre midi.",
+     "copy": true
+    },
+    {
+     "label": "Demande de carte cadeau",
+     "text": "Avec plaisir ! Pour qui est-elle, et pour quel soin ou quel montant ? Je vous la prépare 🎁",
+     "copy": true
+    },
+    {
+     "label": "Première fois pour les cils",
+     "text": "Pas d'inquiétude, je vous explique tout et on choisit ensemble l'effet qui vous va le mieux 😊 Vous préférez un résultat naturel ou plus intense ?",
+     "copy": true
+    },
+    {
+     "label": "Une cliente gênée (pieds, maillot…)",
+     "text": "Ne vous inquiétez pas, c'est mon métier et je ne juge personne 😊 On reprend tranquillement là où vous en êtes.",
+     "copy": true
+    },
+    {
+     "label": "« Pourquoi vos prix sont si doux ? »",
+     "text": "C'est un choix ! Prendre soin de soi ne devrait pas être une question qu'on se pose chaque mois. La qualité est la même, promis 💕",
+     "copy": true
+    }
+   ]
+  },
+  {
+   "title": "Mes tarifs",
+   "intro": "Ceux utilisés dans tes visuels. Un prix change ? Dis-le-moi.",
+   "rows": [
+    {
+     "label": "— Extensions de cils —",
+     "text": ""
+    },
+    {
+     "label": "Pose cil à cil",
+     "text": "38 €"
+    },
+    {
+     "label": "Pose mixte",
+     "text": "40 €"
+    },
+    {
+     "label": "Volume russe 3D",
+     "text": "40 €"
+    },
+    {
+     "label": "Volume russe 4D/5D",
+     "text": "45 €"
+    },
+    {
+     "label": "Rehaussement de cils",
+     "text": "25 €"
+    },
+    {
+     "label": "Coloration cils ou sourcils",
+     "text": "10 €"
+    },
+    {
+     "label": "— Mains et pieds —",
+     "text": ""
+    },
+    {
+     "label": "Vernis semi-permanent",
+     "text": "20 €"
+    },
+    {
+     "label": "Dépose (sans pose)",
+     "text": "15 €"
+    },
+    {
+     "label": "Manucure",
+     "text": "13 €"
+    },
+    {
+     "label": "Soin des pieds",
+     "text": "25 €"
+    },
+    {
+     "label": "— Soins —",
+     "text": ""
+    },
+    {
+     "label": "Soin du visage (45 min)",
+     "text": "30 €"
+    },
+    {
+     "label": "Modelage corps (45 min)",
+     "text": "35 €"
+    },
+    {
+     "label": "Maquillage",
+     "text": "40 €"
+    },
+    {
+     "label": "— Épilations —",
+     "text": ""
+    },
+    {
+     "label": "Lèvres",
+     "text": "5 €"
+    },
+    {
+     "label": "Aisselles",
+     "text": "8 €"
+    },
+    {
+     "label": "Sourcils",
+     "text": "8 €"
+    },
+    {
+     "label": "Maillot simple",
+     "text": "10 €"
+    },
+    {
+     "label": "Fesses",
+     "text": "12 €"
+    },
+    {
+     "label": "Demi-jambes",
+     "text": "13 €"
+    },
+    {
+     "label": "Maillot échancré",
+     "text": "14 €"
+    },
+    {
+     "label": "Bras",
+     "text": "15 €"
+    },
+    {
+     "label": "Cuisses",
+     "text": "15 €"
+    },
+    {
+     "label": "Maillot intégral",
+     "text": "19 €"
+    },
+    {
+     "label": "Jambes entières",
+     "text": "19 €"
+    }
+   ]
+  }
+ ],
+ "items": [
+  {
+   "id": "p01",
+   "date": "2026-11-19",
+   "label": "Jeudi 19 nov.",
+   "caption": "Vous aussi, vous découvrez mon institut aujourd'hui ? 😊\nJe m'appelle Manon, je suis esthéticienne depuis 5 ans à La Chapelle-Saint-Luc. Je vous reçois dans un institut 100 % féminin, un petit cocon où l'on prend le temps.\n✨ Extensions de cils · semi-permanent · soins du visage et des pieds · épilations\n💕 Des prix doux, pour que vous puissiez prendre soin de vous sans vous demander si vous pouvez vous le permettre\n📍 22 rue des Templiers, La Chapelle-Saint-Luc\nÉcrivez-moi en message privé 💌\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty",
+   "type": "Reel",
+   "title": "Je me présente",
+   "media": [
+    "/home/claude/manon/v2/light/p01.mp4"
+   ],
+   "cover": "/home/claude/manon/v2/light/p01.jpg",
+   "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story."
+  },
+  {
+   "id": "p02",
+   "date": "2026-11-21",
+   "label": "Samedi 21 nov.",
+   "caption": "Avec 20 €, vous vous offrez quoi ? 💕\nUn vernis semi-permanent, des jambes douces, un maillot net… Chez moi, prendre soin de vous ne devrait pas être une question qu'on se pose chaque mois.\nFaites glisser : tous mes tarifs sont dedans, en toute transparence.\nEnregistrez ce post pour les garder sous la main 📌\nÉcrivez-moi en message privé 💌\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty",
+   "type": "Carrousel",
+   "title": "Avec 20 €",
+   "media": [
+    "/home/claude/manon/v2/carrousels/1 Avec 20 € – 1.jpg",
+    "/home/claude/manon/v2/carrousels/1 Avec 20 € – 2.jpg",
+    "/home/claude/manon/v2/carrousels/1 Avec 20 € – 3.jpg",
+    "/home/claude/manon/v2/carrousels/1 Avec 20 € – 4.jpg",
+    "/home/claude/manon/v2/carrousels/1 Avec 20 € – 5.jpg",
+    "/home/claude/manon/v2/carrousels/1 Avec 20 € – 6.jpg"
+   ],
+   "tip": "🎵 Ajoute une musique au moment de publier. Sélectionne les images dans l'ordre."
+  },
+  {
+   "id": "p03",
+   "date": "2026-11-24",
+   "label": "Mardi 24 nov.",
+   "caption": "Le regard qui vous ressemble 👀\nNaturel avec le cil à cil, plus intense avec le volume russe, ou entre les deux avec le mixte : on choisit ensemble, selon vos cils et ce que vous aimez.\nVos cils naturels passent toujours en premier.\n✨ Extensions de cils dès 38 €\nÉcrivez-moi en message privé 💌\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty",
+   "type": "Reel",
+   "title": "Le regard",
+   "media": [
+    "/home/claude/manon/v2/light/p03.mp4"
+   ],
+   "cover": "/home/claude/manon/v2/light/p03.jpg",
+   "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story."
+  },
+  {
+   "id": "p04",
+   "date": "2026-11-26",
+   "label": "Jeudi 26 nov.",
+   "caption": "« Je n'ai pas les moyens… mais avec toi, j'ai pu me le permettre. » C'est la phrase que j'entends le plus en cabine 💕\nMes prix sont doux, et c'est un choix : je veux que chaque femme puisse s'offrir un moment pour elle, sans culpabiliser et sans attendre « le mois prochain ».\nDes produits de qualité, du temps pris pour vous : rien n'est sacrifié.\nÉcrivez-moi en message privé 💌\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty",
+   "type": "Reel à filmer",
+   "title": "« Avec toi, j'ai pu me le permettre »",
+   "media": [],
+   "tip": "📱 À filmer par toi dans Instagram, en une seule prise.",
+   "steps": [
+    {
+     "what": "Comment faire",
+     "text": "À filmer par toi dans Instagram, en une seule prise (20 à 25 s)"
+    }
+   ]
+  },
+  {
+   "id": "p05",
+   "date": "2026-11-28",
+   "label": "Samedi 28 nov.",
+   "caption": "Le cadeau qui fait plaisir à coup sûr 🎁\nOffrez-lui un moment rien qu'à elle : cils, ongles, soin du visage, modelage… La carte cadeau M' & Beauty, à glisser sous le sapin.\nPour la commander, écrivez-moi en message privé, je vous la prépare 💌\nIdentifiez la personne qui doit trouver un cadeau 😉\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty",
+   "type": "Carrousel",
+   "title": "Carte cadeau",
+   "media": [
+    "/home/claude/manon/v2/carrousels/2 Carte cadeau – 1.jpg",
+    "/home/claude/manon/v2/carrousels/2 Carte cadeau – 2.jpg",
+    "/home/claude/manon/v2/carrousels/2 Carte cadeau – 3.jpg"
+   ],
+   "tip": "🎵 Ajoute une musique au moment de publier. Sélectionne les images dans l'ordre."
+  },
+  {
+   "id": "p06",
+   "date": "2026-12-01",
+   "label": "Mardi 1er déc.",
+   "caption": "Les questions que vous n'osez pas poser à votre esthéticienne 🤫\nMes pieds sont trop abîmés, je n'ai pas fait mon maillot depuis des mois, mes cils sont fragiles… On a toutes ces petites gênes. Ici, on en parle simplement : c'est mon métier, et je ne juge personne.\nEt vous, quelle question n'avez-vous jamais osé poser ? Dites-le-moi en commentaire ou écrivez-moi en message privé 💌\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty",
+   "type": "Carrousel",
+   "title": "Zéro jugement",
+   "media": [
+    "/home/claude/manon/v2/carrousels/3 Zéro jugement – 1.jpg",
+    "/home/claude/manon/v2/carrousels/3 Zéro jugement – 2.jpg",
+    "/home/claude/manon/v2/carrousels/3 Zéro jugement – 3.jpg",
+    "/home/claude/manon/v2/carrousels/3 Zéro jugement – 4.jpg",
+    "/home/claude/manon/v2/carrousels/3 Zéro jugement – 5.jpg",
+    "/home/claude/manon/v2/carrousels/3 Zéro jugement – 6.jpg"
+   ],
+   "tip": "🎵 Ajoute une musique au moment de publier. Sélectionne les images dans l'ordre."
+  },
+  {
+   "id": "p07",
+   "date": "2026-12-03",
+   "label": "Jeudi 3 déc.",
+   "caption": "Des pieds tout doux pour l'hiver ❄️\nTalons secs, peau épaisse, callosités : pas de gêne à avoir, c'est exactement ce que mon soin des pieds traite. Diplômée en soin des pieds, je prends le temps de bien faire.\n👣 Soin des pieds : 25 €\nÉcrivez-moi en message privé 💌\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty",
+   "type": "Reel",
+   "title": "Soin des pieds",
+   "media": [
+    "/home/claude/manon/v2/light/p07.mp4"
+   ],
+   "cover": "/home/claude/manon/v2/light/p07.jpg",
+   "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story."
+  },
+  {
+   "id": "p08",
+   "date": "2026-12-05",
+   "label": "Samedi 5 déc.",
+   "caption": "🎄 CONCOURS DE NOËL 🎄\nComme chaque année, je vous gâte ! À gagner : une pose d'extensions de cils ✨\nPour participer :\n1. Abonnez-vous à @mbeau_ty10\n2. Aimez cette publication\n3. Identifiez 2 amies en commentaire\nTirage au sort le samedi 19 décembre. Bonne chance à toutes !\nConcours gratuit, sans obligation d'achat. Instagram n'est ni organisateur ni associé à ce concours.\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty",
+   "type": "Post",
+   "title": "Concours de Noël",
+   "media": [
+    "/home/claude/manon/v2/posts/4 Concours de Noël (5 déc).jpg"
+   ],
+   "tip": "🎵 Ajoute une musique au moment de publier."
+  },
+  {
+   "id": "p09",
+   "date": "2026-12-08",
+   "label": "Mardi 8 déc.",
+   "caption": "Votre pause du midi, rien qu'à vous ☀️\nEntre deux rendez-vous, entre deux courses, entre deux réunions : je vous reçois de 9h à 18h, même entre midi.\nUn semi-permanent, une épilation, un soin… et vous repartez légère.\nÉcrivez-moi en message privé 💌\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty",
+   "type": "Reel",
+   "title": "La pause du midi",
+   "media": [
+    "/home/claude/manon/v2/light/p09.mp4"
+   ],
+   "cover": "/home/claude/manon/v2/light/p09.jpg",
+   "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story."
+  },
+  {
+   "id": "p10",
+   "date": "2026-12-10",
+   "label": "Jeudi 10 déc.",
+   "caption": "« Manon a fait des miracles » 🥹\nKyaa était venue après une très mauvaise expérience ailleurs, avec des cils abîmés. On a pris le temps, en douceur. Vos cils naturels passent toujours en premier.\nMerci à toutes pour vos messages, ils me touchent à chaque fois 💕\nÀ votre tour ? Écrivez-moi en message privé 💌\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty",
+   "type": "Carrousel",
+   "title": "Avis",
+   "media": [
+    "/home/claude/manon/v2/carrousels/5 Avis – 1.jpg",
+    "/home/claude/manon/v2/carrousels/5 Avis – 2.jpg",
+    "/home/claude/manon/v2/carrousels/5 Avis – 3.jpg",
+    "/home/claude/manon/v2/carrousels/5 Avis – 4.jpg",
+    "/home/claude/manon/v2/carrousels/5 Avis – 5.jpg",
+    "/home/claude/manon/v2/carrousels/5 Avis – 6.jpg"
+   ],
+   "tip": "🎵 Ajoute une musique au moment de publier. Sélectionne les images dans l'ordre."
+  },
+  {
+   "id": "p11",
+   "date": "2026-12-12",
+   "label": "Samedi 12 déc.",
+   "caption": "Rouge, doré, nude, paillettes… vous partez sur quoi pour les fêtes ? ✨ Dites-le-moi en commentaire 👇\n💅 Semi-permanent mains ou pieds : 20 €\nLes créneaux de décembre partent vite : écrivez-moi en message privé 💌\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty",
+   "type": "Reel",
+   "title": "Ongles des fêtes",
+   "media": [
+    "/home/claude/manon/v2/light/p11.mp4"
+   ],
+   "cover": "/home/claude/manon/v2/light/p11.jpg",
+   "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story."
+  },
+  {
+   "id": "p12",
+   "date": "2026-12-15",
+   "label": "Mardi 15 déc.",
+   "caption": "Entrez, installez-vous, c'est votre moment 🌸\nMon institut est un cocon 100 % féminin, où l'on prend le temps.\n🎁 Pour Noël, la carte cadeau fait toujours plaisir.\n📍 22 rue des Templiers, La Chapelle-Saint-Luc · de 9h à 18h, même entre midi\nÉcrivez-moi en message privé 💌\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty",
+   "type": "Reel",
+   "title": "Mon institut",
+   "media": [
+    "/home/claude/manon/v2/light/p12.mp4"
+   ],
+   "cover": "/home/claude/manon/v2/light/p12.jpg",
+   "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story."
+  },
+  {
+   "id": "p13",
+   "date": "2026-12-17",
+   "label": "Jeudi 17 déc.",
+   "caption": "Pas encore trouvé de cadeau ? 🎁 Il est encore temps !\nLa carte cadeau M' & Beauty fait plaisir à toutes : maman, sœur, amie, collègue… Un moment rien qu'à elle.\nÉcrivez-moi en message privé, je vous la prépare 💌\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty",
+   "type": "Post",
+   "title": "Carte cadeau dernière minute",
+   "media": [
+    "/home/claude/manon/v2/posts/6 Carte cadeau dernière minute (17 déc).jpg"
+   ],
+   "tip": "🎵 Ajoute une musique au moment de publier."
+  },
+  {
+   "id": "p14",
+   "date": "2026-12-19",
+   "label": "Samedi 19 déc.",
+   "caption": "🎉 Le tirage du concours de Noël est fait !\nBravo à [prénom de la gagnante], qui remporte une pose d'extensions de cils ✨ Je t'écris en message privé pour fixer ton rendez-vous.\nMerci à toutes pour votre participation 💕\nEt pour les autres : la carte cadeau est toujours disponible, écrivez-moi en message privé 💌\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty",
+   "type": "Post",
+   "title": "Gagnante",
+   "media": [
+    "/home/claude/manon/v2/posts/7 Gagnante (19 déc).jpg"
+   ],
+   "tip": "🎵 Ajoute une musique au moment de publier."
+  },
+  {
+   "id": "s00",
+   "date": "2026-11-19",
+   "label": "Jeudi 19 nov.",
+   "type": "Story",
+   "title": "Je me présente",
+   "media": [
+    "/home/claude/manon/v2/stories/Je me présente.jpg",
+    "/home/claude/manon/v2/stories/Écrivez-moi.jpg"
+   ],
+   "caption": "",
+   "steps": [
+    {
+     "what": "Image prête",
+     "text": ""
+    },
+    {
+     "what": "Toi face caméra",
+     "text": "« Je fais les cils, les ongles, les soins du visage et des pieds, les épilations… à prix doux. »"
+    },
+    {
+     "what": "Image prête",
+     "text": "Rien à ajouter : on te répond en bas de la story, dans « Envoyer un message »"
+    }
+   ],
+   "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."
+  },
+  {
+   "id": "s01",
+   "date": "2026-11-21",
+   "label": "Samedi 21 nov.",
+   "type": "Story",
+   "title": "Mes tarifs",
+   "media": [
+    "/home/claude/manon/v2/stories/Quiz semi-permanent.jpg"
+   ],
+   "caption": "",
+   "steps": [
+    {
+     "what": "Ton carrousel du jour",
+     "text": "Partage-le en story (bouton avion › « Ajouter à la story »)"
+    },
+    {
+     "what": "Image prête",
+     "text": "Sticker Quiz : 15 € / 20 € / 35 € (bonne réponse : 20 €)"
+    }
+   ],
+   "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."
+  },
+  {
+   "id": "s02",
+   "date": "2026-11-23",
+   "label": "Lundi 23 nov.",
+   "type": "Story",
+   "title": "Coulisses d'une pose de cils",
+   "media": [
+    "/home/claude/manon/v2/stories/Coulisses – pendant la pose.jpg",
+    "/home/claude/manon/v2/stories/Coulisses – le résultat.jpg",
+    "/home/claude/manon/v2/stories/Sondage cils.jpg"
+   ],
+   "caption": "",
+   "steps": [
+    {
+     "what": "Image prête",
+     "text": ""
+    },
+    {
+     "what": "Image prête",
+     "text": "Sticker Curseur emoji 😍"
+    },
+    {
+     "what": "Image prête",
+     "text": "Sticker Sondage : « Oui / Pas encore »"
+    }
+   ],
+   "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."
+  },
+  {
+   "id": "s03",
+   "date": "2026-11-25",
+   "label": "Mercredi 25 nov.",
+   "type": "Story",
+   "title": "Vos questions sur les cils",
+   "media": [
+    "/home/claude/manon/v2/stories/Vos questions cils.jpg"
+   ],
+   "caption": "",
+   "steps": [
+    {
+     "what": "Image prête",
+     "text": "Sticker « Questions » : « Posez-moi vos questions »"
+    },
+    {
+     "what": "Dans les 2 jours : toi face caméra",
+     "text": "Réponds à 2 ou 3 questions (appuie sur la question › « Répondre »)"
+    }
+   ],
+   "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."
+  },
+  {
+   "id": "s04",
+   "date": "2026-11-28",
+   "label": "Samedi 28 nov.",
+   "type": "Story",
+   "title": "Carte cadeau",
+   "media": [
+    "/home/claude/manon/v2/stories/Carte cadeau.jpg"
+   ],
+   "caption": "",
+   "steps": [
+    {
+     "what": "Ton carrousel du jour",
+     "text": "Partage-le en story"
+    },
+    {
+     "what": "Image prête",
+     "text": ""
+    }
+   ],
+   "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."
+  },
+  {
+   "id": "s05",
+   "date": "2026-11-30",
+   "label": "Lundi 30 nov.",
+   "type": "Story",
+   "title": "Zéro jugement",
+   "media": [
+    "/home/claude/manon/v2/stories/Sondage gêne.jpg",
+    "/home/claude/manon/v2/stories/Écrivez-moi.jpg"
+   ],
+   "caption": "",
+   "steps": [
+    {
+     "what": "Image prête",
+     "text": "Sticker Sondage : « Oui, déjà / Jamais »"
+    },
+    {
+     "what": "Toi face caméra",
+     "text": "« Si vous avez déjà repoussé un rendez-vous par gêne : je vous comprends. Mais ici, personne ne juge. Promis. »"
+    },
+    {
+     "what": "Image prête",
+     "text": "Rien à ajouter : on te répond en bas de la story, dans « Envoyer un message »"
+    }
+   ],
+   "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."
+  },
+  {
+   "id": "s06",
+   "date": "2026-12-03",
+   "label": "Jeudi 3 déc.",
+   "type": "Story",
+   "title": "Soin des pieds",
+   "media": [
+    "/home/claude/manon/v2/stories/Sondage pieds.jpg",
+    "/home/claude/manon/v2/stories/Écrivez-moi.jpg"
+   ],
+   "caption": "",
+   "steps": [
+    {
+     "what": "Ton Reel du jour",
+     "text": "Partage-le en story"
+    },
+    {
+     "what": "Image prête",
+     "text": "Sticker Sondage : « Oui / Un peu »"
+    },
+    {
+     "what": "Image prête",
+     "text": "Rien à ajouter : on te répond en bas de la story, dans « Envoyer un message »"
+    }
+   ],
+   "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."
+  },
+  {
+   "id": "s07",
+   "date": "2026-12-05",
+   "label": "Samedi 5 déc.",
+   "type": "Story",
+   "title": "Concours de Noël",
+   "media": [
+    "/home/claude/manon/v2/stories/Concours.jpg"
+   ],
+   "caption": "",
+   "steps": [
+    {
+     "what": "Ton post concours",
+     "text": "Partage-le en story"
+    },
+    {
+     "what": "Image prête",
+     "text": "Sticker « Compte à rebours » : « Tirage du concours », samedi 19 décembre"
+    }
+   ],
+   "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."
+  },
+  {
+   "id": "s08",
+   "date": "2026-12-09",
+   "label": "Mercredi 9 déc.",
+   "type": "Story",
+   "title": "Votre pause du midi",
+   "media": [
+    "/home/claude/manon/v2/stories/Sondage midi.jpg",
+    "/home/claude/manon/v2/stories/Institut et horaires.jpg",
+    "/home/claude/manon/v2/stories/Écrivez-moi.jpg"
+   ],
+   "caption": "",
+   "steps": [
+    {
+     "what": "Image prête",
+     "text": "Sticker Sondage : « Je mange vite / Je cours partout »"
+    },
+    {
+     "what": "Image prête",
+     "text": ""
+    },
+    {
+     "what": "Image prête",
+     "text": "Rien à ajouter : on te répond en bas de la story, dans « Envoyer un message »"
+    }
+   ],
+   "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."
+  },
+  {
+   "id": "s09",
+   "date": "2026-12-11",
+   "label": "Vendredi 11 déc.",
+   "type": "Story",
+   "title": "Mes créneaux de décembre",
+   "media": [
+    "/home/claude/manon/v2/stories/Créneaux de décembre.jpg",
+    "/home/claude/manon/v2/stories/Écrivez-moi.jpg"
+   ],
+   "caption": "",
+   "steps": [
+    {
+     "what": "Image prête",
+     "text": "Écris tes créneaux libres avec l'outil « Aa » (ex. : « Mardi 16 · 12h »)"
+    },
+    {
+     "what": "Image prête",
+     "text": "Rien à ajouter : on te répond en bas de la story, dans « Envoyer un message »"
+    }
+   ],
+   "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."
+  },
+  {
+   "id": "s10",
+   "date": "2026-12-14",
+   "label": "Lundi 14 déc.",
+   "type": "Story",
+   "title": "Idée cadeau",
+   "media": [
+    "/home/claude/manon/v2/stories/Sondage cadeaux.jpg",
+    "/home/claude/manon/v2/stories/Carte cadeau.jpg"
+   ],
+   "caption": "",
+   "steps": [
+    {
+     "what": "Image prête",
+     "text": "Sticker Sondage : « Oui / Pas encore »"
+    },
+    {
+     "what": "Image prête",
+     "text": ""
+    }
+   ],
+   "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."
+  },
+  {
+   "id": "s11",
+   "date": "2026-12-18",
+   "label": "Vendredi 18 déc.",
+   "type": "Story",
+   "title": "Dernier jour du concours",
+   "media": [
+    "/home/claude/manon/v2/stories/Dernier jour concours.jpg"
+   ],
+   "caption": "",
+   "steps": [
+    {
+     "what": "Image prête",
+     "text": "Sticker « Compte à rebours » du concours"
+    }
+   ],
+   "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."
+  },
+  {
+   "id": "s12",
+   "date": "2026-12-19",
+   "label": "Samedi 19 déc.",
+   "type": "Story",
+   "title": "Le tirage",
+   "media": [
+    "/home/claude/manon/v2/stories/Tirage.jpg"
+   ],
+   "caption": "",
+   "steps": [
+    {
+     "what": "Image prête",
+     "text": ""
+    },
+    {
+     "what": "Toi, en vidéo",
+     "text": "Filme le tirage au sort et annonce le prénom de la gagnante, avec son accord"
+    },
+    {
+     "what": "Ton post « Gagnante »",
+     "text": "Partage-le en story"
+    }
+   ],
+   "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."
+  }
+ ]
+}

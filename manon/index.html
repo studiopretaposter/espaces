@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Prêt à Poster">
+<meta name="theme-color" content="#833AB4">
+<link rel="icon" href="logo.svg">
+<link rel="apple-touch-icon" href="logo.png">
+<title>M&#x27; &amp; Beauty · Mon espace Prêt à Poster</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--vio:#833AB4;--pink:#FD1D78;--ora:#FF963C;--ink:#22182F;--grey:#6B6178;--soft:#FBF5F9;--line:#EFE4EC;--ok:#1E9E62;
+--grad:linear-gradient(110deg,var(--vio) 0%,var(--pink) 52%,var(--ora) 100%)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--soft);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:16px;line-height:1.5}
+.wrap{max-width:560px;margin:0 auto;padding:0 16px calc(96px + env(safe-area-inset-bottom))}
+.hero{background:var(--grad);color:#fff;padding:calc(18px + env(safe-area-inset-top)) 20px 24px;border-radius:0 0 28px 28px;margin:0 -16px 8px;position:relative;overflow:hidden}
+.hero:after{content:'';position:absolute;right:-80px;top:-60px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.12);pointer-events:none}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:13px;letter-spacing:.12em}
+.brand img{width:30px;height:30px}
+.hero h1{font-size:30px;line-height:1.1;font-weight:900;letter-spacing:-.02em;margin:18px 0 6px}
+.hero p{margin:0;opacity:.92;font-size:15px}
+h2{font-size:22px;font-weight:900;letter-spacing:-.02em;margin:24px 4px 10px}
+.sub{color:var(--grey);margin:-4px 4px 14px;font-size:15px}
+.card{background:#fff;border-radius:22px;box-shadow:0 6px 24px rgba(34,24,47,.07);margin-bottom:16px;overflow:hidden;border:1px solid var(--line)}
+.pad{padding:18px}
+.kv{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.kv div{background:var(--soft);border-radius:14px;padding:12px}
+.kv b{display:block;font-size:22px;font-weight:900}
+.kv span{font-size:13px;color:var(--grey)}
+.pill{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:6px 11px;border-radius:30px;background:var(--soft);color:var(--vio);white-space:nowrap}
+.pill.reel{background:#FFE6F0;color:#C2125A}.pill.story{background:#F1E7FA;color:var(--vio)}.pill.carrousel,.pill.post{background:#FFF0E2;color:#B85A0F}
+.progress{display:flex;align-items:center;gap:10px;margin-top:14px}
+.bar{flex:1;height:10px;background:rgba(255,255,255,.3);border-radius:10px;overflow:hidden}
+.bar i{display:block;height:100%;background:#fff;width:0;transition:width .4s}
+.progress b{font-size:14px;white-space:nowrap}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:2px 16px 6px;margin:0 -16px 12px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;border:1.5px solid var(--line);background:#fff;color:var(--ink);border-radius:30px;padding:9px 15px;font:700 14px Inter;cursor:pointer}
+.tabs button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.tabs button.now:after{content:' •';color:var(--pink)}
+.top{display:flex;align-items:center;justify-content:space-between;padding:16px 18px 6px;gap:10px}
+.day{font-size:19px;font-weight:900;letter-spacing:-.01em}
+.title{padding:0 18px 12px;color:var(--grey);font-size:15px}
+.media{display:flex;gap:10px;overflow-x:auto;padding:0 18px 10px;scroll-snap-type:x mandatory;scrollbar-width:none}
+.media::-webkit-scrollbar{display:none}
+.media img,.media video{flex:none;height:320px;border-radius:14px;scroll-snap-align:start;background:#eee;object-fit:cover;max-width:86%}
+.media.one img,.media.one video{width:100%;max-width:100%;height:auto;max-height:560px;object-fit:contain;background:var(--soft)}
+.swipe{font-size:13px;color:var(--grey);padding:0 18px 8px}
+.seq{margin:0 18px 12px;padding:0 0 0 22px}.seq li{margin-bottom:8px;font-size:15px}.seq span{color:var(--grey)}
+.tip{margin:4px 18px 12px;background:#FFF6E8;border-radius:12px;padding:10px 12px;font-size:15px}
+.cap{margin:0 18px 12px;border:1.5px dashed var(--line);border-radius:12px;padding:10px 12px;font-size:15px;white-space:pre-wrap;max-height:5.8em;overflow:hidden;position:relative;cursor:pointer}
+.cap.open{max-height:none}
+.cap:not(.open):after{content:'Voir tout le texte ▾';position:absolute;left:0;right:0;bottom:0;padding:18px 12px 6px;background:linear-gradient(transparent,#fff 60%);font-weight:700;color:var(--vio);font-size:14px}
+.steps{padding:4px 18px 16px;display:grid;gap:10px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;border:0;border-radius:16px;padding:15px 16px;font:800 16px Inter;cursor:pointer;color:#fff;background:var(--grad);text-decoration:none}
+.btn .n{flex:none;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.25);display:grid;place-items:center;font-size:14px}
+.btn.dark{background:var(--ink)}
+.btn.ghost{background:#fff;color:var(--ink);border:1.5px solid var(--line)}
+.btn.ok{background:var(--ok)}
+.check{display:flex;align-items:center;gap:12px;padding:14px 18px;border-top:1px solid var(--line);font-weight:700;cursor:pointer;user-select:none}
+.check input{width:24px;height:24px;accent-color:var(--ok)}
+.card.done .seq,.card.done .media,.card.done .cap,.card.done .tip,.card.done .steps,.card.done .swipe{display:none}
+.card.done .check{color:var(--ok)}
+.list{margin:0;padding:0;list-style:none}
+.list li{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.list li:last-child{border:0}
+.list .ico{flex:none;width:38px;height:38px;border-radius:12px;background:var(--soft);display:grid;place-items:center;font-size:18px}
+.mini{display:flex;gap:12px;align-items:center;padding:12px 18px;border-top:1px solid var(--line);cursor:pointer}
+.mini img{width:54px;height:54px;border-radius:12px;object-fit:cover;background:var(--soft);flex:none}
+.mini b{display:block;font-size:15px}.mini span{font-size:13px;color:var(--grey)}
+.covers{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:0 18px 12px}
+.covers figure{margin:0;text-align:center;font-size:12px;color:var(--grey)}
+.covers img{width:100%;aspect-ratio:1;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:0 0 0 2px var(--pink)}
+.pp{display:flex;gap:16px;align-items:center;padding:18px}
+.pp img{width:96px;height:96px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 3px #fff,0 0 0 5px var(--pink);flex:none}
+details{border-top:1px solid var(--line)}
+details:first-child{border:0}
+summary{list-style:none;padding:16px 18px;font-weight:800;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:'+';font-size:22px;color:var(--vio)}
+details[open] summary:after{content:'–'}
+details .in{padding:0 18px 16px;color:#3b3147}
+details ol{padding-left:20px;margin:0}details li{margin-bottom:8px}
+.nav{position:fixed;left:0;right:0;bottom:0;background:rgba(255,255,255,.96);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-top:1px solid var(--line);display:flex;justify-content:center;padding:6px 6px calc(6px + env(safe-area-inset-bottom));z-index:5}
+.nav div{display:flex;max-width:560px;width:100%}
+.nav button{flex:1;border:0;background:none;font:700 11px Inter;color:var(--grey);padding:6px 0;display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer}
+.nav button i{font-style:normal;font-size:22px;line-height:1.1;filter:grayscale(1);opacity:.55}
+.nav button.on{color:var(--pink)}.nav button.on i{filter:none;opacity:1}
+.view{display:none}.view.on{display:block}
+.toast{opacity:0;pointer-events:none;position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:13px 18px;border-radius:14px;font-weight:700;transition:.3s;z-index:9;max-width:90%;text-align:center}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.sheet{position:fixed;inset:0;background:rgba(34,24,47,.5);display:none;align-items:flex-end;z-index:8}
+.sheet.show{display:flex}
+.sheet>div{background:#fff;width:100%;max-width:560px;margin:0 auto;border-radius:24px 24px 0 0;padding:22px 20px calc(24px + env(safe-area-inset-bottom))}
+.sheet h3{margin:0 0 10px;font-size:20px;font-weight:900}
+.sheet ol{padding-left:20px;margin:0 0 16px}.sheet li{margin-bottom:8px}
+.foot{text-align:center;font-size:13px;color:var(--grey);margin:26px 0 8px}
+a{color:var(--vio)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="brand"><img src="logo.svg" alt="">PRÊT À POSTER</div>
+    <h1 id="hello"></h1>
+    <p id="intro"></p>
+    <div class="progress"><div class="bar"><i id="barfill"></i></div><b id="count"></b></div>
+  </header>
+
+  <section class="view" id="v-home">
+    <h2 id="weekTitle">Cette semaine</h2>
+    <div class="card" id="thisweek"></div>
+    <h2 id="packTitle">Mon pack</h2>
+    <div class="card pad">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:10px"><b id="packName"></b><span class="pill" id="packStatus"></span></div>
+      <div class="kv" id="packKv"></div>
+      <ul class="list" id="packDates" style="margin-top:10px"></ul>
+    </div>
+    <h2>Comment ça marche</h2>
+    <div class="card pad"><ul class="list" id="how"></ul></div>
+  </section>
+
+  <section class="view" id="v-pubs">
+    <h2>Mes publications</h2>
+    <p class="sub" id="pubsSub"></p>
+    <nav class="tabs" id="tabs"></nav>
+    <main id="list"></main>
+  </section>
+
+  <section class="view" id="v-profile">
+    <h2>Mon profil</h2>
+    <p class="sub" id="profSub"></p>
+    <div class="card" id="profile"></div>
+    <div id="extras"></div>
+  </section>
+
+  <section class="view" id="v-help">
+    <h2>Mode d'emploi</h2>
+    <div class="card" id="guides"></div>
+    <h2>Le cadre</h2>
+    <div class="card" id="cadre"></div>
+    <h2>Une question ?</h2>
+    <div class="card pad" id="contact"></div>
+  </section>
+  <p class="foot">Prêt à Poster · espace réservé à <span id="fname"></span></p>
+</div>
+
+<nav class="nav"><div>
+  <button data-v="home"><i>🏠</i>Accueil</button>
+  <button data-v="pubs"><i>🗓️</i>Publications</button>
+  <button data-v="profile"><i>👤</i>Profil</button>
+  <button data-v="help"><i>💡</i>Aide</button>
+</div></nav>
+<div class="toast" id="toast"></div>
+<div class="sheet" id="sheet" onclick="if(event.target===this)this.classList.remove('show')"><div>
+  <h3 id="shT"></h3>
+  <ol id="shL"></ol>
+  <button class="btn dark" onclick="document.getElementById('sheet').classList.remove('show')">J'ai compris</button>
+</div></div>
+
+<script>
+const DATA = {"client": {"slug": "manon", "name": "M' & Beauty", "first": "Manon", "tone": "tu"}, "pack": {"name": "Pack Prêt à Poster · 1 mois", "start": "2026-11-19", "end": "2026-12-19", "retouches": "1 tour inclus, dans les 7 jours après la livraison", "cadre": [["Ce que tu reçois", ["Tes publications du mois : reels, carrousels, posts et stories", "Tous les textes, prêts à copier", "Le calendrier : quoi publier, et quel jour", "Ton profil revu : bio et couvertures à la une", "Les vidéos sont livrées sans musique : tu ajoutes un son en publiant"]], ["Les retouches", ["1 tour de retouches inclus, dans les 7 jours après la livraison", "En un seul message : la publication concernée et ce qu'il faut changer", "Corrections livrées sous 48 h ouvrées"]], ["Ce qui reste entre tes mains", ["C'est toi qui publies : je n'accède pas à ton compte", "Répondre aux commentaires et aux messages", "Les petites stories spontanées : ce sont elles qui créent le lien"]], ["Mon engagement", ["Des contenus pros, prêts à publier, adaptés à ton activité", "Je ne promets ni vues, ni abonnés, ni clientes : ils dépendent de ton offre, de ta régularité et des réseaux eux-mêmes"]]]}, "contact": {"email": "studio.pretaposter@gmail.com", "text": "Un fichier qui ne s'ouvre pas, une étape pas claire, une retouche ? Écris-moi, je te réponds sous 24 h ouvrées, du lundi au vendredi."}, "extras": [{"title": "Mon message clé", "intro": "La phrase à répéter partout : en story, en message, en vrai.", "rows": [{"label": "Mon message", "text": "Prenez soin de vous sans vous demander si vous pouvez vous le permettre.", "copy": true}]}, {"title": "Mes réponses types", "intro": "À copier quand on t'écrit en message privé.", "rows": [{"label": "On te demande un prix", "text": "Bonjour [prénom] ! Merci pour votre message 😊 [Prestation] est à [prix]. Quand seriez-vous disponible ? Je vous reçois de 9h à 18h, même entre midi.", "copy": true}, {"label": "Demande de carte cadeau", "text": "Avec plaisir ! Pour qui est-elle, et pour quel soin ou quel montant ? Je vous la prépare 🎁", "copy": true}, {"label": "Première fois pour les cils", "text": "Pas d'inquiétude, je vous explique tout et on choisit ensemble l'effet qui vous va le mieux 😊 Vous préférez un résultat naturel ou plus intense ?", "copy": true}, {"label": "Une cliente gênée (pieds, maillot…)", "text": "Ne vous inquiétez pas, c'est mon métier et je ne juge personne 😊 On reprend tranquillement là où vous en êtes.", "copy": true}, {"label": "« Pourquoi vos prix sont si doux ? »", "text": "C'est un choix ! Prendre soin de soi ne devrait pas être une question qu'on se pose chaque mois. La qualité est la même, promis 💕", "copy": true}]}, {"title": "Mes tarifs", "intro": "Ceux utilisés dans tes visuels. Un prix change ? Dis-le-moi.", "rows": [{"label": "— Extensions de cils —", "text": ""}, {"label": "Pose cil à cil", "text": "38 €"}, {"label": "Pose mixte", "text": "40 €"}, {"label": "Volume russe 3D", "text": "40 €"}, {"label": "Volume russe 4D/5D", "text": "45 €"}, {"label": "Rehaussement de cils", "text": "25 €"}, {"label": "Coloration cils ou sourcils", "text": "10 €"}, {"label": "— Mains et pieds —", "text": ""}, {"label": "Vernis semi-permanent", "text": "20 €"}, {"label": "Dépose (sans pose)", "text": "15 €"}, {"label": "Manucure", "text": "13 €"}, {"label": "Soin des pieds", "text": "25 €"}, {"label": "— Soins —", "text": ""}, {"label": "Soin du visage (45 min)", "text": "30 €"}, {"label": "Modelage corps (45 min)", "text": "35 €"}, {"label": "Maquillage", "text": "40 €"}, {"label": "— Épilations —", "text": ""}, {"label": "Lèvres", "text": "5 €"}, {"label": "Aisselles", "text": "8 €"}, {"label": "Sourcils", "text": "8 €"}, {"label": "Maillot simple", "text": "10 €"}, {"label": "Fesses", "text": "12 €"}, {"label": "Demi-jambes", "text": "13 €"}, {"label": "Maillot échancré", "text": "14 €"}, {"label": "Bras", "text": "15 €"}, {"label": "Cuisses", "text": "15 €"}, {"label": "Maillot intégral", "text": "19 €"}, {"label": "Jambes entières", "text": "19 €"}]}], "items": [{"id": "p01", "date": "2026-11-19", "label": "Jeudi 19 nov.", "caption": "Vous aussi, vous découvrez mon institut aujourd'hui ? 😊\nJe m'appelle Manon, je suis esthéticienne depuis 5 ans à La Chapelle-Saint-Luc. Je vous reçois dans un institut 100 % féminin, un petit cocon où l'on prend le temps.\n✨ Extensions de cils · semi-permanent · soins du visage et des pieds · épilations\n💕 Des prix doux, pour que vous puissiez prendre soin de vous sans vous demander si vous pouvez vous le permettre\n📍 22 rue des Templiers, La Chapelle-Saint-Luc\nÉcrivez-moi en message privé 💌\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty", "type": "Reel", "title": "Je me présente", "media": [{"file": "media/62f4505c54.mp4", "video": true}], "cover": "/home/claude/manon/v2/light/p01.jpg", "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story.", "poster": "media/134efc0091.jpg"}, {"id": "s00", "date": "2026-11-19", "label": "Jeudi 19 nov.", "type": "Story", "title": "Je me présente", "media": [{"file": "media/c78acdf98d.jpg", "video": false}, {"file": "media/cb32651fa0.jpg", "video": false}], "caption": "", "steps": [{"what": "Image prête", "text": ""}, {"what": "Toi face caméra", "text": "« Je fais les cils, les ongles, les soins du visage et des pieds, les épilations… à prix doux. »"}, {"what": "Image prête", "text": "Rien à ajouter : on te répond en bas de la story, dans « Envoyer un message »"}], "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."}, {"id": "p02", "date": "2026-11-21", "label": "Samedi 21 nov.", "caption": "Avec 20 €, vous vous offrez quoi ? 💕\nUn vernis semi-permanent, des jambes douces, un maillot net… Chez moi, prendre soin de vous ne devrait pas être une question qu'on se pose chaque mois.\nFaites glisser : tous mes tarifs sont dedans, en toute transparence.\nEnregistrez ce post pour les garder sous la main 📌\nÉcrivez-moi en message privé 💌\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty", "type": "Carrousel", "title": "Avec 20 €", "media": [{"file": "media/834ac4fcc4.jpg", "video": false}, {"file": "media/0cd986cafc.jpg", "video": false}, {"file": "media/5fed38f13a.jpg", "video": false}, {"file": "media/1fefe5d67d.jpg", "video": false}, {"file": "media/8b95d46578.jpg", "video": false}, {"file": "media/901bec3355.jpg", "video": false}], "tip": "🎵 Ajoute une musique au moment de publier. Sélectionne les images dans l'ordre."}, {"id": "s01", "date": "2026-11-21", "label": "Samedi 21 nov.", "type": "Story", "title": "Mes tarifs", "media": [{"file": "media/b76e05ba97.jpg", "video": false}], "caption": "", "steps": [{"what": "Ton carrousel du jour", "text": "Partage-le en story (bouton avion › « Ajouter à la story »)"}, {"what": "Image prête", "text": "Sticker Quiz : 15 € / 20 € / 35 € (bonne réponse : 20 €)"}], "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."}, {"id": "s02", "date": "2026-11-23", "label": "Lundi 23 nov.", "type": "Story", "title": "Coulisses d'une pose de cils", "media": [{"file": "media/6a50b8431e.jpg", "video": false}, {"file": "media/2e7a499adc.jpg", "video": false}, {"file": "media/d3655031a4.jpg", "video": false}], "caption": "", "steps": [{"what": "Image prête", "text": ""}, {"what": "Image prête", "text": "Sticker Curseur emoji 😍"}, {"what": "Image prête", "text": "Sticker Sondage : « Oui / Pas encore »"}], "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."}, {"id": "p03", "date": "2026-11-24", "label": "Mardi 24 nov.", "caption": "Le regard qui vous ressemble 👀\nNaturel avec le cil à cil, plus intense avec le volume russe, ou entre les deux avec le mixte : on choisit ensemble, selon vos cils et ce que vous aimez.\nVos cils naturels passent toujours en premier.\n✨ Extensions de cils dès 38 €\nÉcrivez-moi en message privé 💌\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty", "type": "Reel", "title": "Le regard", "media": [{"file": "media/1689bb74fd.mp4", "video": true}], "cover": "/home/claude/manon/v2/light/p03.jpg", "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story.", "poster": "media/e24eeba6d9.jpg"}, {"id": "s03", "date": "2026-11-25", "label": "Mercredi 25 nov.", "type": "Story", "title": "Vos questions sur les cils", "media": [{"file": "media/62706a84a1.jpg", "video": false}], "caption": "", "steps": [{"what": "Image prête", "text": "Sticker « Questions » : « Posez-moi vos questions »"}, {"what": "Dans les 2 jours : toi face caméra", "text": "Réponds à 2 ou 3 questions (appuie sur la question › « Répondre »)"}], "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."}, {"id": "p04", "date": "2026-11-26", "label": "Jeudi 26 nov.", "caption": "« Je n'ai pas les moyens… mais avec toi, j'ai pu me le permettre. » C'est la phrase que j'entends le plus en cabine 💕\nMes prix sont doux, et c'est un choix : je veux que chaque femme puisse s'offrir un moment pour elle, sans culpabiliser et sans attendre « le mois prochain ».\nDes produits de qualité, du temps pris pour vous : rien n'est sacrifié.\nÉcrivez-moi en message privé 💌\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty", "type": "Reel à filmer", "title": "« Avec toi, j'ai pu me le permettre »", "media": [], "tip": "📱 À filmer par toi dans Instagram, en une seule prise.", "steps": [{"what": "Comment faire", "text": "À filmer par toi dans Instagram, en une seule prise (20 à 25 s)"}]}, {"id": "p05", "date": "2026-11-28", "label": "Samedi 28 nov.", "caption": "Le cadeau qui fait plaisir à coup sûr 🎁\nOffrez-lui un moment rien qu'à elle : cils, ongles, soin du visage, modelage… La carte cadeau M' & Beauty, à glisser sous le sapin.\nPour la commander, écrivez-moi en message privé, je vous la prépare 💌\nIdentifiez la personne qui doit trouver un cadeau 😉\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty", "type": "Carrousel", "title": "Carte cadeau", "media": [{"file": "media/9610cef46d.jpg", "video": false}, {"file": "media/ab218d3029.jpg", "video": false}, {"file": "media/74599d35ff.jpg", "video": false}], "tip": "🎵 Ajoute une musique au moment de publier. Sélectionne les images dans l'ordre."}, {"id": "s04", "date": "2026-11-28", "label": "Samedi 28 nov.", "type": "Story", "title": "Carte cadeau", "media": [{"file": "media/6d7698d1ca.jpg", "video": false}], "caption": "", "steps": [{"what": "Ton carrousel du jour", "text": "Partage-le en story"}, {"what": "Image prête", "text": ""}], "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."}, {"id": "s05", "date": "2026-11-30", "label": "Lundi 30 nov.", "type": "Story", "title": "Zéro jugement", "media": [{"file": "media/bf9baebcea.jpg", "video": false}, {"file": "media/cb32651fa0.jpg", "video": false}], "caption": "", "steps": [{"what": "Image prête", "text": "Sticker Sondage : « Oui, déjà / Jamais »"}, {"what": "Toi face caméra", "text": "« Si vous avez déjà repoussé un rendez-vous par gêne : je vous comprends. Mais ici, personne ne juge. Promis. »"}, {"what": "Image prête", "text": "Rien à ajouter : on te répond en bas de la story, dans « Envoyer un message »"}], "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."}, {"id": "p06", "date": "2026-12-01", "label": "Mardi 1er déc.", "caption": "Les questions que vous n'osez pas poser à votre esthéticienne 🤫\nMes pieds sont trop abîmés, je n'ai pas fait mon maillot depuis des mois, mes cils sont fragiles… On a toutes ces petites gênes. Ici, on en parle simplement : c'est mon métier, et je ne juge personne.\nEt vous, quelle question n'avez-vous jamais osé poser ? Dites-le-moi en commentaire ou écrivez-moi en message privé 💌\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty", "type": "Carrousel", "title": "Zéro jugement", "media": [{"file": "media/57498c753c.jpg", "video": false}, {"file": "media/33704b702b.jpg", "video": false}, {"file": "media/8e57eb9de3.jpg", "video": false}, {"file": "media/c5ccdde4eb.jpg", "video": false}, {"file": "media/e2d01b5a1e.jpg", "video": false}, {"file": "media/c7aa8b5e4b.jpg", "video": false}], "tip": "🎵 Ajoute une musique au moment de publier. Sélectionne les images dans l'ordre."}, {"id": "p07", "date": "2026-12-03", "label": "Jeudi 3 déc.", "caption": "Des pieds tout doux pour l'hiver ❄️\nTalons secs, peau épaisse, callosités : pas de gêne à avoir, c'est exactement ce que mon soin des pieds traite. Diplômée en soin des pieds, je prends le temps de bien faire.\n👣 Soin des pieds : 25 €\nÉcrivez-moi en message privé 💌\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty", "type": "Reel", "title": "Soin des pieds", "media": [{"file": "media/890688aff8.mp4", "video": true}], "cover": "/home/claude/manon/v2/light/p07.jpg", "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story.", "poster": "media/b8366bb58a.jpg"}, {"id": "s06", "date": "2026-12-03", "label": "Jeudi 3 déc.", "type": "Story", "title": "Soin des pieds", "media": [{"file": "media/c20af195ab.jpg", "video": false}, {"file": "media/cb32651fa0.jpg", "video": false}], "caption": "", "steps": [{"what": "Ton Reel du jour", "text": "Partage-le en story"}, {"what": "Image prête", "text": "Sticker Sondage : « Oui / Un peu »"}, {"what": "Image prête", "text": "Rien à ajouter : on te répond en bas de la story, dans « Envoyer un message »"}], "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."}, {"id": "p08", "date": "2026-12-05", "label": "Samedi 5 déc.", "caption": "🎄 CONCOURS DE NOËL 🎄\nComme chaque année, je vous gâte ! À gagner : une pose d'extensions de cils ✨\nPour participer :\n1. Abonnez-vous à @mbeau_ty10\n2. Aimez cette publication\n3. Identifiez 2 amies en commentaire\nTirage au sort le samedi 19 décembre. Bonne chance à toutes !\nConcours gratuit, sans obligation d'achat. Instagram n'est ni organisateur ni associé à ce concours.\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty", "type": "Post", "title": "Concours de Noël", "media": [{"file": "media/eb099d521b.jpg", "video": false}], "tip": "🎵 Ajoute une musique au moment de publier."}, {"id": "s07", "date": "2026-12-05", "label": "Samedi 5 déc.", "type": "Story", "title": "Concours de Noël", "media": [{"file": "media/24aed82521.jpg", "video": false}], "caption": "", "steps": [{"what": "Ton post concours", "text": "Partage-le en story"}, {"what": "Image prête", "text": "Sticker « Compte à rebours » : « Tirage du concours », samedi 19 décembre"}], "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."}, {"id": "p09", "date": "2026-12-08", "label": "Mardi 8 déc.", "caption": "Votre pause du midi, rien qu'à vous ☀️\nEntre deux rendez-vous, entre deux courses, entre deux réunions : je vous reçois de 9h à 18h, même entre midi.\nUn semi-permanent, une épilation, un soin… et vous repartez légère.\nÉcrivez-moi en message privé 💌\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty", "type": "Reel", "title": "La pause du midi", "media": [{"file": "media/7c83f37b2e.mp4", "video": true}], "cover": "/home/claude/manon/v2/light/p09.jpg", "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story.", "poster": "media/8715c35dec.jpg"}, {"id": "s08", "date": "2026-12-09", "label": "Mercredi 9 déc.", "type": "Story", "title": "Votre pause du midi", "media": [{"file": "media/9e5d812536.jpg", "video": false}, {"file": "media/f26042b748.jpg", "video": false}, {"file": "media/cb32651fa0.jpg", "video": false}], "caption": "", "steps": [{"what": "Image prête", "text": "Sticker Sondage : « Je mange vite / Je cours partout »"}, {"what": "Image prête", "text": ""}, {"what": "Image prête", "text": "Rien à ajouter : on te répond en bas de la story, dans « Envoyer un message »"}], "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."}, {"id": "p10", "date": "2026-12-10", "label": "Jeudi 10 déc.", "caption": "« Manon a fait des miracles » 🥹\nKyaa était venue après une très mauvaise expérience ailleurs, avec des cils abîmés. On a pris le temps, en douceur. Vos cils naturels passent toujours en premier.\nMerci à toutes pour vos messages, ils me touchent à chaque fois 💕\nÀ votre tour ? Écrivez-moi en message privé 💌\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty", "type": "Carrousel", "title": "Avis", "media": [{"file": "media/156a30535a.jpg", "video": false}, {"file": "media/a6cab255f8.jpg", "video": false}, {"file": "media/7cea86d0e7.jpg", "video": false}, {"file": "media/01c2957c83.jpg", "video": false}, {"file": "media/ccdc808f7c.jpg", "video": false}, {"file": "media/39c6591e55.jpg", "video": false}], "tip": "🎵 Ajoute une musique au moment de publier. Sélectionne les images dans l'ordre."}, {"id": "s09", "date": "2026-12-11", "label": "Vendredi 11 déc.", "type": "Story", "title": "Mes créneaux de décembre", "media": [{"file": "media/8b6e1bffdc.jpg", "video": false}, {"file": "media/cb32651fa0.jpg", "video": false}], "caption": "", "steps": [{"what": "Image prête", "text": "Écris tes créneaux libres avec l'outil « Aa » (ex. : « Mardi 16 · 12h »)"}, {"what": "Image prête", "text": "Rien à ajouter : on te répond en bas de la story, dans « Envoyer un message »"}], "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."}, {"id": "p11", "date": "2026-12-12", "label": "Samedi 12 déc.", "caption": "Rouge, doré, nude, paillettes… vous partez sur quoi pour les fêtes ? ✨ Dites-le-moi en commentaire 👇\n💅 Semi-permanent mains ou pieds : 20 €\nLes créneaux de décembre partent vite : écrivez-moi en message privé 💌\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty", "type": "Reel", "title": "Ongles des fêtes", "media": [{"file": "media/564ebef454.mp4", "video": true}], "cover": "/home/claude/manon/v2/light/p11.jpg", "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story.", "poster": "media/b8c6a9a5df.jpg"}, {"id": "s10", "date": "2026-12-14", "label": "Lundi 14 déc.", "type": "Story", "title": "Idée cadeau", "media": [{"file": "media/da6e58d7be.jpg", "video": false}, {"file": "media/6d7698d1ca.jpg", "video": false}], "caption": "", "steps": [{"what": "Image prête", "text": "Sticker Sondage : « Oui / Pas encore »"}, {"what": "Image prête", "text": ""}], "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."}, {"id": "p12", "date": "2026-12-15", "label": "Mardi 15 déc.", "caption": "Entrez, installez-vous, c'est votre moment 🌸\nMon institut est un cocon 100 % féminin, où l'on prend le temps.\n🎁 Pour Noël, la carte cadeau fait toujours plaisir.\n📍 22 rue des Templiers, La Chapelle-Saint-Luc · de 9h à 18h, même entre midi\nÉcrivez-moi en message privé 💌\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty", "type": "Reel", "title": "Mon institut", "media": [{"file": "media/4df279e756.mp4", "video": true}], "cover": "/home/claude/manon/v2/light/p12.jpg", "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story.", "poster": "media/0a828f133a.jpg"}, {"id": "p13", "date": "2026-12-17", "label": "Jeudi 17 déc.", "caption": "Pas encore trouvé de cadeau ? 🎁 Il est encore temps !\nLa carte cadeau M' & Beauty fait plaisir à toutes : maman, sœur, amie, collègue… Un moment rien qu'à elle.\nÉcrivez-moi en message privé, je vous la prépare 💌\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty", "type": "Post", "title": "Carte cadeau dernière minute", "media": [{"file": "media/7d6309589a.jpg", "video": false}], "tip": "🎵 Ajoute une musique au moment de publier."}, {"id": "s11", "date": "2026-12-18", "label": "Vendredi 18 déc.", "type": "Story", "title": "Dernier jour du concours", "media": [{"file": "media/7118c8e718.jpg", "video": false}], "caption": "", "steps": [{"what": "Image prête", "text": "Sticker « Compte à rebours » du concours"}], "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."}, {"id": "p14", "date": "2026-12-19", "label": "Samedi 19 déc.", "caption": "🎉 Le tirage du concours de Noël est fait !\nBravo à [prénom de la gagnante], qui remporte une pose d'extensions de cils ✨ Je t'écris en message privé pour fixer ton rendez-vous.\nMerci à toutes pour votre participation 💕\nEt pour les autres : la carte cadeau est toujours disponible, écrivez-moi en message privé 💌\n\n#estheticienne #estheticiennetroyes #lachapellesaintluc #troyes #aube #institutdebeaute #extensiondecils #soinaccessible #mbeauty", "type": "Post", "title": "Gagnante", "media": [{"file": "media/23e2283441.jpg", "video": false}], "tip": "🎵 Ajoute une musique au moment de publier."}, {"id": "s12", "date": "2026-12-19", "label": "Samedi 19 déc.", "type": "Story", "title": "Le tirage", "media": [{"file": "media/e1e3fcb59c.jpg", "video": false}], "caption": "", "steps": [{"what": "Image prête", "text": ""}, {"what": "Toi, en vidéo", "text": "Filme le tirage au sort et annonce le prénom de la gagnante, avec son accord"}, {"what": "Ton post « Gagnante »", "text": "Partage-le en story"}], "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi."}], "weeks": [{"id": "2026-11-16", "label": "Sem. du 16 nov.", "items": ["p01", "s00", "p02", "s01"]}, {"id": "2026-11-23", "label": "Sem. du 23 nov.", "items": ["s02", "p03", "s03", "p04", "p05", "s04"]}, {"id": "2026-11-30", "label": "Sem. du 30 nov.", "items": ["s05", "p06", "p07", "s06", "p08", "s07"]}, {"id": "2026-12-07", "label": "Sem. du 7 déc.", "items": ["p09", "s08", "p10", "s09", "p11"]}, {"id": "2026-12-14", "label": "Sem. du 14 déc.", "items": ["s10", "p12", "p13", "s11", "p14", "s12"]}], "profile": {"bio": "Esthéticienne · La Chapelle-Saint-Luc 📍\nLe soin accessible, entre femmes 💕\nCils · ongles · soins · 9h-18h même le midi\n👇 Rdv uniquement par message", "covers": [{"label": "Tarifs", "file": "media/9c0db5db70.jpg"}, {"label": "Cils", "file": "media/25273b337a.jpg"}, {"label": "Pieds", "file": "media/aa3e0be89e.jpg"}, {"label": "Ongles", "file": "media/3de7f916b4.jpg"}, {"label": "Avis", "file": "media/f01940e57c.jpg"}, {"label": "Cadeau", "file": "media/d2c8488d7a.jpg"}, {"label": "Institut", "file": "media/06b42fe446.jpg"}]}};
+const $ = s => document.querySelector(s);
+const C = DATA.client, TU = C.tone !== 'vous';
+const t = (tu, vous) => TU ? tu : vous;
+const esc = s => (s || '').replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+const KEY = 'pap_' + C.slug;
+let done = {}; try { done = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) {}
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(done)); } catch (e) {} };
+const byId = Object.fromEntries(DATA.items.map(i => [i.id, i]));
+const files = {};
+const now = new Date();
+const pad = n => String(n).padStart(2, '0');
+const iso = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+const mondayOf = d => { const x = new Date(d.getFullYear(), d.getMonth(), d.getDate()); x.setDate(x.getDate() - (x.getDay() + 6) % 7); return iso(x); };
+const curWeek = (() => { const m = mondayOf(now); const ids = DATA.weeks.map(w => w.id); if (ids.includes(m)) return m; return m < ids[0] ? ids[0] : ids[ids.length - 1]; })();
+function toast(s) { const el = $('#toast'); el.textContent = s; el.classList.add('show'); clearTimeout(el._t); el._t = setTimeout(() => el.classList.remove('show'), 2600); }
+function sheet(title, steps) { $('#shT').textContent = title; $('#shL').innerHTML = steps.map(s => `<li>${s}</li>`).join(''); $('#sheet').classList.add('show'); }
+
+$('#hello').textContent = `Bonjour ${C.first} 👋`;
+$('#intro').textContent = t(`Ton mois de contenu est prêt. Tout est ici : quoi publier, quand, et comment.`, `Votre mois de contenu est prêt. Tout est ici : quoi publier, quand, et comment.`);
+$('#fname').textContent = C.name;
+$('#packTitle').textContent = t('Ton pack', 'Votre pack');
+function progress() { const n = DATA.items.filter(i => done[i.id]).length; $('#count').textContent = `${n} / ${DATA.items.length} publiés`; $('#barfill').style.width = (100 * n / DATA.items.length) + '%'; }
+
+const P = DATA.pack, fmt = s => new Date(s + 'T12:00').toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' });
+$('#packName').textContent = P.name;
+const tday = iso(now);
+$('#packStatus').textContent = tday < P.start ? 'À venir' : tday > P.end ? 'Terminé' : 'En cours';
+const cnt = k => DATA.items.filter(i => i.type.toLowerCase().startsWith(k)).length;
+$('#packKv').innerHTML = [['reel', 'reels montés'], ['carrousel', 'carrousels'], ['post', 'post photo'], ['story', 'stories']].filter(([k]) => cnt(k)).map(([k, l]) => `<div><b>${cnt(k)}</b><span>${l}</span></div>`).join('');
+$('#packDates').innerHTML = [['📦', 'Livré le', P.delivered && fmt(P.delivered)], ['🗓️', 'Période de publication', `du ${fmt(P.start)} au ${fmt(P.end)}`], ['🔁', 'Retouches', P.retouches]].filter(r => r[2]).map(([i, a, b]) => `<li><span class="ico">${i}</span><div><b>${a}</b><br><span style="color:var(--grey)">${b}</span></div></li>`).join('');
+$('#how').innerHTML = [['🗓️', t('Ouvre « Publications »', 'Ouvrez « Publications »'), t('Chaque semaine, tu y trouves quoi publier et quel jour.', 'Chaque semaine, vous y trouvez quoi publier et quel jour.')],
+  ['📋', 'Copie le texte en un clic', t('Le bouton copie la légende pour toi.', 'Le bouton copie la légende pour vous.')],
+  ['📲', 'Envoie vers Instagram', t('Le deuxième bouton ouvre le partage : choisis Instagram, colle le texte, publie.', 'Le deuxième bouton ouvre le partage : choisissez Instagram, collez le texte, publiez.')],
+  ['✅', 'Coche « C\'est publié »', t('Tu vois où tu en es, sans rien retenir.', 'Vous voyez où vous en êtes, sans rien retenir.')]]
+  .map(([i, a, b]) => `<li><span class="ico">${i}</span><div><b>${TU ? a : a.replace('Copie', 'Copiez').replace('Envoie', 'Envoyez').replace('Coche', 'Cochez')}</b><br><span style="color:var(--grey)">${b}</span></div></li>`).join('');
+
+async function preload(it) {
+  if (!it.media.length) return null;
+  if (!files[it.id]) files[it.id] = Promise.all(it.media.map(async (m, k) => { const r = await fetch(m.file); const b = await r.blob(); return new File([b], `${C.slug}-${it.id}-${k + 1}.${m.file.split('.').pop()}`, { type: b.type }); })).catch(() => null);
+  return files[it.id];
+}
+async function share(it) {
+  const fl = await preload(it);
+  if (fl && navigator.canShare && navigator.canShare({ files: fl })) {
+    try { await navigator.share({ files: fl }); return; } catch (e) { if (e.name === 'AbortError') return; }
+  }
+  sheet(t('Enregistrer dans tes photos', 'Enregistrer dans vos photos'), [t('Appuie longuement sur l\'image (ou la vidéo).', 'Appuyez longuement sur l\'image (ou la vidéo).'), t('Choisis « Enregistrer dans Photos ».', 'Choisissez « Enregistrer dans Photos ».'), t('Ouvre Instagram, appuie sur + et sélectionne-la.', 'Ouvrez Instagram, appuyez sur + et sélectionnez-la.')]);
+}
+function card(it) {
+  preload(it);
+  const c = document.createElement('section'); c.className = 'card' + (done[it.id] ? ' done' : '');
+  const typ = it.type.toLowerCase().split(' ')[0];
+  const media = it.media.map(m => m.video ? `<video src="${m.file}" ${it.poster ? `poster="${it.poster}"` : ''} controls playsinline preload="none"></video>` : `<img src="${m.file}" alt="" loading="lazy">`).join('');
+  const n = it.media.length, vid = n && it.media[0].video;
+  c.innerHTML = `
+    <div class="top"><span class="day">${esc(it.label)}</span><span class="pill ${typ}">${esc(it.type)}</span></div>
+    <div class="title">${esc(it.title)}</div>
+    ${n ? `<div class="media ${n === 1 ? 'one' : ''}">${media}</div>` : ''}
+    ${n > 1 ? `<div class="swipe">← ${t('Fais glisser pour voir les', 'Faites glisser pour voir les')} ${n} images</div>` : ''}
+    ${it.tip ? `<div class="tip">💡 ${esc(it.tip)}</div>` : ''}
+    ${it.steps ? `<ol class="seq">${it.steps.map(x => `<li><b>${esc(x.what)}</b>${x.text ? `<br><span>${esc(x.text)}</span>` : ''}</li>`).join('')}</ol>` : ''}
+    ${it.caption ? `<div class="cap">${esc(it.caption)}</div>` : ''}
+    <div class="steps">
+      ${it.caption ? `<button class="btn dark cp"><span class="n">1</span><span class="t">Copier le texte</span></button>` : ''}
+      ${n ? `<button class="btn sh"><span class="n">${it.caption ? 2 : 1}</span>${n > 1 ? `Envoyer les ${n} images` : vid ? 'Envoyer la vidéo' : "Envoyer l'image"} vers Instagram</button>` : ''}
+    </div>
+    <label class="check"><input type="checkbox" ${done[it.id] ? 'checked' : ''}> C'est publié !</label>`;
+  const cap = c.querySelector('.cap'); if (cap) cap.onclick = () => cap.classList.toggle('open');
+  const cp = c.querySelector('.cp');
+  if (cp) cp.onclick = async () => { try { await navigator.clipboard.writeText(it.caption); cp.classList.replace('dark', 'ok'); cp.querySelector('.t').textContent = 'Texte copié ✓'; toast(t('Texte copié : tu pourras le coller dans Instagram', 'Texte copié : vous pourrez le coller dans Instagram')); } catch (e) { cap && cap.classList.add('open'); toast(t('Appuie longuement sur le texte pour le copier', 'Appuyez longuement sur le texte pour le copier')); } };
+  const sh = c.querySelector('.sh'); if (sh) sh.onclick = () => share(it);
+  c.querySelector('input').onchange = e => { done[it.id] = e.target.checked; save(); c.classList.toggle('done', e.target.checked); progress(); renderHome(); if (e.target.checked) toast('Bravo ! 🎉'); };
+  return c;
+}
+function renderWeek(wid) {
+  document.querySelectorAll('#tabs button').forEach(b => b.classList.toggle('on', b.dataset.id === wid));
+  const L = $('#list'); L.innerHTML = '';
+  DATA.weeks.find(w => w.id === wid).items.forEach(id => L.appendChild(card(byId[id])));
+}
+DATA.weeks.forEach(w => { const b = document.createElement('button'); b.textContent = w.label; b.dataset.id = w.id; if (w.id === curWeek) b.classList.add('now'); b.onclick = () => renderWeek(w.id); $('#tabs').appendChild(b); });
+$('#pubsSub').textContent = 'Semaine par semaine. Le point rose indique la semaine en cours.';
+
+function renderHome() {
+  const w = DATA.weeks.find(x => x.id === curWeek);
+  const todo = w.items.map(id => byId[id]);
+  const left = todo.filter(i => !done[i.id]).length;
+  $('#weekTitle').textContent = w.label.replace('Sem.', 'Semaine');
+  const box = $('#thisweek');
+  box.innerHTML = `<div class="pad" style="padding-bottom:6px"><b>${left ? `${left} publication${left > 1 ? 's' : ''} à faire` : 'Tout est publié cette semaine, bravo ! 🎉'}</b></div>` +
+    todo.map(i => `<div class="mini"><img src="${i.poster || (!i.media.length || i.media[0].video ? 'logo.png' : i.media[0].file)}" alt="" loading="lazy"><div style="flex:1"><b>${esc(i.label)}</b><span>${esc(i.type)} · ${esc(i.title)}</span></div><span>${done[i.id] ? '✅' : '›'}</span></div>`).join('') +
+    `<div class="pad"><button class="btn" id="goWeek">Voir mes publications de la semaine</button></div>`;
+  box.querySelectorAll('.mini').forEach(m => m.onclick = () => { go('pubs'); renderWeek(curWeek); });
+  $('#goWeek').onclick = () => { go('pubs'); renderWeek(curWeek); };
+}
+
+(function () {
+  const p = DATA.profile; $('#profSub').textContent = t('À faire une seule fois, au début. Compte 10 minutes.', 'À faire une seule fois, au début. Comptez 10 minutes.');
+  let h = '';
+  if (p.photo) h += `<div class="pp"><img src="${p.photo}" alt=""><div><b>Photo de profil</b><br><span style="color:var(--grey);font-size:14px">${t('Instagram › ton profil › Modifier le profil › Modifier la photo.', 'Instagram › votre profil › Modifier le profil › Modifier la photo.')}</span></div></div><div class="steps"><button class="btn ghost" data-share="photo">Enregistrer la photo</button></div>`;
+  if (p.name) h += `<div class="pad" style="border-top:1px solid var(--line)"><b>Nom affiché</b><div class="cap open" style="margin:8px 0 10px;cursor:default">${esc(p.name)}</div><button class="btn dark" data-copy="name">Copier le nom</button></div>`;
+  if (p.bio) h += `<div class="pad" style="border-top:1px solid var(--line)"><b>Bio</b><div class="cap open" style="margin:8px 0 10px;cursor:default">${esc(p.bio)}</div><button class="btn dark" data-copy="bio">Copier la bio</button><p style="font-size:14px;color:var(--grey);margin:10px 0 0">${t('Instagram › Modifier le profil › Bio : efface l\'ancienne, colle, puis OK.', 'Instagram › Modifier le profil › Bio : effacez l\'ancienne, collez, puis OK.')}</p></div>`;
+  if (p.covers.length) h += `<div class="pad" style="border-top:1px solid var(--line);padding-bottom:8px"><b>Couvertures « à la une »</b><p style="font-size:14px;color:var(--grey);margin:4px 0 0">${t('Sur ton profil, appuie longuement sur une story à la une › Modifier › Modifier la couverture.', 'Sur votre profil, appuyez longuement sur une story à la une › Modifier › Modifier la couverture.')}</p></div><div class="covers">${p.covers.map(c => `<figure><img src="${c.file}" alt=""><figcaption>${esc(c.label)}</figcaption></figure>`).join('')}</div><div class="steps"><button class="btn ghost" data-share="covers">Enregistrer les couvertures</button></div>`;
+  if (p.pinned) h += `<div class="pad" style="border-top:1px solid var(--line)"><b>📌 Publication à épingler</b><p style="margin:6px 0 0;color:#3b3147">${esc(p.pinned)}</p></div>`;
+  $('#profile').innerHTML = h;
+  document.querySelectorAll('[data-copy]').forEach(b => b.onclick = async () => { try { await navigator.clipboard.writeText(p[b.dataset.copy]); b.classList.replace('dark', 'ok'); b.textContent = 'Copié ✓'; } catch (e) { toast('Appuie longuement sur le texte pour le copier'); } });
+  document.querySelectorAll('[data-share]').forEach(b => b.onclick = () => share({ id: 'p_' + b.dataset.share, media: b.dataset.share === 'photo' ? [{ file: p.photo }] : p.covers.map(c => ({ file: c.file })) }));
+})();
+
+const G = [
+  ['Publier une publication ou un carrousel', [t('Appuie sur « Copier le texte ».', 'Appuyez sur « Copier le texte ».'), t('Appuie sur « Envoyer vers Instagram », puis choisis Instagram › Publication.', 'Appuyez sur « Envoyer vers Instagram », puis choisissez Instagram › Publication.'), t('Vérifie l\'ordre des images, puis Suivant.', 'Vérifiez l\'ordre des images, puis Suivant.'), t('Ajoute une musique si tu veux (« Ajouter de la musique »).', 'Ajoutez une musique si vous voulez (« Ajouter de la musique »).'), t('Appuie dans « Ajouter une légende », colle le texte, puis Partager.', 'Appuyez dans « Ajouter une légende », collez le texte, puis Partager.')]],
+  ['Publier un reel (vidéo)', [t('Copie le texte, puis « Envoyer la vidéo vers Instagram » › Reels.', 'Copiez le texte, puis « Envoyer la vidéo vers Instagram » › Reels.'), t('Appuie sur la note de musique ♫ et choisis un son tendance : les vidéos sont livrées sans musique, exprès.', 'Appuyez sur la note de musique ♫ et choisissez un son tendance : les vidéos sont livrées sans musique, exprès.'), t('Suivant, colle le texte dans la légende, puis Partager.', 'Suivant, collez le texte dans la légende, puis Partager.')]],
+  ['Publier une story', [t('« Envoyer l\'image vers Instagram » › Stories.', '« Envoyer l\'image vers Instagram » › Stories.'), t('Appuie sur l\'icône sticker (le carré souriant) pour ajouter le sticker indiqué : lieu, sondage, quiz, compte à rebours…', 'Appuyez sur l\'icône sticker (le carré souriant) pour ajouter le sticker indiqué : lieu, sondage, quiz, compte à rebours…'), t('Appuie sur « Votre story ».', 'Appuyez sur « Votre story ».')]],
+  ['Publication ou story : quelle différence ?', [t('Une publication reste sur ton profil : tout le monde peut la voir.', 'Une publication reste sur votre profil : tout le monde peut la voir.'), t('Une story disparaît au bout de 24 h : elle est surtout vue par tes abonnés.', 'Une story disparaît au bout de 24 h : elle est surtout vue par vos abonnés.'), t('Suis simplement le type indiqué sur chaque carte : Reel, Carrousel, Post ou Story.', 'Suivez simplement le type indiqué sur chaque carte : Reel, Carrousel, Post ou Story.')]],
+  [t('Mettre ton espace sur l\'écran d\'accueil', 'Mettre votre espace sur l\'écran d\'accueil'), [t('iPhone : dans Safari, appuie sur Partager ⬆️ puis « Sur l\'écran d\'accueil ».', 'iPhone : dans Safari, appuyez sur Partager ⬆️ puis « Sur l\'écran d\'accueil ».'), t('Android : dans Chrome, menu ⋮ puis « Ajouter à l\'écran d\'accueil ».', 'Android : dans Chrome, menu ⋮ puis « Ajouter à l\'écran d\'accueil ».'), t('Ton espace s\'ouvre ensuite comme une application.', 'Votre espace s\'ouvre ensuite comme une application.')]],
+  ['Le bouton « Envoyer » ne marche pas ?', [t('Ouvre ton espace dans Safari (iPhone) ou Chrome (Android), pas directement dans WhatsApp.', 'Ouvrez votre espace dans Safari (iPhone) ou Chrome (Android), pas directement dans WhatsApp.'), t('Sinon : appuie longuement sur l\'image › « Enregistrer dans Photos », puis publie depuis Instagram.', 'Sinon : appuyez longuement sur l\'image › « Enregistrer dans Photos », puis publiez depuis Instagram.')]]];
+$('#guides').innerHTML = G.map(([q, s]) => `<details><summary>${q}</summary><div class="in"><ol>${s.map(x => `<li>${x}</li>`).join('')}</ol></div></details>`).join('');
+$('#cadre').innerHTML = (P.cadre || []).map(([q, s]) => `<details><summary>${esc(q)}</summary><div class="in"><ul style="padding-left:18px;margin:0">${s.map(x => `<li style="margin-bottom:6px">${esc(x)}</li>`).join('')}</ul></div></details>`).join('');
+const CT = DATA.contact || {};
+$('#contact').innerHTML = `<p style="margin:0 0 14px">${esc(CT.text || '')}</p>${CT.email ? `<a class="btn" href="mailto:${CT.email}?subject=${encodeURIComponent('Mon espace ' + C.name)}">✉️ Écrire un e-mail</a><p style="text-align:center;font-size:14px;color:var(--grey);margin:8px 0 0">${CT.email}</p>` : ''}`;
+
+(DATA.extras || []).forEach((x, xi) => {
+  const w = document.createElement('div');
+  w.innerHTML = `<h2>${esc(x.title)}</h2>${x.intro ? `<p class="sub">${esc(x.intro)}</p>` : ''}<div class="card">${x.rows.map((r, k) => `<div class="pad" style="${k ? 'border-top:1px solid var(--line)' : ''}"><b>${esc(r.label)}</b>${r.text ? `<div class="cap open" style="margin:8px 0 ${r.copy ? 10 : 0}px;cursor:default">${esc(r.text)}</div>` : ''}${r.copy ? `<button class="btn dark" data-x="${xi}_${k}">Copier</button>` : ''}</div>`).join('')}</div>`;
+  $('#extras').appendChild(w);
+});
+document.querySelectorAll('[data-x]').forEach(b => b.onclick = async () => { try { await navigator.clipboard.writeText((([a, c]) => DATA.extras[a].rows[c].text)(b.dataset.x.split('_'))); b.classList.replace('dark', 'ok'); b.textContent = 'Copié ✓'; } catch (e) { toast('Appuie longuement sur le texte pour le copier'); } });
+function go(v) { document.querySelectorAll('.view').forEach(s => s.classList.toggle('on', s.id === 'v-' + v)); document.querySelectorAll('.nav button').forEach(b => b.classList.toggle('on', b.dataset.v === v)); window.scrollTo(0, 0); try { history.replaceState(null, '', '#' + v); } catch (e) {} }
+document.querySelectorAll('.nav button').forEach(b => b.onclick = () => go(b.dataset.v));
+window.addEventListener('hashchange', () => { const v = location.hash.slice(1); if (['home', 'pubs', 'profile', 'help'].includes(v)) go(v); });
+renderWeek(curWeek); renderHome(); progress();
+go(['home', 'pubs', 'profile', 'help'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'home');
+</script>
+</body>
+</html>

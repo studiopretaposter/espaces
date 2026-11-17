@@ -18,7 +18,10 @@ def add(src, thumb_w=None):
     if ext in ('.jpg', '.jpeg', '.png'):
         name = f'{h}.jpg'
         if not os.path.exists(os.path.join(MED, name)):
-            im = ImageOps.exif_transpose(Image.open(src)).convert('RGB')
+            im = ImageOps.exif_transpose(Image.open(src))
+            if im.mode in ('RGBA', 'LA', 'P'):
+                im = im.convert('RGBA'); bg = Image.new('RGB', im.size, (250, 246, 240)); bg.paste(im, mask=im.split()[-1]); im = bg
+            im = im.convert('RGB')
             if max(im.size) > 1440: im.thumbnail((1440, 1920))
             im.save(os.path.join(MED, name), quality=88, optimize=True)
         return f'media/{name}'

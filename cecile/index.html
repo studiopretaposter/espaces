@@ -202,6 +202,7 @@ $('#how').innerHTML = [['🗓️', t('Ouvre « Publications »', 'Ouvrez « Publ
   .map(([i, a, b]) => `<li><span class="ico">${i}</span><div><b>${TU ? a : a.replace('Copie', 'Copiez').replace('Envoie', 'Envoyez').replace('Coche', 'Cochez')}</b><br><span style="color:var(--grey)">${b}</span></div></li>`).join('');
 
 async function preload(it) {
+  if (!it.media.length) return null;
   if (!files[it.id]) files[it.id] = Promise.all(it.media.map(async (m, k) => { const r = await fetch(m.file); const b = await r.blob(); return new File([b], `${C.slug}-${it.id}-${k + 1}.${m.file.split('.').pop()}`, { type: b.type }); })).catch(() => null);
   return files[it.id];
 }
@@ -217,24 +218,24 @@ function card(it) {
   const c = document.createElement('section'); c.className = 'card' + (done[it.id] ? ' done' : '');
   const typ = it.type.toLowerCase().split(' ')[0];
   const media = it.media.map(m => m.video ? `<video src="${m.file}" ${it.poster ? `poster="${it.poster}"` : ''} controls playsinline preload="none"></video>` : `<img src="${m.file}" alt="" loading="lazy">`).join('');
-  const n = it.media.length, vid = it.media[0].video;
+  const n = it.media.length, vid = n && it.media[0].video;
   c.innerHTML = `
     <div class="top"><span class="day">${esc(it.label)}</span><span class="pill ${typ}">${esc(it.type)}</span></div>
     <div class="title">${esc(it.title)}</div>
-    <div class="media ${n === 1 ? 'one' : ''}">${media}</div>
+    ${n ? `<div class="media ${n === 1 ? 'one' : ''}">${media}</div>` : ''}
     ${n > 1 ? `<div class="swipe">← ${t('Fais glisser pour voir les', 'Faites glisser pour voir les')} ${n} images</div>` : ''}
     ${it.tip ? `<div class="tip">💡 ${esc(it.tip)}</div>` : ''}
     ${it.steps ? `<ol class="seq">${it.steps.map(x => `<li><b>${esc(x.what)}</b>${x.text ? `<br><span>${esc(x.text)}</span>` : ''}</li>`).join('')}</ol>` : ''}
     ${it.caption ? `<div class="cap">${esc(it.caption)}</div>` : ''}
     <div class="steps">
       ${it.caption ? `<button class="btn dark cp"><span class="n">1</span><span class="t">Copier le texte</span></button>` : ''}
-      <button class="btn sh"><span class="n">${it.caption ? 2 : 1}</span>${n > 1 ? `Envoyer les ${n} images` : vid ? 'Envoyer la vidéo' : "Envoyer l'image"} vers Instagram</button>
+      ${n ? `<button class="btn sh"><span class="n">${it.caption ? 2 : 1}</span>${n > 1 ? `Envoyer les ${n} images` : vid ? 'Envoyer la vidéo' : "Envoyer l'image"} vers Instagram</button>` : ''}
     </div>
     <label class="check"><input type="checkbox" ${done[it.id] ? 'checked' : ''}> C'est publié !</label>`;
   const cap = c.querySelector('.cap'); if (cap) cap.onclick = () => cap.classList.toggle('open');
   const cp = c.querySelector('.cp');
   if (cp) cp.onclick = async () => { try { await navigator.clipboard.writeText(it.caption); cp.classList.replace('dark', 'ok'); cp.querySelector('.t').textContent = 'Texte copié ✓'; toast(t('Texte copié : tu pourras le coller dans Instagram', 'Texte copié : vous pourrez le coller dans Instagram')); } catch (e) { cap && cap.classList.add('open'); toast(t('Appuie longuement sur le texte pour le copier', 'Appuyez longuement sur le texte pour le copier')); } };
-  c.querySelector('.sh').onclick = () => share(it);
+  const sh = c.querySelector('.sh'); if (sh) sh.onclick = () => share(it);
   c.querySelector('input').onchange = e => { done[it.id] = e.target.checked; save(); c.classList.toggle('done', e.target.checked); progress(); renderHome(); if (e.target.checked) toast('Bravo ! 🎉'); };
   return c;
 }
@@ -253,7 +254,7 @@ function renderHome() {
   $('#weekTitle').textContent = w.label.replace('Sem.', 'Semaine');
   const box = $('#thisweek');
   box.innerHTML = `<div class="pad" style="padding-bottom:6px"><b>${left ? `${left} publication${left > 1 ? 's' : ''} à faire` : 'Tout est publié cette semaine, bravo ! 🎉'}</b></div>` +
-    todo.map(i => `<div class="mini"><img src="${i.poster || (i.media[0].video ? '' : i.media[0].file)}" alt="" loading="lazy"><div style="flex:1"><b>${esc(i.label)}</b><span>${esc(i.type)} · ${esc(i.title)}</span></div><span>${done[i.id] ? '✅' : '›'}</span></div>`).join('') +
+    todo.map(i => `<div class="mini"><img src="${i.poster || (!i.media.length || i.media[0].video ? 'logo.png' : i.media[0].file)}" alt="" loading="lazy"><div style="flex:1"><b>${esc(i.label)}</b><span>${esc(i.type)} · ${esc(i.title)}</span></div><span>${done[i.id] ? '✅' : '›'}</span></div>`).join('') +
     `<div class="pad"><button class="btn" id="goWeek">Voir mes publications de la semaine</button></div>`;
   box.querySelectorAll('.mini').forEach(m => m.onclick = () => { go('pubs'); renderWeek(curWeek); });
   $('#goWeek').onclick = () => { go('pubs'); renderWeek(curWeek); };
