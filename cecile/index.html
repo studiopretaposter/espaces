@@ -51,6 +51,7 @@ h2{font-size:22px;font-weight:900;letter-spacing:-.02em;margin:24px 4px 10px}
 .media img,.media video{flex:none;height:320px;border-radius:14px;scroll-snap-align:start;background:#eee;object-fit:cover;max-width:86%}
 .media.one img,.media.one video{width:100%;max-width:100%;height:auto;max-height:560px;object-fit:contain;background:var(--soft)}
 .swipe{font-size:13px;color:var(--grey);padding:0 18px 8px}
+.seq{margin:0 18px 12px;padding:0 0 0 22px}.seq li{margin-bottom:8px;font-size:15px}.seq span{color:var(--grey)}
 .tip{margin:4px 18px 12px;background:#FFF6E8;border-radius:12px;padding:10px 12px;font-size:15px}
 .cap{margin:0 18px 12px;border:1.5px dashed var(--line);border-radius:12px;padding:10px 12px;font-size:15px;white-space:pre-wrap;max-height:5.8em;overflow:hidden;position:relative;cursor:pointer}
 .cap.open{max-height:none}
@@ -63,7 +64,7 @@ h2{font-size:22px;font-weight:900;letter-spacing:-.02em;margin:24px 4px 10px}
 .btn.ok{background:var(--ok)}
 .check{display:flex;align-items:center;gap:12px;padding:14px 18px;border-top:1px solid var(--line);font-weight:700;cursor:pointer;user-select:none}
 .check input{width:24px;height:24px;accent-color:var(--ok)}
-.card.done .media,.card.done .cap,.card.done .tip,.card.done .steps,.card.done .swipe{display:none}
+.card.done .seq,.card.done .media,.card.done .cap,.card.done .tip,.card.done .steps,.card.done .swipe{display:none}
 .card.done .check{color:var(--ok)}
 .list{margin:0;padding:0;list-style:none}
 .list li{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
@@ -135,6 +136,7 @@ a{color:var(--vio)}
     <h2>Mon profil</h2>
     <p class="sub" id="profSub"></p>
     <div class="card" id="profile"></div>
+    <div id="extras"></div>
   </section>
 
   <section class="view" id="v-help">
@@ -222,6 +224,7 @@ function card(it) {
     <div class="media ${n === 1 ? 'one' : ''}">${media}</div>
     ${n > 1 ? `<div class="swipe">← ${t('Fais glisser pour voir les', 'Faites glisser pour voir les')} ${n} images</div>` : ''}
     ${it.tip ? `<div class="tip">💡 ${esc(it.tip)}</div>` : ''}
+    ${it.steps ? `<ol class="seq">${it.steps.map(x => `<li><b>${esc(x.what)}</b>${x.text ? `<br><span>${esc(x.text)}</span>` : ''}</li>`).join('')}</ol>` : ''}
     ${it.caption ? `<div class="cap">${esc(it.caption)}</div>` : ''}
     <div class="steps">
       ${it.caption ? `<button class="btn dark cp"><span class="n">1</span><span class="t">Copier le texte</span></button>` : ''}
@@ -281,6 +284,12 @@ $('#cadre').innerHTML = (P.cadre || []).map(([q, s]) => `<details><summary>${esc
 const CT = DATA.contact || {};
 $('#contact').innerHTML = `<p style="margin:0 0 14px">${esc(CT.text || '')}</p>${CT.email ? `<a class="btn" href="mailto:${CT.email}?subject=${encodeURIComponent('Mon espace ' + C.name)}">✉️ Écrire un e-mail</a><p style="text-align:center;font-size:14px;color:var(--grey);margin:8px 0 0">${CT.email}</p>` : ''}`;
 
+(DATA.extras || []).forEach((x, xi) => {
+  const w = document.createElement('div');
+  w.innerHTML = `<h2>${esc(x.title)}</h2>${x.intro ? `<p class="sub">${esc(x.intro)}</p>` : ''}<div class="card">${x.rows.map((r, k) => `<div class="pad" style="${k ? 'border-top:1px solid var(--line)' : ''}"><b>${esc(r.label)}</b>${r.text ? `<div class="cap open" style="margin:8px 0 ${r.copy ? 10 : 0}px;cursor:default">${esc(r.text)}</div>` : ''}${r.copy ? `<button class="btn dark" data-x="${xi}_${k}">Copier</button>` : ''}</div>`).join('')}</div>`;
+  $('#extras').appendChild(w);
+});
+document.querySelectorAll('[data-x]').forEach(b => b.onclick = async () => { try { await navigator.clipboard.writeText((([a, c]) => DATA.extras[a].rows[c].text)(b.dataset.x.split('_'))); b.classList.replace('dark', 'ok'); b.textContent = 'Copié ✓'; } catch (e) { toast('Appuie longuement sur le texte pour le copier'); } });
 function go(v) { document.querySelectorAll('.view').forEach(s => s.classList.toggle('on', s.id === 'v-' + v)); document.querySelectorAll('.nav button').forEach(b => b.classList.toggle('on', b.dataset.v === v)); window.scrollTo(0, 0); try { history.replaceState(null, '', '#' + v); } catch (e) {} }
 document.querySelectorAll('.nav button').forEach(b => b.onclick = () => go(b.dataset.v));
 window.addEventListener('hashchange', () => { const v = location.hash.slice(1); if (['home', 'pubs', 'profile', 'help'].includes(v)) go(v); });

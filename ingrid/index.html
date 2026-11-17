@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Prêt à Poster">
+<meta name="theme-color" content="#833AB4">
+<link rel="icon" href="logo.svg">
+<link rel="apple-touch-icon" href="logo.png">
+<title>Ingrid Franz · Énergéticienne · Mon espace Prêt à Poster</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--vio:#833AB4;--pink:#FD1D78;--ora:#FF963C;--ink:#22182F;--grey:#6B6178;--soft:#FBF5F9;--line:#EFE4EC;--ok:#1E9E62;
+--grad:linear-gradient(110deg,var(--vio) 0%,var(--pink) 52%,var(--ora) 100%)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--soft);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:16px;line-height:1.5}
+.wrap{max-width:560px;margin:0 auto;padding:0 16px calc(96px + env(safe-area-inset-bottom))}
+.hero{background:var(--grad);color:#fff;padding:calc(18px + env(safe-area-inset-top)) 20px 24px;border-radius:0 0 28px 28px;margin:0 -16px 8px;position:relative;overflow:hidden}
+.hero:after{content:'';position:absolute;right:-80px;top:-60px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.12);pointer-events:none}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:13px;letter-spacing:.12em}
+.brand img{width:30px;height:30px}
+.hero h1{font-size:30px;line-height:1.1;font-weight:900;letter-spacing:-.02em;margin:18px 0 6px}
+.hero p{margin:0;opacity:.92;font-size:15px}
+h2{font-size:22px;font-weight:900;letter-spacing:-.02em;margin:24px 4px 10px}
+.sub{color:var(--grey);margin:-4px 4px 14px;font-size:15px}
+.card{background:#fff;border-radius:22px;box-shadow:0 6px 24px rgba(34,24,47,.07);margin-bottom:16px;overflow:hidden;border:1px solid var(--line)}
+.pad{padding:18px}
+.kv{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.kv div{background:var(--soft);border-radius:14px;padding:12px}
+.kv b{display:block;font-size:22px;font-weight:900}
+.kv span{font-size:13px;color:var(--grey)}
+.pill{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:6px 11px;border-radius:30px;background:var(--soft);color:var(--vio);white-space:nowrap}
+.pill.reel{background:#FFE6F0;color:#C2125A}.pill.story{background:#F1E7FA;color:var(--vio)}.pill.carrousel,.pill.post{background:#FFF0E2;color:#B85A0F}
+.progress{display:flex;align-items:center;gap:10px;margin-top:14px}
+.bar{flex:1;height:10px;background:rgba(255,255,255,.3);border-radius:10px;overflow:hidden}
+.bar i{display:block;height:100%;background:#fff;width:0;transition:width .4s}
+.progress b{font-size:14px;white-space:nowrap}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:2px 16px 6px;margin:0 -16px 12px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;border:1.5px solid var(--line);background:#fff;color:var(--ink);border-radius:30px;padding:9px 15px;font:700 14px Inter;cursor:pointer}
+.tabs button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.tabs button.now:after{content:' •';color:var(--pink)}
+.top{display:flex;align-items:center;justify-content:space-between;padding:16px 18px 6px;gap:10px}
+.day{font-size:19px;font-weight:900;letter-spacing:-.01em}
+.title{padding:0 18px 12px;color:var(--grey);font-size:15px}
+.media{display:flex;gap:10px;overflow-x:auto;padding:0 18px 10px;scroll-snap-type:x mandatory;scrollbar-width:none}
+.media::-webkit-scrollbar{display:none}
+.media img,.media video{flex:none;height:320px;border-radius:14px;scroll-snap-align:start;background:#eee;object-fit:cover;max-width:86%}
+.media.one img,.media.one video{width:100%;max-width:100%;height:auto;max-height:560px;object-fit:contain;background:var(--soft)}
+.swipe{font-size:13px;color:var(--grey);padding:0 18px 8px}
+.seq{margin:0 18px 12px;padding:0 0 0 22px}.seq li{margin-bottom:8px;font-size:15px}.seq span{color:var(--grey)}
+.tip{margin:4px 18px 12px;background:#FFF6E8;border-radius:12px;padding:10px 12px;font-size:15px}
+.cap{margin:0 18px 12px;border:1.5px dashed var(--line);border-radius:12px;padding:10px 12px;font-size:15px;white-space:pre-wrap;max-height:5.8em;overflow:hidden;position:relative;cursor:pointer}
+.cap.open{max-height:none}
+.cap:not(.open):after{content:'Voir tout le texte ▾';position:absolute;left:0;right:0;bottom:0;padding:18px 12px 6px;background:linear-gradient(transparent,#fff 60%);font-weight:700;color:var(--vio);font-size:14px}
+.steps{padding:4px 18px 16px;display:grid;gap:10px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;border:0;border-radius:16px;padding:15px 16px;font:800 16px Inter;cursor:pointer;color:#fff;background:var(--grad);text-decoration:none}
+.btn .n{flex:none;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.25);display:grid;place-items:center;font-size:14px}
+.btn.dark{background:var(--ink)}
+.btn.ghost{background:#fff;color:var(--ink);border:1.5px solid var(--line)}
+.btn.ok{background:var(--ok)}
+.check{display:flex;align-items:center;gap:12px;padding:14px 18px;border-top:1px solid var(--line);font-weight:700;cursor:pointer;user-select:none}
+.check input{width:24px;height:24px;accent-color:var(--ok)}
+.card.done .seq,.card.done .media,.card.done .cap,.card.done .tip,.card.done .steps,.card.done .swipe{display:none}
+.card.done .check{color:var(--ok)}
+.list{margin:0;padding:0;list-style:none}
+.list li{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.list li:last-child{border:0}
+.list .ico{flex:none;width:38px;height:38px;border-radius:12px;background:var(--soft);display:grid;place-items:center;font-size:18px}
+.mini{display:flex;gap:12px;align-items:center;padding:12px 18px;border-top:1px solid var(--line);cursor:pointer}
+.mini img{width:54px;height:54px;border-radius:12px;object-fit:cover;background:var(--soft);flex:none}
+.mini b{display:block;font-size:15px}.mini span{font-size:13px;color:var(--grey)}
+.covers{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:0 18px 12px}
+.covers figure{margin:0;text-align:center;font-size:12px;color:var(--grey)}
+.covers img{width:100%;aspect-ratio:1;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:0 0 0 2px var(--pink)}
+.pp{display:flex;gap:16px;align-items:center;padding:18px}
+.pp img{width:96px;height:96px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 3px #fff,0 0 0 5px var(--pink);flex:none}
+details{border-top:1px solid var(--line)}
+details:first-child{border:0}
+summary{list-style:none;padding:16px 18px;font-weight:800;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:'+';font-size:22px;color:var(--vio)}
+details[open] summary:after{content:'–'}
+details .in{padding:0 18px 16px;color:#3b3147}
+details ol{padding-left:20px;margin:0}details li{margin-bottom:8px}
+.nav{position:fixed;left:0;right:0;bottom:0;background:rgba(255,255,255,.96);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-top:1px solid var(--line);display:flex;justify-content:center;padding:6px 6px calc(6px + env(safe-area-inset-bottom));z-index:5}
+.nav div{display:flex;max-width:560px;width:100%}
+.nav button{flex:1;border:0;background:none;font:700 11px Inter;color:var(--grey);padding:6px 0;display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer}
+.nav button i{font-style:normal;font-size:22px;line-height:1.1;filter:grayscale(1);opacity:.55}
+.nav button.on{color:var(--pink)}.nav button.on i{filter:none;opacity:1}
+.view{display:none}.view.on{display:block}
+.toast{opacity:0;pointer-events:none;position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:13px 18px;border-radius:14px;font-weight:700;transition:.3s;z-index:9;max-width:90%;text-align:center}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.sheet{position:fixed;inset:0;background:rgba(34,24,47,.5);display:none;align-items:flex-end;z-index:8}
+.sheet.show{display:flex}
+.sheet>div{background:#fff;width:100%;max-width:560px;margin:0 auto;border-radius:24px 24px 0 0;padding:22px 20px calc(24px + env(safe-area-inset-bottom))}
+.sheet h3{margin:0 0 10px;font-size:20px;font-weight:900}
+.sheet ol{padding-left:20px;margin:0 0 16px}.sheet li{margin-bottom:8px}
+.foot{text-align:center;font-size:13px;color:var(--grey);margin:26px 0 8px}
+a{color:var(--vio)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="brand"><img src="logo.svg" alt="">PRÊT À POSTER</div>
+    <h1 id="hello"></h1>
+    <p id="intro"></p>
+    <div class="progress"><div class="bar"><i id="barfill"></i></div><b id="count"></b></div>
+  </header>
+
+  <section class="view" id="v-home">
+    <h2 id="weekTitle">Cette semaine</h2>
+    <div class="card" id="thisweek"></div>
+    <h2 id="packTitle">Mon pack</h2>
+    <div class="card pad">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:10px"><b id="packName"></b><span class="pill" id="packStatus"></span></div>
+      <div class="kv" id="packKv"></div>
+      <ul class="list" id="packDates" style="margin-top:10px"></ul>
+    </div>
+    <h2>Comment ça marche</h2>
+    <div class="card pad"><ul class="list" id="how"></ul></div>
+  </section>
+
+  <section class="view" id="v-pubs">
+    <h2>Mes publications</h2>
+    <p class="sub" id="pubsSub"></p>
+    <nav class="tabs" id="tabs"></nav>
+    <main id="list"></main>
+  </section>
+
+  <section class="view" id="v-profile">
+    <h2>Mon profil</h2>
+    <p class="sub" id="profSub"></p>
+    <div class="card" id="profile"></div>
+    <div id="extras"></div>
+  </section>
+
+  <section class="view" id="v-help">
+    <h2>Mode d'emploi</h2>
+    <div class="card" id="guides"></div>
+    <h2>Le cadre</h2>
+    <div class="card" id="cadre"></div>
+    <h2>Une question ?</h2>
+    <div class="card pad" id="contact"></div>
+  </section>
+  <p class="foot">Prêt à Poster · espace réservé à <span id="fname"></span></p>
+</div>
+
+<nav class="nav"><div>
+  <button data-v="home"><i>🏠</i>Accueil</button>
+  <button data-v="pubs"><i>🗓️</i>Publications</button>
+  <button data-v="profile"><i>👤</i>Profil</button>
+  <button data-v="help"><i>💡</i>Aide</button>
+</div></nav>
+<div class="toast" id="toast"></div>
+<div class="sheet" id="sheet" onclick="if(event.target===this)this.classList.remove('show')"><div>
+  <h3 id="shT"></h3>
+  <ol id="shL"></ol>
+  <button class="btn dark" onclick="document.getElementById('sheet').classList.remove('show')">J'ai compris</button>
+</div></div>
+
+<script>
+const DATA = {"client": {"slug": "ingrid", "name": "Ingrid Franz · Énergéticienne", "first": "Ingrid", "tone": "tu"}, "pack": {"name": "Pack Prêt à Poster · 1 mois", "start": "2026-11-16", "end": "2026-12-14", "retouches": "1 tour inclus, dans les 7 jours après la livraison", "cadre": [["Ce que tu reçois", ["Tes publications du mois : reels, carrousels et séquences de stories", "Tous les textes, prêts à copier", "Le calendrier : quoi publier, et quel jour", "Ton profil revu : bio et couvertures à la une", "Les vidéos sont livrées sans musique : tu ajoutes un son en publiant"]], ["Les retouches", ["1 tour de retouches inclus, dans les 7 jours après la livraison", "En un seul message : la publication concernée et ce qu'il faut changer", "Corrections livrées sous 48 h ouvrées"]], ["Ce qui reste entre tes mains", ["C'est toi qui publies : je n'accède pas à ton compte", "Répondre aux commentaires et aux messages", "Les petites stories face caméra : ce sont elles qui créent la confiance"]], ["Mon engagement", ["Des contenus pros, prêts à publier, adaptés à ton activité", "Je ne promets ni vues, ni abonnés, ni clients : ils dépendent de ton offre, de ta régularité et des réseaux eux-mêmes"]]]}, "contact": {"email": "studio.pretaposter@gmail.com", "text": "Un fichier qui ne s'ouvre pas, une étape pas claire, une retouche ? Écris-moi, je te réponds sous 24 h ouvrées, du lundi au vendredi."}, "extras": [{"title": "Mes réponses types", "intro": "À copier quand on t'écrit en message privé.", "rows": [{"label": "Quelqu'un écrit INFO", "text": "Bonjour [prénom] ! Merci pour votre message 😊 Qu'est-ce qui vous amène : minceur, stress, sommeil, tabac… ? Je vous explique comment je peux vous accompagner.", "copy": true}, {"label": "On te demande un prix (jusqu'au 27 nov.)", "text": "[Soin] est à [prix]. Et les vendredis 20 et 27 novembre, il passe à [prix Black November] 🖤 Voulez-vous qu'on fixe un rendez-vous ?", "copy": true}, {"label": "« Ça marche vraiment ? »", "text": "Je vais être honnête : il n'y a pas de miracle, mais un vrai accompagnement. Votre implication compte autant que mes soins. On en parle ?", "copy": true}, {"label": "Demande de carte cadeau", "text": "Avec plaisir ! Pour quel soin ou quel montant ? Je vous la prépare et vous pouvez l'offrir dès que vous le souhaitez 🎁", "copy": true}]}, {"title": "Mes prix Black November", "intro": "Pour les achats faits le vendredi 20 ou le vendredi 27 novembre.", "rows": [{"label": "Cure minceur 2 mois", "text": "480 € → 360 €"}, {"label": "Cure minceur 3 mois", "text": "720 € → 550 €"}, {"label": "Massage relaxation", "text": "90 € → 63 €"}, {"label": "Soin énergétique", "text": "50 € → 40 €"}, {"label": "Accompagnement arrêt du tabac", "text": "200 € → 160 €"}, {"label": "Cure luxopuncture bouffées de chaleur (5 séances)", "text": "300 € → 240 €"}, {"label": "Pressothérapie (8 séances)", "text": "280 € → 200 €"}]}], "items": [{"id": "s00", "date": "2026-11-16", "label": "Lundi 16 nov.", "type": "Story", "title": "Je me présente (pour tes nouveaux abonnés)", "media": [{"file": "media/fd6bb5641e.jpg", "video": false}, {"file": "media/a164968fa0.jpg", "video": false}], "caption": "", "steps": [{"what": "Image prête", "text": "« Je me présente » : ajoute ton prénom en texte si tu veux"}, {"what": "Toi face caméra", "text": "« Je suis Ingrid, énergéticienne depuis 12 ans, à Saint-Parres-aux-Tertres. »"}, {"what": "Toi face caméra", "text": "« J'aide les femmes à se sentir plus légères, dans leur corps comme dans leur tête. Sans régime privatif, avec un vrai suivi. »"}, {"what": "Toi face caméra", "text": "« Et je vous le dis tout de suite : je ne suis pas magicienne. On avance ensemble. »"}, {"what": "Image prête", "text": "Ajoute le sticker « Envoyer un message »"}], "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi. Le reste, tu le filmes en quelques secondes."}, {"id": "p00", "date": "2026-11-18", "label": "Mercredi 18 nov.", "type": "Carrousel", "title": "Black November", "media": [{"file": "media/c27b73711f.jpg", "video": false}, {"file": "media/e417097fce.jpg", "video": false}, {"file": "media/a43a0bc261.jpg", "video": false}, {"file": "media/d93c8ad28e.jpg", "video": false}, {"file": "media/ef0f50fd30.jpg", "video": false}, {"file": "media/4ff3181ec6.jpg", "video": false}, {"file": "media/7391e08df3.jpg", "video": false}], "caption": "🖤 BLACK NOVEMBER 🖤\nTous les vendredis de novembre, je vous fais profiter de prix doux sur mes accompagnements.\n👉 Il reste 2 vendredis : le 20 et le 27 novembre. La réduction s'applique aux achats faits ces jours-là.\nFaites glisser pour voir toutes les offres ➡️\nUne question, un doute sur le soin qui vous correspond ? Écrivez-moi INFO en message privé ou appelez-moi au 06 48 12 27 14 💌\n\n#energeticienne #luxopuncture #eft #magnetisme #bienetre #troyes #aube #saintparresauxtertres #accompagnementminceur", "tip": "🎵 Ajoute une musique au moment de publier. Sélectionne les images dans l'ordre."}, {"id": "s01", "date": "2026-11-18", "label": "Mercredi 18 nov.", "type": "Story", "title": "Annonce Black November", "media": [{"file": "media/9edb3e0a1e.jpg", "video": false}], "caption": "", "steps": [{"what": "Ton carrousel du jour", "text": "Partage ton post en story (bouton avion › « Ajouter à la story »)"}, {"what": "Image prête", "text": "Ajoute le sticker Sondage : « Quel soin vous tente ? » Massage / Luxopuncture"}, {"what": "Toi face caméra", "text": "« Attention : la réduction, c'est uniquement pour les achats faits les vendredis 20 et 27. Une question ? Écrivez-moi. »"}], "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi. Le reste, tu le filmes en quelques secondes."}, {"id": "p01", "date": "2026-11-19", "label": "Jeudi 19 nov.", "type": "Reel", "title": "Est-ce que ça marche vraiment", "media": [{"file": "media/0a4bab6435.mp4", "video": true}], "caption": "« Est-ce que ça marche vraiment ? » 🤔\nC'est LA question qu'on me pose. Et je préfère vous répondre franchement : il n'y a pas de méthode miracle.\nMon métier, depuis 12 ans : aider les femmes à se sentir plus légères, dans leur corps comme dans leur tête, sans régime privatif et avec un vrai suivi. Mon rôle, c'est de vous soutenir et de vous donner les bons outils. Le vôtre, c'est de vous impliquer. Et ensemble, on avance 🌿\nVous vous posez la question ? Écrivez-moi INFO en message privé, je vous réponds avec plaisir.\n\n#energeticienne #luxopuncture #eft #magnetisme #bienetre #troyes #aube #saintparresauxtertres #accompagnementminceur", "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story.", "cover": "/home/claude/ingrid/light/p01.jpg", "poster": "media/6ee88572db.jpg"}, {"id": "p02", "date": "2026-11-20", "label": "Vendredi 20 nov.", "type": "Reel", "title": "C'est vendredi", "media": [{"file": "media/7b8de16d0d.mp4", "video": true}], "caption": "🖤 C'est aujourd'hui ! Jusqu'à -30 % sur mes accompagnements, pour tout achat fait ce vendredi 20 novembre.\nProchain et dernier vendredi : le 27 👀\nÉcrivez INFO en message privé ou appelez-moi au 06 48 12 27 14.\n\n#energeticienne #luxopuncture #eft #magnetisme #bienetre #troyes #aube #saintparresauxtertres #accompagnementminceur", "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story.", "cover": "/home/claude/ingrid/light/p02.jpg", "poster": "media/6d519a81c6.jpg"}, {"id": "s02", "date": "2026-11-20", "label": "Vendredis 20 et 27 nov.", "type": "Story", "title": "Black November (le matin)", "media": [{"file": "media/4d98f1385b.jpg", "video": false}, {"file": "media/24a9ad5eb1.jpg", "video": false}, {"file": "media/a164968fa0.jpg", "video": false}], "caption": "", "steps": [{"what": "Toi face caméra", "text": "« Bonjour ! Aujourd'hui c'est vendredi, et vous savez ce que ça veut dire… »"}, {"what": "Image prête", "text": "« Jusqu'à -30 % aujourd'hui seulement »"}, {"what": "Image prête", "text": "Ajoute le sticker Sondage : Oui / Pas encore"}, {"what": "Toi face caméra", "text": "« Vous hésitez ? Écrivez-moi, je vous conseille le soin qui vous correspond. »"}, {"what": "Image prête", "text": "Ajoute le sticker « Envoyer un message »"}], "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi. Le reste, tu le filmes en quelques secondes."}, {"id": "s03", "date": "2026-11-21", "label": "Samedi 21 nov.", "type": "Story", "title": "Coulisses du cabinet", "media": [{"file": "media/14cfcc42a6.jpg", "video": false}], "caption": "", "steps": [{"what": "Vidéo du cabinet (filme en marchant doucement)", "text": "« Bienvenue dans mon cocon 🌿 »"}, {"what": "Vidéo de l'appareil de luxopuncture", "text": "« Ici, on prend le temps »"}, {"what": "Image prête", "text": "Ajoute le sticker Quiz : « Combien de séances dure une cure ? »"}], "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi. Le reste, tu le filmes en quelques secondes."}, {"id": "p03", "date": "2026-11-23", "label": "Lundi 23 nov.", "type": "Reel", "title": "Votre petit-déjeuner", "media": [{"file": "media/a75efa290c.mp4", "video": true}], "caption": "Le petit-déjeuner, c'est la base de votre journée ☀️\nUn petit-déj très sucré, c'est souvent un coup de fatigue en milieu de matinée. Un petit-déj avec des protéines, c'est une énergie plus stable jusqu'au déjeuner.\nQuelques idées : des œufs, du fromage blanc, quelques amandes, un fruit de saison.\nEnregistrez la vidéo pour vous en souvenir demain matin 📌 Et si vous voulez qu'on regarde votre alimentation ensemble, écrivez-moi INFO.\n\n#energeticienne #luxopuncture #eft #magnetisme #bienetre #troyes #aube #saintparresauxtertres #accompagnementminceur", "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story.", "cover": "/home/claude/ingrid/light/p03.jpg", "poster": "media/3b5f63641a.jpg"}, {"id": "s04", "date": "2026-11-24", "label": "Mardi 24 nov.", "type": "Story", "title": "L'histoire du consultant", "media": [{"file": "media/2dedfd370c.jpg", "video": false}, {"file": "media/3dd080a8b6.jpg", "video": false}, {"file": "media/b1bacc1cc7.jpg", "video": false}, {"file": "media/17c058955c.jpg", "video": false}], "caption": "", "steps": [{"what": "Image prête", "text": "« Je vous raconte une histoire… »"}, {"what": "Image prête", "text": "« Il mangeait 800 calories de trop par jour, sans le savoir. »"}, {"what": "Image prête", "text": "« On n'a rien supprimé, on a ajusté. »"}, {"what": "Image prête", "text": "Ajoute le sticker « Questions »"}], "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi. Le reste, tu le filmes en quelques secondes."}, {"id": "p04", "date": "2026-11-25", "label": "Mercredi 25 nov.", "type": "Reel", "title": "La luxopuncture sans détour", "media": [{"file": "media/ad8cc37206.mp4", "video": true}], "caption": "La luxopuncture, sans détour 💡\nPas de miracle, pas d'aiguille, mais un vrai accompagnement, séance après séance.\nEnregistrez cette vidéo pour la retrouver 📌 Une question ? Écrivez INFO en message privé.\nRappel : Black November, dernier vendredi le 27 novembre !\n\n#energeticienne #luxopuncture #eft #magnetisme #bienetre #troyes #aube #saintparresauxtertres #accompagnementminceur", "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story.", "cover": "/home/claude/ingrid/light/p04.jpg", "poster": "media/e593adb03b.jpg"}, {"id": "s05", "date": "2026-11-26", "label": "Jeudi 26 nov.", "type": "Story", "title": "Vos questions sur la luxopuncture", "media": [{"file": "media/734d491601.jpg", "video": false}], "caption": "", "steps": [{"what": "Image prête", "text": "Ajoute le sticker « Questions » : « Posez-moi vos questions »"}, {"what": "Dans les 2 jours : toi face caméra", "text": "Réponds à 2 ou 3 questions reçues (appuie sur la question › « Répondre »)"}], "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi. Le reste, tu le filmes en quelques secondes."}, {"id": "p05", "date": "2026-11-27", "label": "Vendredi 27 nov.", "type": "Reel", "title": "Dernier vendredi", "media": [{"file": "media/eef589fc0e.mp4", "video": true}], "caption": "🖤 DERNIER VENDREDI du Black November !\nAujourd'hui seulement : jusqu'à -30 % sur mes accompagnements, et la pressothérapie à 200 € les 8 séances, pour une sensation de jambes légères.\nÉcrivez INFO ou appelez-moi au 06 48 12 27 14 avant ce soir.\n\n#energeticienne #luxopuncture #eft #magnetisme #bienetre #troyes #aube #saintparresauxtertres #accompagnementminceur", "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story.", "cover": "/home/claude/ingrid/light/p05.jpg", "poster": "media/dfadebb066.jpg"}, {"id": "p06", "date": "2026-11-30", "label": "Lundi 30 nov.", "type": "Reel", "title": "Retrouver la paix intérieure", "media": [{"file": "media/ea59a85567.mp4", "video": true}], "caption": "Le bien-être intérieur, c'est un chemin 🌿\nOn ne chasse pas le négatif d'un coup : on ajoute un peu de positif chaque jour, goutte après goutte.\nC'est ce que je vous propose en séance d'EFT ou de magnétisme, au cabinet ou à distance.\nVous traversez une période chargée ? Écrivez-moi INFO.\n\n#energeticienne #luxopuncture #eft #magnetisme #bienetre #troyes #aube #saintparresauxtertres #accompagnementminceur", "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story.", "cover": "/home/claude/ingrid/light/p06.jpg", "poster": "media/eb5f8f4269.jpg"}, {"id": "s06", "date": "2026-12-01", "label": "Mardi 1er déc.", "type": "Story", "title": "Ma recette du moment", "media": [{"file": "media/9ebe7f6cd5.jpg", "video": false}], "caption": "", "steps": [{"what": "Image prête", "text": "Titre de la recette"}, {"what": "Photo de tes ingrédients", "text": "Écris la liste en 2 lignes"}, {"what": "Vidéo de la préparation (10 s)", "text": "« Simple et rapide »"}, {"what": "Photo du plat terminé", "text": "Ajoute le sticker Curseur emoji 😋 : « Ça vous tente ? »"}], "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi. Le reste, tu le filmes en quelques secondes."}, {"id": "p07", "date": "2026-12-02", "label": "Mercredi 2 déc.", "type": "Carrousel", "title": "Vos envies vous parlent", "media": [{"file": "media/00f995b4ac.jpg", "video": false}, {"file": "media/5622cedb5d.jpg", "video": false}, {"file": "media/f97cc8deec.jpg", "video": false}, {"file": "media/966db6f1c3.jpg", "video": false}, {"file": "media/05dde40b3d.jpg", "video": false}, {"file": "media/f566485987.jpg", "video": false}], "caption": "Et si vos envies avaient quelque chose à vous dire ? 🍫🧂\nPlutôt que de culpabiliser, on cherche à comprendre. C'est ce que je fais avec vous en accompagnement.\nLaquelle est la vôtre ? Dites-le-moi en commentaire 👇\n\n#energeticienne #luxopuncture #eft #magnetisme #bienetre #troyes #aube #saintparresauxtertres #accompagnementminceur", "tip": "🎵 Ajoute une musique au moment de publier. Sélectionne les images dans l'ordre."}, {"id": "s07", "date": "2026-12-03", "label": "Jeudi 3 déc.", "type": "Story", "title": "Souffler avant les fêtes", "media": [{"file": "media/b695e2baac.jpg", "video": false}], "caption": "", "steps": [{"what": "Image prête", "text": "Ajoute le sticker Sondage : « Oui, beaucoup / Ça va »"}, {"what": "Toi face caméra", "text": "« Si c'est votre cas, prenez 2 minutes pour vous : respirez lentement, 5 fois. »"}, {"what": "Toi face caméra", "text": "« Et si vous avez besoin d'un vrai moment pour vous, je suis là. Écrivez-moi INFO. »"}], "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi. Le reste, tu le filmes en quelques secondes."}, {"id": "p08", "date": "2026-12-04", "label": "Vendredi 4 déc.", "type": "Reel", "title": "Votre première séance", "media": [{"file": "media/6fe32b5846.mp4", "video": true}], "caption": "Vous hésitez à franchir le pas ? Voici comment ça se passe, étape par étape 🌿\nPas de jugement, pas de pression : on prend le temps.\nÉcrivez INFO en message privé pour en parler.\n\n#energeticienne #luxopuncture #eft #magnetisme #bienetre #troyes #aube #saintparresauxtertres #accompagnementminceur", "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story.", "cover": "/home/claude/ingrid/light/p08.jpg", "poster": "media/e029c3c945.jpg"}, {"id": "s08", "date": "2026-12-05", "label": "Samedi 5 déc.", "type": "Story", "title": "Arrêter de fumer, on en parle ?", "media": [{"file": "media/aa02feebc3.jpg", "video": false}, {"file": "media/a164968fa0.jpg", "video": false}], "caption": "", "steps": [{"what": "Image prête", "text": "Ajoute le sticker Sondage : « Vous y avez déjà pensé ? » Oui / Pas encore"}, {"what": "Toi face caméra", "text": "« Arrêter de fumer, ça demande de la motivation. Mon rôle, c'est de la soutenir, en douceur, avec la luxopuncture. »"}, {"what": "Image prête", "text": "« Envie d'en parler ? » + sticker « Envoyer un message »"}], "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi. Le reste, tu le filmes en quelques secondes."}, {"id": "p09", "date": "2026-12-07", "label": "Lundi 7 déc.", "type": "Reel", "title": "3 erreurs à la ménopause", "media": [{"file": "media/f78ff76549.mp4", "video": true}], "caption": "La ménopause, ce n'est pas le moment de se priver 🌿\n1. Manger trop peu : souvent plus de fatigue et de fringales.\n2. Oublier les protéines : elles aident à rester rassasiée.\n3. Négliger le sommeil et le stress : ils comptent autant que l'assiette.\nJ'accompagne les femmes à cette étape, avec des conseils simples et, si vous le souhaitez, une cure de luxopuncture pour les bouffées de chaleur.\nÉcrivez-moi INFO pour en parler.\nAccompagnement bien-être, ne remplace pas un suivi médical.\n\n#energeticienne #luxopuncture #eft #magnetisme #bienetre #troyes #aube #saintparresauxtertres #accompagnementminceur #menopause", "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story.", "cover": "/home/claude/ingrid/light/p09.jpg", "poster": "media/1b9df00515.jpg"}, {"id": "s09", "date": "2026-12-08", "label": "Mardi 8 déc.", "type": "Story", "title": "Vos retours", "media": [{"file": "media/4720be40ee.jpg", "video": false}, {"file": "media/a164968fa0.jpg", "video": false}], "caption": "", "steps": [{"what": "Image prête", "text": "« Vos messages me touchent à chaque fois »"}, {"what": "Une capture d'un avis reçu (cache le nom)", "text": "« Merci à elle 🌿 »"}, {"what": "Image prête", "text": "« À votre tour ? » + sticker « Envoyer un message »"}], "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi. Le reste, tu le filmes en quelques secondes."}, {"id": "p10", "date": "2026-12-09", "label": "Mercredi 9 déc.", "type": "Carrousel", "title": "Avis clients", "media": [{"file": "media/118f184184.jpg", "video": false}, {"file": "media/833c04da40.jpg", "video": false}, {"file": "media/58399d09a0.jpg", "video": false}, {"file": "media/fdd77e4f67.jpg", "video": false}, {"file": "media/f15513afa2.jpg", "video": false}, {"file": "media/c173b4cbde.jpg", "video": false}], "caption": "Ils m'ont fait confiance 🌿\nÀ votre tour ? Écrivez INFO en message privé.\n\n#energeticienne #luxopuncture #eft #magnetisme #bienetre #troyes #aube #saintparresauxtertres #accompagnementminceur", "tip": "🎵 Ajoute une musique au moment de publier. Sélectionne les images dans l'ordre."}, {"id": "s10", "date": "2026-12-10", "label": "Jeudi 10 déc.", "type": "Story", "title": "Idée cadeau", "media": [{"file": "media/d1a32ae8c3.jpg", "video": false}, {"file": "media/a164968fa0.jpg", "video": false}], "caption": "", "steps": [{"what": "Image prête", "text": "Ajoute le sticker Sondage : « Massage / Soin énergétique »"}, {"what": "Toi face caméra", "text": "« Les cartes cadeaux sont disponibles. Montant au choix, à offrir quand vous voulez. »"}, {"what": "Image prête", "text": "Ajoute le sticker « Envoyer un message »"}], "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi. Le reste, tu le filmes en quelques secondes."}, {"id": "p11", "date": "2026-12-11", "label": "Vendredi 11 déc.", "type": "Carrousel", "title": "Carte cadeau", "media": [{"file": "media/baa2c28c1b.jpg", "video": false}, {"file": "media/c252ff1e0e.jpg", "video": false}, {"file": "media/5cc537d3cb.jpg", "video": false}], "caption": "Une idée cadeau qui fait vraiment du bien ? 🎁\nOffrez une carte cadeau : massage relaxation, soin énergétique, luxopuncture… La personne choisit le soin qui lui fait du bien.\nÉcrivez-moi INFO pour la commander.\n\n#energeticienne #luxopuncture #eft #magnetisme #bienetre #troyes #aube #saintparresauxtertres #accompagnementminceur", "tip": "🎵 Ajoute une musique au moment de publier. Sélectionne les images dans l'ordre."}, {"id": "p12", "date": "2026-12-14", "label": "Lundi 14 déc.", "type": "Reel", "title": "EFT et magnétisme à distance", "media": [{"file": "media/5a8eba8909.mp4", "video": true}], "caption": "Pas besoin d'habiter à côté pour être accompagné(e) 🌍\nEFT et magnétisme : je vous accompagne aussi à distance.\nÉcrivez INFO pour en savoir plus.\n\n#energeticienne #luxopuncture #eft #magnetisme #bienetre #troyes #aube #saintparresauxtertres #accompagnementminceur", "tip": "🎵 Ajoute une musique au moment de publier. Partage aussi le reel en story.", "cover": "/home/claude/ingrid/light/p12.jpg", "poster": "media/1c4dc14009.jpg"}], "weeks": [{"id": "2026-11-16", "label": "Sem. du 16 nov.", "items": ["s00", "p00", "s01", "p01", "p02", "s02", "s03"]}, {"id": "2026-11-23", "label": "Sem. du 23 nov.", "items": ["p03", "s04", "p04", "s05", "p05"]}, {"id": "2026-11-30", "label": "Sem. du 30 nov.", "items": ["p06", "s06", "p07", "s07", "p08", "s08"]}, {"id": "2026-12-07", "label": "Sem. du 7 déc.", "items": ["p09", "s09", "p10", "s10", "p11"]}, {"id": "2026-12-14", "label": "Sem. du 14 déc.", "items": ["p12"]}], "profile": {"bio": "Énergéticienne 🌿 12 ans d'expérience\nJ'aide les femmes à se sentir plus légères, sans se priver\n📍 Saint-Parres-aux-Tertres & à distance\n👇 Écrivez INFO", "covers": [{"label": "Qui suis-je", "file": "media/db983b6bf0.jpg"}, {"label": "Mes soins", "file": "media/3a5d9d8f1b.jpg"}, {"label": "Offres", "file": "media/d04414e62b.jpg"}, {"label": "Avis", "file": "media/81c447c230.jpg"}, {"label": "Conseils", "file": "media/4ec3b9f1c1.jpg"}, {"label": "Recettes", "file": "media/fed06cb380.jpg"}], "pinned": "Le carrousel Black November (18 nov.) : épingle-le jusqu'au 27 novembre. Sur la publication › ⋯ › Épingler."}};
+const $ = s => document.querySelector(s);
+const C = DATA.client, TU = C.tone !== 'vous';
+const t = (tu, vous) => TU ? tu : vous;
+const esc = s => (s || '').replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+const KEY = 'pap_' + C.slug;
+let done = {}; try { done = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) {}
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(done)); } catch (e) {} };
+const byId = Object.fromEntries(DATA.items.map(i => [i.id, i]));
+const files = {};
+const now = new Date();
+const pad = n => String(n).padStart(2, '0');
+const iso = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+const mondayOf = d => { const x = new Date(d.getFullYear(), d.getMonth(), d.getDate()); x.setDate(x.getDate() - (x.getDay() + 6) % 7); return iso(x); };
+const curWeek = (() => { const m = mondayOf(now); const ids = DATA.weeks.map(w => w.id); if (ids.includes(m)) return m; return m < ids[0] ? ids[0] : ids[ids.length - 1]; })();
+function toast(s) { const el = $('#toast'); el.textContent = s; el.classList.add('show'); clearTimeout(el._t); el._t = setTimeout(() => el.classList.remove('show'), 2600); }
+function sheet(title, steps) { $('#shT').textContent = title; $('#shL').innerHTML = steps.map(s => `<li>${s}</li>`).join(''); $('#sheet').classList.add('show'); }
+
+$('#hello').textContent = `Bonjour ${C.first} 👋`;
+$('#intro').textContent = t(`Ton mois de contenu est prêt. Tout est ici : quoi publier, quand, et comment.`, `Votre mois de contenu est prêt. Tout est ici : quoi publier, quand, et comment.`);
+$('#fname').textContent = C.name;
+$('#packTitle').textContent = t('Ton pack', 'Votre pack');
+function progress() { const n = DATA.items.filter(i => done[i.id]).length; $('#count').textContent = `${n} / ${DATA.items.length} publiés`; $('#barfill').style.width = (100 * n / DATA.items.length) + '%'; }
+
+const P = DATA.pack, fmt = s => new Date(s + 'T12:00').toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' });
+$('#packName').textContent = P.name;
+const tday = iso(now);
+$('#packStatus').textContent = tday < P.start ? 'À venir' : tday > P.end ? 'Terminé' : 'En cours';
+const cnt = k => DATA.items.filter(i => i.type.toLowerCase().startsWith(k)).length;
+$('#packKv').innerHTML = [['reel', 'reels montés'], ['carrousel', 'carrousels'], ['post', 'post photo'], ['story', 'stories']].filter(([k]) => cnt(k)).map(([k, l]) => `<div><b>${cnt(k)}</b><span>${l}</span></div>`).join('');
+$('#packDates').innerHTML = [['📦', 'Livré le', P.delivered && fmt(P.delivered)], ['🗓️', 'Période de publication', `du ${fmt(P.start)} au ${fmt(P.end)}`], ['🔁', 'Retouches', P.retouches]].filter(r => r[2]).map(([i, a, b]) => `<li><span class="ico">${i}</span><div><b>${a}</b><br><span style="color:var(--grey)">${b}</span></div></li>`).join('');
+$('#how').innerHTML = [['🗓️', t('Ouvre « Publications »', 'Ouvrez « Publications »'), t('Chaque semaine, tu y trouves quoi publier et quel jour.', 'Chaque semaine, vous y trouvez quoi publier et quel jour.')],
+  ['📋', 'Copie le texte en un clic', t('Le bouton copie la légende pour toi.', 'Le bouton copie la légende pour vous.')],
+  ['📲', 'Envoie vers Instagram', t('Le deuxième bouton ouvre le partage : choisis Instagram, colle le texte, publie.', 'Le deuxième bouton ouvre le partage : choisissez Instagram, collez le texte, publiez.')],
+  ['✅', 'Coche « C\'est publié »', t('Tu vois où tu en es, sans rien retenir.', 'Vous voyez où vous en êtes, sans rien retenir.')]]
+  .map(([i, a, b]) => `<li><span class="ico">${i}</span><div><b>${TU ? a : a.replace('Copie', 'Copiez').replace('Envoie', 'Envoyez').replace('Coche', 'Cochez')}</b><br><span style="color:var(--grey)">${b}</span></div></li>`).join('');
+
+async function preload(it) {
+  if (!files[it.id]) files[it.id] = Promise.all(it.media.map(async (m, k) => { const r = await fetch(m.file); const b = await r.blob(); return new File([b], `${C.slug}-${it.id}-${k + 1}.${m.file.split('.').pop()}`, { type: b.type }); })).catch(() => null);
+  return files[it.id];
+}
+async function share(it) {
+  const fl = await preload(it);
+  if (fl && navigator.canShare && navigator.canShare({ files: fl })) {
+    try { await navigator.share({ files: fl }); return; } catch (e) { if (e.name === 'AbortError') return; }
+  }
+  sheet(t('Enregistrer dans tes photos', 'Enregistrer dans vos photos'), [t('Appuie longuement sur l\'image (ou la vidéo).', 'Appuyez longuement sur l\'image (ou la vidéo).'), t('Choisis « Enregistrer dans Photos ».', 'Choisissez « Enregistrer dans Photos ».'), t('Ouvre Instagram, appuie sur + et sélectionne-la.', 'Ouvrez Instagram, appuyez sur + et sélectionnez-la.')]);
+}
+function card(it) {
+  preload(it);
+  const c = document.createElement('section'); c.className = 'card' + (done[it.id] ? ' done' : '');
+  const typ = it.type.toLowerCase().split(' ')[0];
+  const media = it.media.map(m => m.video ? `<video src="${m.file}" ${it.poster ? `poster="${it.poster}"` : ''} controls playsinline preload="none"></video>` : `<img src="${m.file}" alt="" loading="lazy">`).join('');
+  const n = it.media.length, vid = it.media[0].video;
+  c.innerHTML = `
+    <div class="top"><span class="day">${esc(it.label)}</span><span class="pill ${typ}">${esc(it.type)}</span></div>
+    <div class="title">${esc(it.title)}</div>
+    <div class="media ${n === 1 ? 'one' : ''}">${media}</div>
+    ${n > 1 ? `<div class="swipe">← ${t('Fais glisser pour voir les', 'Faites glisser pour voir les')} ${n} images</div>` : ''}
+    ${it.tip ? `<div class="tip">💡 ${esc(it.tip)}</div>` : ''}
+    ${it.steps ? `<ol class="seq">${it.steps.map(x => `<li><b>${esc(x.what)}</b>${x.text ? `<br><span>${esc(x.text)}</span>` : ''}</li>`).join('')}</ol>` : ''}
+    ${it.caption ? `<div class="cap">${esc(it.caption)}</div>` : ''}
+    <div class="steps">
+      ${it.caption ? `<button class="btn dark cp"><span class="n">1</span><span class="t">Copier le texte</span></button>` : ''}
+      <button class="btn sh"><span class="n">${it.caption ? 2 : 1}</span>${n > 1 ? `Envoyer les ${n} images` : vid ? 'Envoyer la vidéo' : "Envoyer l'image"} vers Instagram</button>
+    </div>
+    <label class="check"><input type="checkbox" ${done[it.id] ? 'checked' : ''}> C'est publié !</label>`;
+  const cap = c.querySelector('.cap'); if (cap) cap.onclick = () => cap.classList.toggle('open');
+  const cp = c.querySelector('.cp');
+  if (cp) cp.onclick = async () => { try { await navigator.clipboard.writeText(it.caption); cp.classList.replace('dark', 'ok'); cp.querySelector('.t').textContent = 'Texte copié ✓'; toast(t('Texte copié : tu pourras le coller dans Instagram', 'Texte copié : vous pourrez le coller dans Instagram')); } catch (e) { cap && cap.classList.add('open'); toast(t('Appuie longuement sur le texte pour le copier', 'Appuyez longuement sur le texte pour le copier')); } };
+  c.querySelector('.sh').onclick = () => share(it);
+  c.querySelector('input').onchange = e => { done[it.id] = e.target.checked; save(); c.classList.toggle('done', e.target.checked); progress(); renderHome(); if (e.target.checked) toast('Bravo ! 🎉'); };
+  return c;
+}
+function renderWeek(wid) {
+  document.querySelectorAll('#tabs button').forEach(b => b.classList.toggle('on', b.dataset.id === wid));
+  const L = $('#list'); L.innerHTML = '';
+  DATA.weeks.find(w => w.id === wid).items.forEach(id => L.appendChild(card(byId[id])));
+}
+DATA.weeks.forEach(w => { const b = document.createElement('button'); b.textContent = w.label; b.dataset.id = w.id; if (w.id === curWeek) b.classList.add('now'); b.onclick = () => renderWeek(w.id); $('#tabs').appendChild(b); });
+$('#pubsSub').textContent = 'Semaine par semaine. Le point rose indique la semaine en cours.';
+
+function renderHome() {
+  const w = DATA.weeks.find(x => x.id === curWeek);
+  const todo = w.items.map(id => byId[id]);
+  const left = todo.filter(i => !done[i.id]).length;
+  $('#weekTitle').textContent = w.label.replace('Sem.', 'Semaine');
+  const box = $('#thisweek');
+  box.innerHTML = `<div class="pad" style="padding-bottom:6px"><b>${left ? `${left} publication${left > 1 ? 's' : ''} à faire` : 'Tout est publié cette semaine, bravo ! 🎉'}</b></div>` +
+    todo.map(i => `<div class="mini"><img src="${i.poster || (i.media[0].video ? '' : i.media[0].file)}" alt="" loading="lazy"><div style="flex:1"><b>${esc(i.label)}</b><span>${esc(i.type)} · ${esc(i.title)}</span></div><span>${done[i.id] ? '✅' : '›'}</span></div>`).join('') +
+    `<div class="pad"><button class="btn" id="goWeek">Voir mes publications de la semaine</button></div>`;
+  box.querySelectorAll('.mini').forEach(m => m.onclick = () => { go('pubs'); renderWeek(curWeek); });
+  $('#goWeek').onclick = () => { go('pubs'); renderWeek(curWeek); };
+}
+
+(function () {
+  const p = DATA.profile; $('#profSub').textContent = t('À faire une seule fois, au début. Compte 10 minutes.', 'À faire une seule fois, au début. Comptez 10 minutes.');
+  let h = '';
+  if (p.photo) h += `<div class="pp"><img src="${p.photo}" alt=""><div><b>Photo de profil</b><br><span style="color:var(--grey);font-size:14px">${t('Instagram › ton profil › Modifier le profil › Modifier la photo.', 'Instagram › votre profil › Modifier le profil › Modifier la photo.')}</span></div></div><div class="steps"><button class="btn ghost" data-share="photo">Enregistrer la photo</button></div>`;
+  if (p.name) h += `<div class="pad" style="border-top:1px solid var(--line)"><b>Nom affiché</b><div class="cap open" style="margin:8px 0 10px;cursor:default">${esc(p.name)}</div><button class="btn dark" data-copy="name">Copier le nom</button></div>`;
+  if (p.bio) h += `<div class="pad" style="border-top:1px solid var(--line)"><b>Bio</b><div class="cap open" style="margin:8px 0 10px;cursor:default">${esc(p.bio)}</div><button class="btn dark" data-copy="bio">Copier la bio</button><p style="font-size:14px;color:var(--grey);margin:10px 0 0">${t('Instagram › Modifier le profil › Bio : efface l\'ancienne, colle, puis OK.', 'Instagram › Modifier le profil › Bio : effacez l\'ancienne, collez, puis OK.')}</p></div>`;
+  if (p.covers.length) h += `<div class="pad" style="border-top:1px solid var(--line);padding-bottom:8px"><b>Couvertures « à la une »</b><p style="font-size:14px;color:var(--grey);margin:4px 0 0">${t('Sur ton profil, appuie longuement sur une story à la une › Modifier › Modifier la couverture.', 'Sur votre profil, appuyez longuement sur une story à la une › Modifier › Modifier la couverture.')}</p></div><div class="covers">${p.covers.map(c => `<figure><img src="${c.file}" alt=""><figcaption>${esc(c.label)}</figcaption></figure>`).join('')}</div><div class="steps"><button class="btn ghost" data-share="covers">Enregistrer les couvertures</button></div>`;
+  if (p.pinned) h += `<div class="pad" style="border-top:1px solid var(--line)"><b>📌 Publication à épingler</b><p style="margin:6px 0 0;color:#3b3147">${esc(p.pinned)}</p></div>`;
+  $('#profile').innerHTML = h;
+  document.querySelectorAll('[data-copy]').forEach(b => b.onclick = async () => { try { await navigator.clipboard.writeText(p[b.dataset.copy]); b.classList.replace('dark', 'ok'); b.textContent = 'Copié ✓'; } catch (e) { toast('Appuie longuement sur le texte pour le copier'); } });
+  document.querySelectorAll('[data-share]').forEach(b => b.onclick = () => share({ id: 'p_' + b.dataset.share, media: b.dataset.share === 'photo' ? [{ file: p.photo }] : p.covers.map(c => ({ file: c.file })) }));
+})();
+
+const G = [
+  ['Publier une publication ou un carrousel', [t('Appuie sur « Copier le texte ».', 'Appuyez sur « Copier le texte ».'), t('Appuie sur « Envoyer vers Instagram », puis choisis Instagram › Publication.', 'Appuyez sur « Envoyer vers Instagram », puis choisissez Instagram › Publication.'), t('Vérifie l\'ordre des images, puis Suivant.', 'Vérifiez l\'ordre des images, puis Suivant.'), t('Ajoute une musique si tu veux (« Ajouter de la musique »).', 'Ajoutez une musique si vous voulez (« Ajouter de la musique »).'), t('Appuie dans « Ajouter une légende », colle le texte, puis Partager.', 'Appuyez dans « Ajouter une légende », collez le texte, puis Partager.')]],
+  ['Publier un reel (vidéo)', [t('Copie le texte, puis « Envoyer la vidéo vers Instagram » › Reels.', 'Copiez le texte, puis « Envoyer la vidéo vers Instagram » › Reels.'), t('Appuie sur la note de musique ♫ et choisis un son tendance : les vidéos sont livrées sans musique, exprès.', 'Appuyez sur la note de musique ♫ et choisissez un son tendance : les vidéos sont livrées sans musique, exprès.'), t('Suivant, colle le texte dans la légende, puis Partager.', 'Suivant, collez le texte dans la légende, puis Partager.')]],
+  ['Publier une story', [t('« Envoyer l\'image vers Instagram » › Stories.', '« Envoyer l\'image vers Instagram » › Stories.'), t('Appuie sur l\'icône sticker (le carré souriant) pour ajouter le sticker indiqué : lieu, sondage, quiz, compte à rebours…', 'Appuyez sur l\'icône sticker (le carré souriant) pour ajouter le sticker indiqué : lieu, sondage, quiz, compte à rebours…'), t('Appuie sur « Votre story ».', 'Appuyez sur « Votre story ».')]],
+  ['Publication ou story : quelle différence ?', [t('Une publication reste sur ton profil : tout le monde peut la voir.', 'Une publication reste sur votre profil : tout le monde peut la voir.'), t('Une story disparaît au bout de 24 h : elle est surtout vue par tes abonnés.', 'Une story disparaît au bout de 24 h : elle est surtout vue par vos abonnés.'), t('Suis simplement le type indiqué sur chaque carte : Reel, Carrousel, Post ou Story.', 'Suivez simplement le type indiqué sur chaque carte : Reel, Carrousel, Post ou Story.')]],
+  [t('Mettre ton espace sur l\'écran d\'accueil', 'Mettre votre espace sur l\'écran d\'accueil'), [t('iPhone : dans Safari, appuie sur Partager ⬆️ puis « Sur l\'écran d\'accueil ».', 'iPhone : dans Safari, appuyez sur Partager ⬆️ puis « Sur l\'écran d\'accueil ».'), t('Android : dans Chrome, menu ⋮ puis « Ajouter à l\'écran d\'accueil ».', 'Android : dans Chrome, menu ⋮ puis « Ajouter à l\'écran d\'accueil ».'), t('Ton espace s\'ouvre ensuite comme une application.', 'Votre espace s\'ouvre ensuite comme une application.')]],
+  ['Le bouton « Envoyer » ne marche pas ?', [t('Ouvre ton espace dans Safari (iPhone) ou Chrome (Android), pas directement dans WhatsApp.', 'Ouvrez votre espace dans Safari (iPhone) ou Chrome (Android), pas directement dans WhatsApp.'), t('Sinon : appuie longuement sur l\'image › « Enregistrer dans Photos », puis publie depuis Instagram.', 'Sinon : appuyez longuement sur l\'image › « Enregistrer dans Photos », puis publiez depuis Instagram.')]]];
+$('#guides').innerHTML = G.map(([q, s]) => `<details><summary>${q}</summary><div class="in"><ol>${s.map(x => `<li>${x}</li>`).join('')}</ol></div></details>`).join('');
+$('#cadre').innerHTML = (P.cadre || []).map(([q, s]) => `<details><summary>${esc(q)}</summary><div class="in"><ul style="padding-left:18px;margin:0">${s.map(x => `<li style="margin-bottom:6px">${esc(x)}</li>`).join('')}</ul></div></details>`).join('');
+const CT = DATA.contact || {};
+$('#contact').innerHTML = `<p style="margin:0 0 14px">${esc(CT.text || '')}</p>${CT.email ? `<a class="btn" href="mailto:${CT.email}?subject=${encodeURIComponent('Mon espace ' + C.name)}">✉️ Écrire un e-mail</a><p style="text-align:center;font-size:14px;color:var(--grey);margin:8px 0 0">${CT.email}</p>` : ''}`;
+
+(DATA.extras || []).forEach((x, xi) => {
+  const w = document.createElement('div');
+  w.innerHTML = `<h2>${esc(x.title)}</h2>${x.intro ? `<p class="sub">${esc(x.intro)}</p>` : ''}<div class="card">${x.rows.map((r, k) => `<div class="pad" style="${k ? 'border-top:1px solid var(--line)' : ''}"><b>${esc(r.label)}</b>${r.text ? `<div class="cap open" style="margin:8px 0 ${r.copy ? 10 : 0}px;cursor:default">${esc(r.text)}</div>` : ''}${r.copy ? `<button class="btn dark" data-x="${xi}_${k}">Copier</button>` : ''}</div>`).join('')}</div>`;
+  $('#extras').appendChild(w);
+});
+document.querySelectorAll('[data-x]').forEach(b => b.onclick = async () => { try { await navigator.clipboard.writeText((([a, c]) => DATA.extras[a].rows[c].text)(b.dataset.x.split('_'))); b.classList.replace('dark', 'ok'); b.textContent = 'Copié ✓'; } catch (e) { toast('Appuie longuement sur le texte pour le copier'); } });
+function go(v) { document.querySelectorAll('.view').forEach(s => s.classList.toggle('on', s.id === 'v-' + v)); document.querySelectorAll('.nav button').forEach(b => b.classList.toggle('on', b.dataset.v === v)); window.scrollTo(0, 0); try { history.replaceState(null, '', '#' + v); } catch (e) {} }
+document.querySelectorAll('.nav button').forEach(b => b.onclick = () => go(b.dataset.v));
+window.addEventListener('hashchange', () => { const v = location.hash.slice(1); if (['home', 'pubs', 'profile', 'help'].includes(v)) go(v); });
+renderWeek(curWeek); renderHome(); progress();
+go(['home', 'pubs', 'profile', 'help'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'home');
+</script>
+</body>
+</html>
