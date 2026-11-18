@@ -1,0 +1,238 @@
+{
+ "kit": [
+  {
+   "title": "Mon kit autonomie",
+   "intro": "Tout ce qu'il te faut pour continuer seule, sans rien payer, avec le même style.",
+   "rows": [
+    {
+     "label": "1. Mes modèles Canva",
+     "text": "Ouvre le lien du modèle, appuie sur « Utiliser comme modèle », change la photo et le texte. Canva gratuit suffit."
+    },
+    {
+     "label": "2. Mes légendes",
+     "text": "Choisis le type de post, copie la légende et change les mots entre [crochets]."
+    },
+    {
+     "label": "3. Mon planning",
+     "text": "3 publications par semaine : mardi, jeudi, samedi, vers 12h15 ou 19h. Le planning type sur 4 semaines se répète tout le temps."
+    },
+    {
+     "label": "4. Mes photos et vidéos",
+     "text": "Suis les 5 règles photo et les 5 plans vidéo plus bas."
+    },
+    {
+     "label": "5. Mon montage",
+     "text": "Appli gratuite Edits (Instagram) ou CapCut. La musique, tu l'ajoutes directement dans Instagram."
+    }
+   ]
+  },
+  {
+   "title": "Ma charte",
+   "intro": "Tes couleurs et tes polices, à reprendre dans Canva pour garder le même style.",
+   "rows": [
+    {
+     "label": "Crème (fond)",
+     "text": "#F7F1EA",
+     "copy": true
+    },
+    {
+     "label": "Poudre d'orchidée (fond doux)",
+     "text": "#ECD4D0",
+     "copy": true
+    },
+    {
+     "label": "Orchidée (accent)",
+     "text": "#C47C88",
+     "copy": true
+    },
+    {
+     "label": "Pampa (accent doux)",
+     "text": "#CDB296",
+     "copy": true
+    },
+    {
+     "label": "Prune (textes)",
+     "text": "#4E343A",
+     "copy": true
+    },
+    {
+     "label": "Titres",
+     "text": "Bodoni Moda (droit ou italique)"
+    },
+    {
+     "label": "Textes",
+     "text": "Jost"
+    },
+    {
+     "label": "Petite touche manuscrite",
+     "text": "La Belle Aurore (2 ou 3 mots maximum)"
+    },
+    {
+     "label": "Les 3 règles",
+     "text": "Une seule idée par visuel. Peu de texte, jamais sur le visage. Toujours des photos lumineuses, en lumière du jour."
+    }
+   ]
+  },
+  {
+   "title": "Mes légendes à réutiliser",
+   "intro": "Copie, change les mots entre [crochets], publie.",
+   "rows": [
+    {
+     "label": "Une réalisation (cils)",
+     "text": "Le regard qui vous ressemble 👀\nAujourd'hui, une pose [cil à cil / mixte / volume russe] pour [prénom], [naturelle / plus intense] comme elle les aime.\nVos cils naturels passent toujours en premier : on choisit ensemble l'effet qui vous va.\n\n✨ Extensions de cils dès 38 €\nÉcrivez-moi en message privé pour réserver votre pose 💌\n\n#extensiondecils #estheticiennetroyes #lachapellesaintluc #troyes #mbeauty",
+     "copy": true
+    },
+    {
+     "label": "Une réalisation (ongles)",
+     "text": "[Couleur / style] pour [prénom] 💅\nUn semi-permanent qui tient, des mains soignées, et un vrai moment pour soi.\n\n💅 Semi-permanent mains ou pieds : 20 €\nVous voulez la même ? Écrivez-moi en message privé 💌\n\n#ongles #semipermanent #estheticiennetroyes #lachapellesaintluc #mbeauty",
+     "copy": true
+    },
+    {
+     "label": "Avant / après",
+     "text": "Avant… après ✨\n[Ce qu'on a fait, en une phrase : ex. des pieds tout doux après un soin hyperkératose].\nPas de gêne à avoir : c'est exactement mon métier.\n\nEnvie du même résultat ? Écrivez-moi en message privé 💌\n\n#avantapres #estheticiennetroyes #lachapellesaintluc #troyes #mbeauty",
+     "copy": true
+    },
+    {
+     "label": "Un avis client",
+     "text": "« [Citation de l'avis] » 🥹\nMerci [prénom] pour ce retour qui me touche énormément.\nC'est pour ces moments-là que j'aime mon métier.\n\nVous hésitez encore ? Écrivez-moi en message privé, je réponds à toutes vos questions 💌\n\n#avisclient #estheticiennetroyes #lachapellesaintluc #mbeauty",
+     "copy": true
+    },
+    {
+     "label": "Un conseil",
+     "text": "[Le conseil en une phrase : ex. Pour faire tenir vos extensions plus longtemps…] 💡\n1. [Conseil 1]\n2. [Conseil 2]\n3. [Conseil 3]\n\nEnregistrez ce post pour l'avoir sous la main 📌\nUne question ? Écrivez-moi en message privé 💌\n\n#conseilbeaute #estheticiennetroyes #lachapellesaintluc #mbeauty",
+     "copy": true
+    },
+    {
+     "label": "Mes tarifs",
+     "text": "Prendre soin de vous… sans vous ruiner 💕\nDepuis 5 ans, je vous propose des soins de qualité à des prix doux.\nFaites glisser pour voir tous mes tarifs 👉\n\nEnregistrez ce post pour les avoir sous la main 📌\nEnvie d'un rendez-vous ? Écrivez-moi en message privé 💌\n\n#estheticiennetroyes #soinaccessible #lachapellesaintluc #troyes #mbeauty",
+     "copy": true
+    },
+    {
+     "label": "Des créneaux libres",
+     "text": "Il me reste quelques créneaux [cette semaine / le jour] ✨\n[Jour] : [heures]\n[Jour] : [heures]\nPremière arrivée, première servie : écrivez-moi en message privé 💌",
+     "copy": true
+    },
+    {
+     "label": "Mon institut / moi",
+     "text": "Entrez, installez-vous, c'est votre moment 🌸\nMoi c'est Manon, esthéticienne depuis 5 ans. Je vous reçois dans un institut 100 % féminin, un petit cocon où l'on prend le temps.\n\n📍 22 rue des Templiers, La Chapelle-Saint-Luc · de 9h à 18h, même entre midi\nÉcrivez-moi en message privé 💌\n\n#institutdebeaute #estheticiennetroyes #lachapellesaintluc #mbeauty",
+     "copy": true
+    },
+    {
+     "label": "Une occasion (fêtes, Saint-Valentin, fête des mères…)",
+     "text": "[L'occasion] arrive ! 🎁\nOffrez-lui un moment rien qu'à elle : cils, ongles, soin du visage, modelage…\nLa carte cadeau M' & Beauty fait plaisir à coup sûr.\n\nPour la commander, écrivez-moi en message privé 💌\n\n#cartecadeau #estheticiennetroyes #lachapellesaintluc #mbeauty",
+     "copy": true
+    }
+   ]
+  },
+  {
+   "title": "Mes accroches",
+   "intro": "La première phrase à l'écran ou en début de légende : c'est elle qui arrête le pouce.",
+   "rows": [
+    {
+     "label": "Accroche",
+     "text": "On me dit souvent : « [phrase qu'on te dit en cabine] »",
+     "copy": true
+    },
+    {
+     "label": "Accroche",
+     "text": "Avec 20 €, vous vous offrez quoi ?",
+     "copy": true
+    },
+    {
+     "label": "Accroche",
+     "text": "Les questions que vous n'osez pas poser à votre esthéticienne 🤫",
+     "copy": true
+    },
+    {
+     "label": "Accroche",
+     "text": "Elle pensait que [problème]… regardez le résultat",
+     "copy": true
+    },
+    {
+     "label": "Accroche",
+     "text": "3 erreurs qui abîment vos [cils / ongles / pieds]",
+     "copy": true
+    },
+    {
+     "label": "Accroche",
+     "text": "Naturel ou intense : vous êtes plutôt quoi ?",
+     "copy": true
+    },
+    {
+     "label": "Accroche",
+     "text": "Ce que personne ne vous dit sur [prestation]",
+     "copy": true
+    },
+    {
+     "label": "Accroche",
+     "text": "Votre pause du midi, rien qu'à vous ☀️",
+     "copy": true
+    }
+   ]
+  },
+  {
+   "title": "Mon planning type (4 semaines)",
+   "intro": "À répéter tous les mois. Mardi, jeudi, samedi, vers 12h15 ou 19h.",
+   "rows": [
+    {
+     "label": "Semaine 1",
+     "text": "Mardi : Reel réalisation cils · Jeudi : carrousel tarifs · Samedi : avis client"
+    },
+    {
+     "label": "Semaine 2",
+     "text": "Mardi : Reel avant / après · Jeudi : carrousel conseil · Samedi : réalisation ongles"
+    },
+    {
+     "label": "Semaine 3",
+     "text": "Mardi : Reel face caméra (une phrase qu'on te dit souvent) · Jeudi : mon institut / moi · Samedi : réalisation cils"
+    },
+    {
+     "label": "Semaine 4",
+     "text": "Mardi : Reel réalisation ongles ou pieds · Jeudi : occasion du mois (carte cadeau…) · Samedi : avis client"
+    },
+    {
+     "label": "Chaque semaine en story",
+     "text": "2 ou 3 stories spontanées : une réalisation du jour, tes créneaux libres, un sondage (« naturel ou intense ? »). Pas besoin que ce soit parfait."
+    }
+   ]
+  },
+  {
+   "title": "Mes photos et vidéos",
+   "intro": "Avec ton téléphone, ça suffit largement.",
+   "rows": [
+    {
+     "label": "Photo 1 · La lumière",
+     "text": "Près d'une fenêtre, en lumière du jour. Jamais de flash, jamais sous une lampe jaune."
+    },
+    {
+     "label": "Photo 2 · Le fond",
+     "text": "Un fond simple et doux : drap clair, serviette, plaid, ton mur. Range ce qui traîne autour."
+    },
+    {
+     "label": "Photo 3 · Le cadrage",
+     "text": "Ton téléphone à la verticale, l'appareil photo arrière, objectif essuyé. Mets la réalisation au centre, assez près."
+    },
+    {
+     "label": "Photo 4 · La mise au point",
+     "text": "Touche l'écran sur les cils ou les ongles pour que ce soit net. Prends-en 5 ou 6, garde la meilleure."
+    },
+    {
+     "label": "Photo 5 · Les retouches",
+     "text": "Pas de filtre. Juste un peu de luminosité si besoin, dans l'appli Photos."
+    },
+    {
+     "label": "Vidéo · Les 5 plans à filmer",
+     "text": "1. Le résultat de près (5 s) · 2. Ton geste pendant la pose (5 s) · 3. Le visage ou les mains de la cliente qui découvre (3 s) · 4. Un plan de ton institut (3 s) · 5. Toi qui souris à la caméra (3 s)"
+    },
+    {
+     "label": "Vidéo · Les réglages",
+     "text": "Téléphone à la verticale, posé ou bien calé. Filme en 4K si ton téléphone le permet. Chaque plan dure au moins 5 secondes."
+    },
+    {
+     "label": "Montage · Edits ou CapCut (gratuits)",
+     "text": "Importe tes plans, coupe chaque plan à 2 ou 3 secondes, ajoute l'accroche en texte en haut de l'écran, active les sous-titres automatiques si tu parles. Enregistre sans musique : tu l'ajoutes en publiant sur Instagram."
+    }
+   ]
+  }
+ ]
+}

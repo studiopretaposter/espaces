@@ -51,7 +51,7 @@ prof = dict(spec.get('profile', {}))
 if prof.get('photo'): prof['photo'] = add(prof['photo'])
 prof['covers'] = [{'label': c['label'], 'file': add(c['file'])} for c in prof.get('covers', [])]
 
-data = {k: spec[k] for k in ('client', 'pack', 'contact', 'texts', 'extras') if k in spec}
+data = {k: spec[k] for k in ('client', 'pack', 'contact', 'texts', 'extras', 'kit') if k in spec}
 data.update({'items': items, 'weeks': wl, 'profile': prof})
 tpl = open(os.path.join(HERE, 'template.html')).read()
 out = tpl.replace('/*DATA*/', 'const DATA = ' + json.dumps(data, ensure_ascii=False) + ';').replace('{{TITLE}}', html.escape(spec['client']['name']))
