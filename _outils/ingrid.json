@@ -55,42 +55,47 @@
   "covers": [
    {
     "label": "Qui suis-je",
-    "file": "/home/claude/ingrid/v2/profil/1_Qui_suis_je.jpg"
+    "file": "/home/claude/ingrid/v3/profil/1_Qui_suis-je.jpg"
    },
    {
     "label": "Mes soins",
-    "file": "/home/claude/ingrid/v2/profil/2_Mes_soins.jpg"
+    "file": "/home/claude/ingrid/v3/profil/2_Mes_soins.jpg"
    },
    {
     "label": "Offres",
-    "file": "/home/claude/ingrid/v2/profil/3_Offres.jpg"
+    "file": "/home/claude/ingrid/v3/profil/3_Offres.jpg"
    },
    {
     "label": "Avis",
-    "file": "/home/claude/ingrid/v2/profil/4_Avis.jpg"
+    "file": "/home/claude/ingrid/v3/profil/4_Avis.jpg"
    },
    {
     "label": "Conseils",
-    "file": "/home/claude/ingrid/v2/profil/5_Conseils.jpg"
+    "file": "/home/claude/ingrid/v3/profil/5_Conseils.jpg"
    },
    {
     "label": "Recettes",
-    "file": "/home/claude/ingrid/v2/profil/6_Recettes.jpg"
+    "file": "/home/claude/ingrid/v3/profil/6_Recettes.jpg"
    },
    {
     "label": "Avant-Après",
-    "file": "/home/claude/ingrid/v2/profil/7_Avant_Apres.jpg"
+    "file": "/home/claude/ingrid/v3/profil/7_Avant-Après.jpg"
    },
    {
     "label": "Beauté",
-    "file": "/home/claude/ingrid/v2/profil/8_Beaute.jpg"
+    "file": "/home/claude/ingrid/v3/profil/8_Beauté.jpg"
    },
    {
     "label": "Mantra",
-    "file": "/home/claude/ingrid/v2/profil/9_Mantra.jpg"
+    "file": "/home/claude/ingrid/v3/profil/9_Mantra.jpg"
+   },
+   {
+    "label": "Le cabinet",
+    "file": "/home/claude/ingrid/v3/profil/10_Le_cabinet.jpg"
    }
   ],
-  "pinned": "Le carrousel Black November (18 nov.) : épingle-le jusqu'au 27 novembre. Sur la publication › ⋯ › Épingler."
+  "pinned": "Le carrousel Black November (18 nov.) : épingle-le jusqu'au 27 novembre. Sur la publication › ⋯ › Épingler.",
+  "photo": "/home/claude/ingrid/v3/profil/Photo_de_profil.jpg"
  },
  "extras": [
   {
@@ -440,9 +445,15 @@
    "date": "2026-11-21",
    "label": "Samedi 21 nov.",
    "type": "Story",
-   "title": "Coulisses du cabinet",
+   "title": "Le cabinet (à mettre à la une)",
    "media": [
-    "/home/claude/ingrid/v2/charte/templates_stories/1_Fond_foret.jpg"
+    "/home/claude/ingrid/v3/stories_cabinet/1.jpg",
+    "/home/claude/ingrid/v3/stories_cabinet/2.jpg",
+    "/home/claude/ingrid/v3/stories_cabinet/3.jpg",
+    "/home/claude/ingrid/v3/stories_cabinet/4.jpg",
+    "/home/claude/ingrid/v3/stories_cabinet/5.jpg",
+    "/home/claude/ingrid/v3/stories_cabinet/6.jpg",
+    "/home/claude/ingrid/v3/stories_cabinet/7.jpg"
    ],
    "caption": "",
    "steps": [
@@ -459,7 +470,7 @@
      "text": "Ajoute le sticker Quiz : « Combien de séances dure une cure ? »"
     }
    ],
-   "tip": "Une séquence de stories, à publier dans l'ordre. « Image prête » : le bouton l'envoie pour toi. Le reste, tu le filmes en quelques secondes."
+   "tip": "Publie les 7 stories dans l’ordre. Story 7 → ajoute un sticker LIEN vers tes messages. Ensuite, crée la story à la une « Le cabinet » avec sa nouvelle couverture (onglet Profil)."
   },
   {
    "id": "s04",
