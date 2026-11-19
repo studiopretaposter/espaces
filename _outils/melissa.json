@@ -1,0 +1,349 @@
+{
+ "client": {
+  "slug": "melissa",
+  "name": "Mélissa · Culligan Aube",
+  "first": "Mélissa",
+  "tone": "tu"
+ },
+ "pack": {
+  "name": "Pack Prêt à Poster · 1 mois",
+  "start": "2026-11-10",
+  "end": "2026-12-09",
+  "retouches": "1 tour inclus, dans les 7 jours après la livraison",
+  "cadre": [
+   [
+    "Ce que tu reçois",
+    [
+     "Tes publications du mois : reels, carrousels, stories et posts Facebook",
+     "Tous les textes, prêts à copier",
+     "Le calendrier : quoi publier, et quel jour",
+     "Ton profil revu : bio et couvertures à la une",
+     "Les vidéos sont livrées sans musique : tu ajoutes un son en publiant"
+    ]
+   ],
+   [
+    "Les retouches",
+    [
+     "1 tour de retouches inclus, dans les 7 jours après la livraison",
+     "En un seul message : la publication concernée et ce qu’il faut changer",
+     "Corrections livrées sous 48 h ouvrées"
+    ]
+   ],
+   [
+    "Ce qui reste entre tes mains",
+    [
+     "C’est toi qui publies : je n’accède pas à ton compte",
+     "Répondre aux commentaires et aux messages « EAU »",
+     "Les petites stories spontanées : ce sont elles qui créent le lien"
+    ]
+   ],
+   [
+    "Mon engagement",
+    [
+     "Des contenus pros, prêts à publier, avec des chiffres vérifiés et sourcés",
+     "Je ne promets ni vues, ni abonnés, ni rendez-vous : ils dépendent de ton offre, de ta régularité et des réseaux eux-mêmes"
+    ]
+   ]
+  ]
+ },
+ "contact": {
+  "email": "studio.pretaposter@gmail.com",
+  "text": "Un fichier qui ne s’ouvre pas, une étape pas claire, une retouche ? Écris-moi, je te réponds sous 24 h ouvrées, du lundi au vendredi."
+ },
+ "profile": {
+  "bio": "💧 J’aide les foyers de l’Aube à dire stop au calcaire et aux packs d’eau\n🏡 +100 foyers équipés\n📩 Écrivez « EAU » en message pour votre démo à domicile",
+  "photo": "/home/claude/livraison/PROFIL/Photo-profil.jpg",
+  "covers": [
+   {
+    "label": "Qui suis je",
+    "file": "/home/claude/livraison/PROFIL/Couvertures-a-la-une/1_Qui-suis-je.jpg"
+   },
+   {
+    "label": "Avis",
+    "file": "/home/claude/livraison/PROFIL/Couvertures-a-la-une/2_Avis.jpg"
+   },
+   {
+    "label": "Installations",
+    "file": "/home/claude/livraison/PROFIL/Couvertures-a-la-une/3_Installations.jpg"
+   },
+   {
+    "label": "Osmoseur",
+    "file": "/home/claude/livraison/PROFIL/Couvertures-a-la-une/4_Osmoseur.jpg"
+   },
+   {
+    "label": "Adoucisseur",
+    "file": "/home/claude/livraison/PROFIL/Couvertures-a-la-une/5_Adoucisseur.jpg"
+   },
+   {
+    "label": "Contact",
+    "file": "/home/claude/livraison/PROFIL/Couvertures-a-la-une/6_Contact.jpg"
+   }
+  ]
+ },
+ "extras": [
+  {
+   "title": "Mes réponses types",
+   "intro": "À copier quand on t’écrit « EAU » en message privé.",
+   "rows": [
+    {
+     "label": "On t’écrit « EAU »",
+     "text": "Bonjour [prénom] ! Merci pour votre message 😊 Je me déplace chez vous pour tester votre eau et on regarde ensemble la solution la plus adaptée. Vous habitez dans quelle commune ? Et quand seriez-vous disponible ?",
+     "copy": true
+    },
+    {
+     "label": "On te demande un prix",
+     "text": "Bonne question ! Le prix dépend de votre eau et de votre installation, c’est justement ce qu’on regarde pendant la démo. Je peux passer chez vous cette semaine ou la suivante, qu’est-ce qui vous arrange ?",
+     "copy": true
+    },
+    {
+     "label": "Après un vote au sondage",
+     "text": "Coucou [prénom] ! J’ai vu votre réponse au sondage 😊 Si vous voulez, je peux passer tester votre eau chez vous, ça prend une petite demi-heure. Ça vous dit ?",
+     "copy": true
+    }
+   ]
+  },
+  {
+   "title": "Mes chiffres vérifiés",
+   "intro": "Les chiffres utilisés dans tes contenus, avec leur source. Tu peux les reprendre en démo.",
+   "rows": [
+    {
+     "label": "Dureté de l’eau dans l’Aube",
+     "text": "26,8 °f en moyenne : une eau « moyennement dure » (contrôles officiels SISE-Eaux).",
+     "copy": true
+    },
+    {
+     "label": "Calcaire dans les tuyaux",
+     "text": "Plus de 30 kg de calcaire par an passent dans les tuyaux d’un foyer moyen (268 mg/L × 120 m³ par an).",
+     "copy": true
+    },
+    {
+     "label": "Chauffe-eau",
+     "text": "1 mm de tartre sur la résistance ≈ 10 % d’énergie en plus (ordre de grandeur cité par les spécialistes du chauffage).",
+     "copy": true
+    },
+    {
+     "label": "Eau du robinet",
+     "text": "C’est l’aliment le plus contrôlé en France (ministère chargé de la Santé). Seulement 1 % de l’eau consommée à la maison sert à boire (CIEau).",
+     "copy": true
+    },
+    {
+     "label": "Eau en bouteille",
+     "text": "100 à 300 fois plus chère que l’eau du robinet (ADEME). En moyenne 240 000 particules de plastique par litre mesurées sur 3 marques (université Columbia, 2024).",
+     "copy": true
+    },
+    {
+     "label": "Calcaire et santé",
+     "text": "Le calcaire n’est pas dangereux à boire : il abîme surtout la robinetterie et les appareils.",
+     "copy": true
+    }
+   ]
+  }
+ ],
+ "items": [
+  {
+   "id": "m01",
+   "date": "2026-11-19",
+   "label": "Jeudi 19 nov. · 12h15",
+   "type": "Reel",
+   "title": "L’eau pure au robinet",
+   "media": [
+    "/home/claude/livraison/2026-11-19_REEL_Eau-au-robinet_v2.mp4"
+   ],
+   "cover": "/home/claude/livraison/posters/2026-11-19_REEL_Eau-au-robinet_v2.jpg",
+   "caption": "Et si vous n’achetiez plus jamais de packs d’eau ? 💧\nL’eau filtrée coule directement au robinet de votre cuisine. Vous remplissez votre carafe… et c’est tout.\nVous voulez la goûter chez vous ?\n📩 Envoyez EAU en message ou appelez-moi au 06 27 60 52 92\n\n#Troyes #Aube #Culligan #calcaire #adoucisseur #osmoseur #eaudurobinet",
+   "tip": "🎵 Ajoute une musique depuis Instagram au moment de publier (volume bas). Partage le reel en story 1 h après."
+  },
+  {
+   "id": "m02",
+   "date": "2026-11-21",
+   "label": "Samedi 21 nov. · 10h",
+   "type": "Carrousel",
+   "title": "Comment marche l’osmoseur",
+   "media": [
+    "/home/claude/livraison/2026-11-21_CARROUSEL_Comment-marche-osmoseur_v2/1.jpg",
+    "/home/claude/livraison/2026-11-21_CARROUSEL_Comment-marche-osmoseur_v2/2.jpg",
+    "/home/claude/livraison/2026-11-21_CARROUSEL_Comment-marche-osmoseur_v2/3.jpg",
+    "/home/claude/livraison/2026-11-21_CARROUSEL_Comment-marche-osmoseur_v2/4.jpg",
+    "/home/claude/livraison/2026-11-21_CARROUSEL_Comment-marche-osmoseur_v2/5.jpg",
+    "/home/claude/livraison/2026-11-21_CARROUSEL_Comment-marche-osmoseur_v2/6.jpg",
+    "/home/claude/livraison/2026-11-21_CARROUSEL_Comment-marche-osmoseur_v2/7.jpg"
+   ],
+   "caption": "Ce qui se passe sous l’évier avant que l’eau arrive dans votre verre 💧\nPréfiltre, charbon actif, membrane, réservoir, robinet dédié : je vous explique les 5 étapes 👉\nEnregistrez ce post pour le retrouver 📌\n📩 Envoyez EAU en message ou appelez-moi au 06 27 60 52 92\n\n#Troyes #Aube #Culligan #calcaire #adoucisseur #osmoseur #eaudurobinet",
+   "tip": "Sélectionne les 7 images dans l’ordre. Partage le post en story."
+  },
+  {
+   "id": "m03",
+   "date": "2026-11-23",
+   "label": "Lundi 23 nov. · 12h30",
+   "type": "Stories",
+   "title": "Le calcaire (sondage)",
+   "media": [
+    "/home/claude/livraison/2026-11-23_STORIES_Calcaire-sondage_v2/1.jpg",
+    "/home/claude/livraison/2026-11-23_STORIES_Calcaire-sondage_v2/2.jpg",
+    "/home/claude/livraison/2026-11-23_STORIES_Calcaire-sondage_v2/3.jpg",
+    "/home/claude/livraison/2026-11-23_STORIES_Calcaire-sondage_v2/4.jpg",
+    "/home/claude/livraison/2026-11-23_STORIES_Calcaire-sondage_v2/5.jpg",
+    "/home/claude/livraison/2026-11-23_STORIES_Calcaire-sondage_v2/6.jpg",
+    "/home/claude/livraison/2026-11-23_STORIES_Calcaire-sondage_v2/7.jpg"
+   ],
+   "caption": "",
+   "tip": "Stickers à ajouter : story 1 → SONDAGE « Une guerre quotidienne 😩 / Ça va, je gère 💪 » · story 6 → QUESTIONS · story 7 → LIEN vers tes messages. Ajoute ensuite les stories à la une « Adoucisseur »."
+  },
+  {
+   "id": "m04",
+   "date": "2026-11-24",
+   "label": "Mardi 24 nov. · 18h30",
+   "type": "Reel",
+   "title": "5 chiffres sur l’eau de l’Aube",
+   "media": [
+    "/home/claude/livraison/2026-11-24_REEL_5-chiffres-eau-Aube_v2.mp4"
+   ],
+   "cover": "/home/claude/livraison/posters/2026-11-24_REEL_5-chiffres-eau-Aube_v2.jpg",
+   "caption": "Saviez-vous qu’un foyer de l’Aube voit passer plus de 30 kg de calcaire par an dans ses tuyaux ? 💧\nChauffe-eau, eau du robinet, bouteilles en plastique : 5 chiffres vérifiés sur l’eau de chez nous 👇\nEt chez vous, votre eau, elle en est où ? Je viens la tester à domicile.\n📩 Envoyez EAU en message ou appelez-moi au 06 27 60 52 92\n\n#Troyes #Aube #Culligan #calcaire #adoucisseur #osmoseur #eaudurobinet",
+   "tip": "🎵 Ajoute une musique depuis Instagram au moment de publier (volume bas). Partage le reel en story 1 h après."
+  },
+  {
+   "id": "m05",
+   "date": "2026-11-25",
+   "label": "Mercredi 25 nov. · 19h",
+   "type": "Groupes Facebook",
+   "title": "Post « sondage »",
+   "media": [],
+   "caption": "Petite question pour les habitants du coin 🤔\nChez vous, vous buvez plutôt :\n💧 l’eau du robinet\n🧴 l’eau en bouteille\nEt pourquoi ? Je suis curieuse de savoir, je travaille dans le traitement de l’eau dans l’Aube !",
+   "tip": "Dans 2 ou 3 groupes locaux maximum. Pas de pub ni de lien dans le post. Réponds aux commentaires et propose la démo en privé."
+  },
+  {
+   "id": "m06",
+   "date": "2026-11-26",
+   "label": "Jeudi 26 nov. · 18h30",
+   "type": "Reel",
+   "title": "Le test du goût",
+   "media": [
+    "/home/claude/livraison/2026-11-26_REEL_Test-du-gout_v2.mp4"
+   ],
+   "cover": "/home/claude/livraison/posters/2026-11-26_REEL_Test-du-gout_v2.jpg",
+   "caption": "1 mois après l’installation de son osmoseur, elle goûte l’eau de son robinet 💧\nSon verdict : « Rien à voir. » 😄\nEt vous, vous voulez la goûter chez vous ?\n📩 Envoyez EAU en message ou appelez-moi au 06 27 60 52 92\n\n#Troyes #Aube #Culligan #calcaire #adoucisseur #osmoseur #eaudurobinet",
+   "tip": "Ce reel garde sa vraie voix : ajoute une musique très douce, ou pas de musique. Partage le reel en story 1 h après."
+  },
+  {
+   "id": "m07",
+   "date": "2026-11-28",
+   "label": "Samedi 28 nov. · 10h",
+   "type": "Carrousel",
+   "title": "Adoucisseur ou osmoseur ?",
+   "media": [
+    "/home/claude/livraison/2026-11-28_CARROUSEL_Adoucisseur-ou-osmoseur_v2/1.jpg",
+    "/home/claude/livraison/2026-11-28_CARROUSEL_Adoucisseur-ou-osmoseur_v2/2.jpg",
+    "/home/claude/livraison/2026-11-28_CARROUSEL_Adoucisseur-ou-osmoseur_v2/3.jpg",
+    "/home/claude/livraison/2026-11-28_CARROUSEL_Adoucisseur-ou-osmoseur_v2/4.jpg",
+    "/home/claude/livraison/2026-11-28_CARROUSEL_Adoucisseur-ou-osmoseur_v2/5.jpg",
+    "/home/claude/livraison/2026-11-28_CARROUSEL_Adoucisseur-ou-osmoseur_v2/6.jpg",
+    "/home/claude/livraison/2026-11-28_CARROUSEL_Adoucisseur-ou-osmoseur_v2/7.jpg"
+   ],
+   "caption": "Adoucisseur ou osmoseur : lequel choisir ? 🤔\nL’un protège toute la maison du calcaire, l’autre vous donne une eau filtrée à boire. Je vous explique la différence 👉\nLe bon choix dépend de votre eau : c’est ce qu’on regarde ensemble pendant la démo.\n📩 Envoyez EAU en message ou appelez-moi au 06 27 60 52 92\n\n#Troyes #Aube #Culligan #calcaire #adoucisseur #osmoseur #eaudurobinet",
+   "tip": "Sélectionne les 7 images dans l’ordre. Partage le post en story."
+  },
+  {
+   "id": "m08",
+   "date": "2026-11-30",
+   "label": "Lundi 30 nov. · 12h30",
+   "type": "Stories",
+   "title": "Une journée avec moi",
+   "media": [
+    "/home/claude/livraison/2026-11-30_STORIES_Une-journee-avec-moi_v2/1.jpg",
+    "/home/claude/livraison/2026-11-30_STORIES_Une-journee-avec-moi_v2/2.jpg",
+    "/home/claude/livraison/2026-11-30_STORIES_Une-journee-avec-moi_v2/3.jpg",
+    "/home/claude/livraison/2026-11-30_STORIES_Une-journee-avec-moi_v2/4.jpg",
+    "/home/claude/livraison/2026-11-30_STORIES_Une-journee-avec-moi_v2/5.jpg"
+   ],
+   "caption": "",
+   "tip": "Story 5 → sticker LIEN vers tes messages. Idéal : ajoute 1 ou 2 vraies stories du jour (une installation, la route). Ajoute à la une « Installations »."
+  },
+  {
+   "id": "m09",
+   "date": "2026-12-01",
+   "label": "Mardi 1er déc. · 18h30",
+   "type": "Reel",
+   "title": "Vrai ou faux ? 4 idées reçues",
+   "media": [
+    "/home/claude/livraison/2026-12-01_REEL_Vrai-ou-faux-eau_v2.mp4"
+   ],
+   "cover": "/home/claude/livraison/posters/2026-12-01_REEL_Vrai-ou-faux-eau_v2.jpg",
+   "caption": "Vrai ou faux ? 4 idées reçues sur l’eau 💧\nVous aviez combien de bonnes réponses ? Dites-le moi en commentaire 👇\nEt si vous voulez savoir ce que contient vraiment votre eau, je viens la tester chez vous.\n📩 Envoyez EAU en message ou appelez-moi au 06 27 60 52 92\n\n#Troyes #Aube #Culligan #calcaire #adoucisseur #osmoseur #eaudurobinet",
+   "tip": "🎵 Ajoute une musique depuis Instagram au moment de publier (volume bas). Partage le reel en story 1 h après."
+  },
+  {
+   "id": "m10",
+   "date": "2026-12-02",
+   "label": "Mercredi 2 déc. · 19h",
+   "type": "Stories",
+   "title": "Quiz vrai ou faux",
+   "media": [
+    "/home/claude/livraison/2026-12-02_STORIES_Vrai-ou-faux_v2/1.jpg",
+    "/home/claude/livraison/2026-12-02_STORIES_Vrai-ou-faux_v2/2.jpg",
+    "/home/claude/livraison/2026-12-02_STORIES_Vrai-ou-faux_v2/3.jpg",
+    "/home/claude/livraison/2026-12-02_STORIES_Vrai-ou-faux_v2/4.jpg",
+    "/home/claude/livraison/2026-12-02_STORIES_Vrai-ou-faux_v2/5.jpg",
+    "/home/claude/livraison/2026-12-02_STORIES_Vrai-ou-faux_v2/6.jpg",
+    "/home/claude/livraison/2026-12-02_STORIES_Vrai-ou-faux_v2/7.jpg",
+    "/home/claude/livraison/2026-12-02_STORIES_Vrai-ou-faux_v2/8.jpg"
+   ],
+   "caption": "",
+   "tip": "Stories 2, 4 et 6 → sticker QUIZ (Vrai / Faux, bonne réponse : Faux). Story 8 → sticker LIEN. Le lendemain, repartage les résultats."
+  },
+  {
+   "id": "m11",
+   "date": "2026-12-05",
+   "label": "Samedi 5 déc. · 10h30",
+   "type": "Stories",
+   "title": "Les packs d’eau (sondage)",
+   "media": [
+    "/home/claude/livraison/2026-12-05_STORIES_Packs-d-eau-sondage_v2/1.jpg",
+    "/home/claude/livraison/2026-12-05_STORIES_Packs-d-eau-sondage_v2/2.jpg",
+    "/home/claude/livraison/2026-12-05_STORIES_Packs-d-eau-sondage_v2/3.jpg",
+    "/home/claude/livraison/2026-12-05_STORIES_Packs-d-eau-sondage_v2/4.jpg",
+    "/home/claude/livraison/2026-12-05_STORIES_Packs-d-eau-sondage_v2/5.jpg"
+   ],
+   "caption": "",
+   "tip": "Story 1 → SONDAGE « Aucun / 1 à 2 / 3 ou plus ». Story 5 → sticker LIEN. Écris en privé à ceux qui votent « 3 ou plus »."
+  },
+  {
+   "id": "m12",
+   "date": "2026-12-06",
+   "label": "Dimanche 6 déc. · 18h",
+   "type": "Groupes Facebook",
+   "title": "Post de présentation",
+   "media": [
+    "/home/claude/livraison/GROUPES-FACEBOOK/Visuel-groupes-Facebook.jpg"
+   ],
+   "caption": "Bonjour à tous ! Je m’appelle Mélissa, conseillère Culligan dans l’Aube 💧\nJ’ai déjà accompagné plus de 100 foyers du secteur à dire au revoir au calcaire et aux packs d’eau. Je me déplace chez vous pour tester votre eau et vous montrer les solutions (adoucisseur, osmoseur).\nEnvoyez-moi un message ou appelez-moi au 06 27 60 52 92 😊",
+   "tip": "Uniquement dans les groupes qui autorisent la pub (souvent un jour dédié)."
+  },
+  {
+   "id": "m13",
+   "date": "2026-12-08",
+   "label": "Mardi 8 déc. · 18h30",
+   "type": "Reel",
+   "title": "Angélique, 1 mois après",
+   "media": [
+    "/home/claude/livraison/2026-12-08_REEL_Angelique-best-of.mp4"
+   ],
+   "cover": "/home/claude/livraison/posters/2026-12-08_REEL_Angelique-best-of.jpg",
+   "caption": "60 € par mois en packs d’eau… et maintenant 28 € 💸\nAngélique raconte son premier mois avec son osmoseur : plus rien à porter, plus rien à stocker, et ça ne se voit pas, c’est sous l’évier.\nSon conseil si vous hésitez ? « Ne plus hésiter. »\n📩 Envoyez EAU en message ou appelez-moi au 06 27 60 52 92\n\n#Troyes #Aube #Culligan #calcaire #adoucisseur #osmoseur #eaudurobinet",
+   "tip": "Ce reel garde la vraie voix d’Angélique : musique très douce ou pas de musique. Partage le reel en story 1 h après."
+  },
+  {
+   "id": "m14",
+   "date": "2026-12-09",
+   "label": "Mercredi 9 déc. · 18h30",
+   "type": "Reel",
+   "title": "Combien coûtent vos packs ?",
+   "media": [
+    "/home/claude/livraison/2026-12-09_REEL_Cout-des-packs.mp4"
+   ],
+   "cover": "/home/claude/livraison/posters/2026-12-09_REEL_Cout-des-packs.jpg",
+   "caption": "Une famille de 4 porte 2,2 tonnes de packs d’eau par an 😮\nJ’ai fait le calcul : 243 packs, environ 657 € par an… contre une dizaine d’euros au robinet.\nEt chez vous, combien de packs par mois ? Dites-le moi en commentaire 👇\n📩 Envoyez EAU en message ou appelez-moi au 06 27 60 52 92\n\n#Troyes #Aube #Culligan #calcaire #adoucisseur #osmoseur #eaudurobinet",
+   "tip": "🎵 Ajoute une musique depuis Instagram au moment de publier (volume bas). Partage le reel en story 1 h après."
+  }
+ ]
+}
