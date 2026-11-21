@@ -62,6 +62,7 @@ h2{font-size:22px;font-weight:900;letter-spacing:-.02em;margin:24px 4px 10px}
 .btn.dark{background:var(--ink)}
 .btn.ghost{background:#fff;color:var(--ink);border:1.5px solid var(--line)}
 .btn.ok{background:var(--ok)}
+.dl{text-align:center;font-size:14px;color:var(--grey);padding:2px 0 4px}.dl a{color:var(--ink);font-weight:700;text-decoration:underline;padding:0 3px}
 .check{display:flex;align-items:center;gap:12px;padding:14px 18px;border-top:1px solid var(--line);font-weight:700;cursor:pointer;user-select:none}
 .check input{width:24px;height:24px;accent-color:var(--ok)}
 .card.done .seq,.card.done .media,.card.done .cap,.card.done .tip,.card.done .steps,.card.done .swipe{display:none}
@@ -227,7 +228,7 @@ async function share(it) {
   if (fl && navigator.canShare && navigator.canShare({ files: fl })) {
     try { await navigator.share({ files: fl }); return; } catch (e) { if (e.name === 'AbortError') return; }
   }
-  sheet(t('Enregistrer dans tes photos', 'Enregistrer dans vos photos'), [t('Appuie longuement sur l\'image (ou la vidéo).', 'Appuyez longuement sur l\'image (ou la vidéo).'), t('Choisis « Enregistrer dans Photos ».', 'Choisissez « Enregistrer dans Photos ».'), t('Ouvre Instagram, appuie sur + et sélectionne-la.', 'Ouvrez Instagram, appuyez sur + et sélectionnez-la.')]);
+  sheet(t('Enregistrer dans tes photos', 'Enregistrer dans vos photos'), [t('Appuie longuement sur l\'image (ou la vidéo).', 'Appuyez longuement sur l\'image (ou la vidéo).'), t('Choisis « Enregistrer dans Photos ».', 'Choisissez « Enregistrer dans Photos ».'), t('Ouvre Instagram ou TikTok, appuie sur + et sélectionne-la.', 'Ouvrez Instagram ou TikTok, appuyez sur + et sélectionnez-la.')]);
 }
 function card(it) {
   preload(it);
@@ -245,7 +246,8 @@ function card(it) {
     ${it.caption ? `<div class="cap">${esc(it.caption)}</div>` : ''}
     <div class="steps">
       ${it.caption ? `<button class="btn dark cp"><span class="n">1</span><span class="t">Copier le texte</span></button>` : ''}
-      ${n ? `<button class="btn sh"><span class="n">${it.caption ? 2 : 1}</span>${n > 1 ? `Envoyer les ${n} images` : vid ? 'Envoyer la vidéo' : "Envoyer l'image"} vers Instagram</button>` : ''}
+      ${n ? `<button class="btn sh"><span class="n">${it.caption ? 2 : 1}</span>${n > 1 ? `Envoyer les ${n} images` : vid ? 'Envoyer la vidéo' : "Envoyer l'image"} (Insta, TikTok…)</button>
+      <div class="dl">${t('Ou télécharger le fichier', 'Ou télécharger le fichier')} : ${it.media.map((m, k) => `<a href="${m.file}" download="${C.slug}-${it.id}-${k + 1}.${m.file.split('.').pop()}">${n > 1 ? (k + 1) : (vid ? 'vidéo' : 'image')}</a>`).join(' · ')}</div>` : ''}
     </div>
     <label class="check"><input type="checkbox" ${done[it.id] ? 'checked' : ''}> C'est publié !</label>`;
   const cap = c.querySelector('.cap'); if (cap) cap.onclick = () => cap.classList.toggle('open');
